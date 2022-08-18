@@ -19,7 +19,7 @@ def load_data(path):
 
     return defense,rooms,external_constraints,supervisor_constraints,external,supervisor
 
-def generate_solution(defense, rooms, external, supervisor):
+def generate_solution(defense, rooms, external, supervisor,external_constraints,supervisor_constraints):
     externals = {}
     supervisors = {}
     room = {}
@@ -50,7 +50,7 @@ def generate_solution(defense, rooms, external, supervisor):
         
         
     
-    return new_data, externals, supervisors,room
+    return new_data, externals, supervisors,room,external_constraints,supervisor_constraints
 
 data = load_data('input.json')
 

@@ -46,6 +46,15 @@ def cost(solution):
             if len(rooms) > 1:
                 examiner_cost += len(rooms)
 
+    for Examiner in solution[1]:
+        l = []
+        for constrained_timing in solution[4][Examiner]:
+            l.append(constrained_timing)
+        for i in l:
+            if len(solution[1][Examiner][i]) >= 1:
+                examiner_cost += 1
+
+
     
     return examiner_cost + supervisor_cost + room_cost
 
