@@ -1,7 +1,16 @@
+import imp
 import json
 import random
 import cost_function
-
+import neighboring
+"""
+    Returns a mutated chromosome. The mutation is done by searching for all classes that violate some hard constraint
+    (with any resource) and randomly choosing one of them. Then, transfer that class in an unoccupied time frame, in
+    one of the allowed classrooms for that class. If there exists no such combination of time frame and classroom,
+    transfer the class into a random time frame in one of the allowed classrooms.
+    :param chromosome: Current timetable
+    :return: Mutated timetable
+    """
 def load_data(path):
     with open(path, 'r') as read_file:
         data = json.load(read_file)
@@ -17,7 +26,7 @@ def load_data(path):
         supervisor.append(data['Defense'][i]['Supervisor'])
 
 
-    return defense,rooms,external_constraints,supervisor_constraints,external,supervisor
+    return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor)
 
 def generate_solution(defense, rooms, external, supervisor,external_constraints,supervisor_constraints):
     externals = {}
@@ -54,10 +63,10 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
 
 data = load_data('input.json')
 
-sol = generate_solution(data[0],data[1],data[4],data[5])
+sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3])
 
-print(cost_function.cost(sol))
 
+neighboring.neighbor(sol)
 
 
 
