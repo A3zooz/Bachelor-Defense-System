@@ -17,14 +17,14 @@ def neighbor(solution):
 
         
         
-        if solution[2][solution[0]['Supervisor'][i]][solution[0]['Time'][i]] > 1:
+        if solution[2][solution[0][i]['Supervisor']][solution[0][i]['Time']] > 1:
             candidates.append(i)
             #print(solution[0][i])
 
     
-        if solution[3][solution[0]['Room'][i]][solution[0]['Time'][i]] > 1:
+        if solution[3][solution[0][i]['Room']][solution[0][i]['Time']] > 1:
             candidates.append(i)
             #print(solution[0][i])
 
     print(set(candidates))
-    
+
