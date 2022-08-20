@@ -26,5 +26,14 @@ def neighbor(solution):
             candidates.append(i)
             #print(solution[0][i])
 
-    print(set(candidates))
+        if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) >= 1 and solution[4][solution[0][i]['Examiner']][solution[0][i]['Time']] == 1:
+            candidates.append(i)
+        
+        if solution[2][solution[0][i]['Supervisor']][solution[0][i]['Time']] >= 1 and solution[5][solution[0][i]['Supervisor']][solution[0][i]['Time']] == 1:
+            candidates.append(i)
 
+    if not candidates:
+        i = random.randrange(len(solution[0]))
+    else:
+        i = random.choice(candidates)
+    

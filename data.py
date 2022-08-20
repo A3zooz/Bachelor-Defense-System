@@ -38,9 +38,9 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
         room[single_room] = [0] * 180
     for single_assignment in defense:
         new_defense = single_assignment.copy()
-        number = random.randrange(0,1)
+        number = random.randrange(0,179)
         while number % 5  == 0 and not(number % 3 == 0)  :
-            number = random.randrange(0,1)
+            number = random.randrange(0,179)
         new_defense['Time'] = number
         room1 = random.choice(rooms)
         new_defense['Room'] = room1
