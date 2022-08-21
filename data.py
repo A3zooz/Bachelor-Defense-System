@@ -11,8 +11,11 @@ def load_data(path):
     supervisor = []
     rooms = data['Rooms']
     defense = data['Defense']
-    external_constraints = data['External Constraints']
-    supervisor_constraints = data['Supervisor Constraints']
+    # external_constraints = data['External Constraints']
+    # supervisor_constraints = data['Supervisor Constraints']
+    external_constraints = {}
+    supervisor_constraints = {}
+
     for i in range(len(data['Defense'])):
         external.append(data['Defense'][i]['Examiner'])
     for i in range(len(data['Defense'])):
@@ -32,15 +35,20 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     number_of_rooms = len(rooms)
     for single_external in external:
         externals[single_external] = [[]*number_of_rooms for i in range(180)]
+        external_constraints[single_external] = [0]*180
     for single_supervisor in supervisor:
         supervisors[single_supervisor] = [0]*180
+        supervisor_constraints[single_supervisor] = [0]*180
+
     for single_room in rooms:
         room[single_room] = [0] * 180
+
+    
     for single_assignment in defense:
         new_defense = single_assignment.copy()
-        number = random.randrange(0,179)
+        number = random.randrange(0,20)
         while number % 5  == 0 and not(number % 3 == 0)  :
-            number = random.randrange(0,179)
+            number = random.randrange(0,20)
         new_defense['Time'] = number
         room1 = random.choice(rooms)
         new_defense['Room'] = room1

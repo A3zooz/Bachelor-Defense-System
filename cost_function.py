@@ -39,10 +39,10 @@ def cost(solution):
     
     #Maximum one consecutive gap for Examiner
     for Examiner in solution[1]:
-        for day in range(12):
+        for day in range(11):
             last_seen = 0
             found = False
-            for slot in range(15):
+            for slot in range(14):
                 time = day * 15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
                     if not found:
@@ -55,9 +55,9 @@ def cost(solution):
 
     #Examiner in more than one room in a single day
     for Examiner in solution[1]:
-        for day in range(12):
+        for day in range(11):
             rooms = []
-            for slot in range(15):
+            for slot in range(14):
                 time = day * 15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
                     rooms=[set(solution[1][Examiner][time])]
@@ -72,6 +72,20 @@ def cost(solution):
         for i in l:
             if len(solution[1][Examiner][i]) >= 1:
                 examiner_cost += 1
+
+    #Examiner has more than 2 days
+
+    for Examiner in solution[1]:
+        working_days = 0
+        for days in range(11):
+            for slot in range(14):
+                time = day*15 + slot
+                if len(solution[1][Examiner][time]) >= 1:
+                    working_days += 1
+                    break
+        if working_days >= 2:
+            examiner_cost += working_days
+
 
 
     
