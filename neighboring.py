@@ -1,5 +1,6 @@
 import random
 import json
+import math
 from copy import deepcopy
 
 
@@ -47,8 +48,52 @@ def neighbor(solution):
     solution[2][selected_supervisor][time] -= 1
     solution[3][selected_room][time] -= 1
 
-    
+    #Swap Room for the external 
+    sday = (math.ceil(time/15)-1)*15
+    eday = math.ceil(time/15)*15
+    if(solution[4][selected_examiner][time] == 0):
+        max = 0
+        temp = 0
+        endslot = 0
+        for x in range(sday,eday):
+            if(x % 5  == 0 and not(x % 3 == 0)) :
+              continue
+            if(solution[1][selected_examiner][x]==1):
+                temp+=1
+            else:
+                if(temp>max):
+                    max=temp
+                    temp=0
+                    endslot=x
+                   
 
+    if endslot != 0:
+        if( solution[3][selected_room][endslot-max] ==0 and not (endslot-max % 5  == 0 and not(endslot-max % 3 == 0)) ):
+            solution[0][i]['Time'] = endslot-max
+            solution[1][selected_examiner][endslot-max].append(selected_room)
+            solution[2][selected_supervisor][endslot-max] += 1
+            solution[3][selected_room][endslot-max] += 1
+            
+        elif( solution[3][selected_room][endslot+1] ==0 and not (endslot % 5  == 0 and not(endslot % 3 == 0)) ):
+            solution[0][i]['Time'] = endslot+1
+            solution[1][selected_examiner][endslot+1].append(selected_room)
+            solution[2][selected_supervisor][endslot+1] += 1
+            solution[3][selected_room][endslot+1] += 1
+        return 
+        
+    if( solution[3][selected_room][time-1] ==0 and not (time-1 % 5  == 0 and not(time-1 % 3 == 0)) ):
+            solution[0][i]['Time'] = time-1
+            solution[1][selected_examiner][time-1].append(selected_room)
+            solution[2][selected_supervisor][time-1] += 1
+            solution[3][selected_room][time-1] += 1
+            
+    elif( solution[3][selected_room][time+1] ==0 and not (time+1 % 5  == 0 and not(time+1 % 3 == 0)) ):
+            solution[0][i]['Time'] = time+1
+            solution[1][selected_examiner][time+1].append(selected_room)
+            solution[2][selected_supervisor][time+1] += 1
+            solution[3][selected_room][time+1] += 1
+
+        
 
 
     

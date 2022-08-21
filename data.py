@@ -69,6 +69,8 @@ sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3])
 
 print(sol[0])
 neighboring.neighbor(sol)
+print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+print(sol[0])
 
 
 
