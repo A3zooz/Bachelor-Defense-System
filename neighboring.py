@@ -120,7 +120,7 @@ def neighbor(solution):
              mwday=x
         else: # <10
             if(temp>max):
-             max=temp
+             max=temp 
              temp=0
              mwday=x
         
