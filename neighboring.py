@@ -67,7 +67,7 @@ def neighbor(solution):
     #                 max=temp
     #                 temp=0
     #                 endslot=x
-                   
+                
     # if exists continous slots check before them and after them for free slot
         # if endslot != 0:
         #  if(solution[3][selected_room][endslot-max] ==0 and not (endslot-max % 5  == 0 and not(endslot-max % 3 == 0)) ):
@@ -103,27 +103,33 @@ def neighbor(solution):
         mwday = 0
         for y in range(15):
             if(solution[4][selected_examiner][x*y] == 0):
-             continue
+                continue
             if(y % 5  == 0 and not(y % 3 == 0)) :
-             continue
+                continue
             if(solution[1][selected_examiner][x*y]==1):
-             temp+=1  
+                temp+=1  
         if( solution[6][selected_examiner] - 10 > 3): #14 and above
             if(temp>max and not(temp>=10)):
-             max=temp
-             temp=0
-             mwday=x
+                max=temp
+                temp=0
+                mwday=x
         elif(solution[6][selected_examiner] > 10): # 11,12,13
-            if(temp>max and not(temp >= solution[6][selected_examiner]-4) ): #7,8,9
-             max=temp
-             temp=0
-             mwday=x
+            if(temp>max and not(temp >= solution[6][selected_examiner]-3) ): #8,9,10
+                max=temp
+                temp=0
+                mwday=x
         else: # <10
             if(temp>max):
-             max=temp 
-             temp=0
-             mwday=x
+                max=temp 
+                temp=0
+                mwday=x
+
+        #insert gaps when inserting slot randomly
         
+        #examiners, supervisors 
+        # examiners -> repitition?, constraints?
+        # supervisor -> repitition?
+        # all -> randomize
     max = 0
     temp = 0
     endslot = 0
@@ -132,45 +138,48 @@ def neighbor(solution):
     flag=True
     r = random.randint(0,14)
     while(flag):
-       if(len(solution[1][selected_examiner][r])==0 and (len(solution[1][selected_examiner][r+1])==1 or len(solution[1][selected_examiner][r-1])==1) ):
-           flag=False
-       else:
-         r  = random.randint(0,14)
+        if(len(solution[1][selected_examiner][r])==0 and (len(solution[1][selected_examiner][r+1])==1 or len(solution[1][selected_examiner][r-1])==1) ):
+            flag=False
+        else:
+            r  = random.randint(0,14)
     if(mwday!=0):
-     r=r*mwday
+        r=r*mwday
     # Find the most continous slots in the day
     for x in range(sday,eday):
         if(x % 5  == 0 and not(x % 3 == 0)) :
             continue
         if(solution[1][selected_examiner][x]==1):
             temp+=1
+        elif (solution[1][selected_examiner][x+1]==1):
+                temp += 1
         else:
             if(temp>max):
-                max=temp
-                temp=0
-                endslot=x
+                max = temp
+                temp = 0
+                endslot = x
+                d = 0
 
     if endslot != 0:
         if(solution[3][selected_room][endslot-max] ==0 and not (endslot-max % 5  == 0 and not(endslot-max % 3 == 0)) ):
-         solution[0][i]['Time'] = endslot-max
-         solution[1][selected_examiner][endslot-max].append(selected_room)
-         solution[2][selected_supervisor][endslot-max] += 1
-         solution[3][selected_room][endslot-max] += 1
-         return
+            solution[0][i]['Time'] = endslot-max
+            solution[1][selected_examiner][endslot-max].append(selected_room)
+            solution[2][selected_supervisor][endslot-max] += 1
+            solution[3][selected_room][endslot-max] += 1
+            return
         
         elif(solution[3][selected_room][endslot+1] ==0 and not (endslot+1 % 5  == 0 and not(endslot+1 % 3 == 0)) ):
-         solution[0][i]['Time'] = endslot+1
-         solution[1][selected_examiner][endslot+1].append(selected_room)
-         solution[2][selected_supervisor][endslot+1] += 1
-         solution[3][selected_room][endslot+1] += 1 
-         return
+            solution[0][i]['Time'] = endslot+1
+            solution[1][selected_examiner][endslot+1].append(selected_room)
+            solution[2][selected_supervisor][endslot+1] += 1
+            solution[3][selected_room][endslot+1] += 1 
+            return
     else:
         if(solution[3][selected_room][r] ==0 and not (r% 5  == 0 and not(r % 3 == 0)) ):
-         solution[0][i]['Time'] = r
-         solution[1][selected_examiner][r].append(selected_room)
-         solution[2][selected_supervisor][r] += 1
-         solution[3][selected_room][r] += 1
-         return
+            solution[0][i]['Time'] = r
+            solution[1][selected_examiner][r].append(selected_room)
+            solution[2][selected_supervisor][r] += 1
+            solution[3][selected_room][r] += 1
+            return
         
 
 
