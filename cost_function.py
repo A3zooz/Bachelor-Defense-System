@@ -91,10 +91,11 @@ def cost(solution):
             if len(solution[1][Examiner][i]) >= 1:
                 examiner_cost += 1
 
+
     #Examiner has more than 2 days
     for Examiner in solution[1]:
         working_days = 0
-        for days in range(11):
+        for day in range(11):
             for slot in range(14):
                 time = day*15 + slot
                 if len(solution[1][Examiner][time]) >= 1:

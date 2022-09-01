@@ -1,4 +1,4 @@
-from tkinter import SOLID
+# from tkinter import SOLID
 import data as dt
 import cost_function
 import neighboring
@@ -37,7 +37,7 @@ def evolutionary_algorithm():
             if ftn <= ft:
                 solution = new_solution
             # print the iteration number and the cost for the current solution
-            if j % 200 == 0:
+            if j % 2 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
@@ -47,7 +47,7 @@ def evolutionary_algorithm():
             best_timetable = deepcopy(solution)
 
     solution = best_timetable
-    print(solution[0])
+    # print(solution[0])
 
     
     """

@@ -52,7 +52,7 @@ def neighbor(solution):
     
 
     # check if this day doesnt break his constraint
-    # if(solution[4][selected_examiner][time] == 0):
+    # if(solution[4][selected_examiner][time] == 1):
     #     max = 0
     #     temp = 0
     #     endslot = 0
@@ -102,7 +102,7 @@ def neighbor(solution):
     #     temp = 0
     #     mwday = 0
     #     for y in range(15):
-    #         if(solution[4][selected_examiner][x*y] == 0):
+    #         if(solution[4][selected_examiner][x*y] == 1):
     #             continue
     #         if(y % 5  == 0 and not(y % 3 == 0)) :
     #             continue
@@ -174,17 +174,17 @@ def neighbor(solution):
     # generate el continous slots including 1 slot gap 
     # max is the value of continous slots 
     # endslot where the continous slots stop
-    
+
+    max = 0
+    mwday = 0
     for x in range(11):
-        max = 0
         temp = 0
-        mwday = 0
         for y in range(14):
-            if(solution[4][selected_examiner][x*y] == 0):
+            if(solution[4][selected_examiner][(x*15)+y] == 1):
                 continue
             if(y % 5  == 0 and not(y % 3 == 0)) :
                 continue
-            if(solution[1][selected_examiner][x*y]==1):
+            if(len(solution[1][selected_examiner][(x*15)+y])>=1):
                 temp+=1  
         if( solution[6][selected_examiner] - 10 > 3): #14 and above
             if(temp>max and not(temp>=10)):
@@ -211,9 +211,9 @@ def neighbor(solution):
     for x in range(sday,eday):
         if(x % 5  == 0 and not(x % 3 == 0)) :
             continue
-        if(solution[1][selected_examiner][x]==1):
+        if(len(solution[1][selected_examiner][x])>=1):
             temp+=1
-        elif (solution[1][selected_examiner][x+1]==1):
+        elif (len(solution[1][selected_examiner][x+1])>=1):
             temp+=1
         else:
             if(temp>max):
@@ -222,17 +222,20 @@ def neighbor(solution):
                 endslot = x
 
     r = random.randint(0,14)
+
     if(mwday!=0):
-        r = r*mwday
-    
+        r = r + (mwday*15)
+
+    #(len(solution[1][selected_examiner][r+1])>=1 or len(solution[1][selected_examiner][r-1])>=1) or len(solution[1][selected_examiner][r+1])>=1 or len(solution[1][selected_examiner][r-1])>=1):
+    #   (len(solution[1][selected_examiner][r+1])>=1 or len(solution[1][selected_examiner][r-1])>=1)
+
     while(flag):
-        if(len(solution[1][selected_examiner][r])==0 and 
-        (len(solution[1][selected_examiner][r+1])==1 or len(solution[1][selected_examiner][r-1])==1) ):
+        if(len(solution[1][selected_examiner][r])==0):
             flag=False
         else:
             r  = random.randint(0,14)
             if(mwday!=0):
-                r = r*mwday
+               r = r + (mwday*15)
 
 
 # if external is wrong and supervisor is right work on external
