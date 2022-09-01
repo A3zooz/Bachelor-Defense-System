@@ -48,9 +48,9 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     
     for single_assignment in defense:
         new_defense = single_assignment.copy()
-        number = random.randrange(0,20)
+        number = random.randrange(0,179)
         while number % 5  == 0 and not(number % 3 == 0)  :
-            number = random.randrange(0,20)
+            number = random.randrange(0,179)
         new_defense['Time'] = number
         room1 = random.choice(rooms)
         new_defense['Room'] = room1
@@ -64,14 +64,14 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     
     return new_data, externals, supervisors,room,external_constraints,supervisor_constraints,externalslots
 
-data = load_data('input.json')
+# data = load_data('input.json')
 
-sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])
+# sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])
 
-print(sol[0])
-neighboring.neighbor(sol)
-print("After Swap Testing")
-print(sol[0])
-print(sol[6])
+# print(sol[0])
+# neighboring.neighbor(sol)
+# print("After Swap Testing")
+# print(sol[0])
+# print(sol[6])
 
 
