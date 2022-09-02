@@ -61,7 +61,7 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
         
         
     
-    return new_data, externals, supervisors,room,external_constraints,supervisor_constraints,externalslots
+    return new_data, externals, supervisors,room,external_constraints,supervisor_constraints,externalslots,rooms
 
 # data = load_data('input.json')
 

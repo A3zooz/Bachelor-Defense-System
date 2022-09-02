@@ -115,11 +115,14 @@ def evolutionary_algorithm():
     for Examiner in solution[1]:
         for day in range(12):
             temp = 0
+            flag1=False
             for slot in range(15):
                 time = day * 15 + slot
                 if (len(solution[1][Examiner][time]) >= 1):
-                    if (time - temp - 1 >= 2):
-                            continued = False
+                    if (time - temp - 1 >= 2 and flag1):
+                            examiner_cost += (time - temp - 1)
+                            # print("Continouty violated")
+                    flag1=True
                     temp = time
 
         
