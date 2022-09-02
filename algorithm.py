@@ -1,5 +1,6 @@
 # from tkinter import SOLID
 import data as dt
+from tabulate import tabulate
 import cost_function
 import neighboring
 from copy import deepcopy
@@ -120,7 +121,7 @@ def evolutionary_algorithm():
                 time = day * 15 + slot
                 if (len(solution[1][Examiner][time]) >= 1):
                     if (time - temp - 1 >= 2 and flag1):
-                            examiner_cost += (time - temp - 1)
+                            continued=False
                             # print("Continouty violated")
                     flag1=True
                     temp = time
@@ -130,9 +131,36 @@ def evolutionary_algorithm():
     print('Are hard restrictions for Supervisor satisfied:', supervisor_hard)
     print('Are hard restrictions for Room satisfied:', room_hard)
     print('Are hard restrictions for Continouity satisfied:', continued)
+    return solution
     
-    
-evolutionary_algorithm()
+f = evolutionary_algorithm()
+
+
+        
+# t = PrettyTable(['Saturday', 'Sunday','Monday', 'Tuesday','Wednesday', 'Thursday''Saturday', 'Sunday','Monday', 'Tuesday','Wednesday', 'Thursday'])
+# t.add_row(['Alice', 24])
+# t.add_row(['Bob', 19])
+# print(t)
+# x1=["---------\n Slot:1 \n---------",u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8],u[9],u[10],u[11],u[12],u[13],u[14]]
+# x2=["---------\n Slot:2 \n---------",u[15],u[16],u[17],u[18],u[19],u[20],u[21],u[22],u[23],u[24],u[25],u[26],u[27],u[28]]
+u=[""]*180
+for x in range(len(f[0])):
+    u[f[0][x]['Time']] += "("+ (f[0][x]['Examiner'] +" , "+ f[0][x]['Supervisor']) +")  "
+x1=["Saturday",u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8],u[9],u[10],u[11],u[12],u[13],u[14]]
+x2=["Sunday",u[15],u[16],u[17],u[18],u[19],u[20],u[21],u[22],u[23],u[24],u[25],u[26],u[27],u[28],u[29]]
+x3=["Monday",u[30],u[31],u[32],u[33],u[34],u[35],u[36],u[37],u[38],u[39],u[40],u[41],u[42],u[43],u[44]]
+x4=["Tuesday",u[45],u[46],u[47],u[48],u[49],u[50],u[51],u[52],u[53],u[54],u[55],u[56],u[57],u[58],u[59]]
+x5=["Wednesday",u[60],u[61],u[62],u[63],u[64],u[65],u[66],u[67],u[68],u[69],u[70],u[71],u[72],u[73],u[74]]
+x6=["Thursday",u[75],u[76],u[77],u[78],u[79],u[80],u[81],u[82],u[83],u[84],u[85],u[86],u[87],u[88],u[89]]
+x7=["Saturday",u[90],u[91],u[92],u[93],u[94],u[95],u[96],u[97],u[98],u[99],u[100],u[101],u[102],u[103],u[104]]
+x8=["Sunday",u[105],u[106],u[107],u[108],u[109],u[110],u[111],u[112],u[113],u[114],u[115],u[116],u[117],u[118],u[119]]
+x9=["Monday",u[120],u[121],u[122],u[123],u[124],u[125],u[126],u[127],u[128],u[129],u[130],u[131],u[132],u[133],u[134]]
+x10=["Tuesday",u[135],u[136],u[137],u[138],u[139],u[140],u[141],u[142],u[143],u[144],u[145],u[146],u[147],u[148],u[149]]
+x11=["Wednesday",u[150],u[151],u[152],u[153],u[154],u[155],u[156],u[157],u[158],u[159],u[160],u[161],u[162],u[163],u[164]]
+x12=["Thursday",u[165],u[166],u[167],u[168],u[169],u[170],u[171],u[172],u[173],u[174],u[175],u[176],u[177],u[178],u[179]]
+
+with open('Solution.txt', 'w') as f: 
+    f.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['Slot 1', 'Slot 2','Slot 3', 'Slot 4','Slot 5', 'Slot 6','Slot 7', 'SLot 8','Slot 9', 'Slot 10','Slot 11', 'Slot 12','Slot 13','Slot 14', 'Slot 15'], tablefmt="grid"))
 
 # "External Constraints":
 #         "Omar":[],  // 17

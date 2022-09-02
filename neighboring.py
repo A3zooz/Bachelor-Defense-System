@@ -237,11 +237,11 @@ def neighbor(solution):
     c=0
     while(flag):
         c+=1
-        if(len(solution[1][selected_examiner][r])==0 and c>45):
+        if(len(solution[1][selected_examiner][r])==0 and c>45 and not(r % 5  == 0 and not(r % 3 == 0))):
             flag=False
         elif(not (r+1>=180 or r-1<0) ):
             if(len(solution[1][selected_examiner][r])==0 and (len(solution[1][selected_examiner][r+1])>=1
-            or len(solution[1][selected_examiner][r-1])>=1)):
+            or len(solution[1][selected_examiner][r-1])>=1) and not(r % 5  == 0 and not(r % 3 == 0))):
                 flag=False
         r  = random.randint(0,14)
         if(mwday!=0):
@@ -274,10 +274,15 @@ def neighbor(solution):
             return solution
 # if external is right and supervisor is wrong or if external and supervisor wrong randomize 
     else:
+        yes=True
+        while(yes):
             r1 = random.randint(0,179)
-            solution[0][i]['Time'] = r1
-            solution[1][selected_examiner][r1].append(selected_room)
-            solution[2][selected_supervisor][r1] += 1
-            solution[3][selected_room][r1] += 1
-            return solution
+            if(not(r1 % 5  == 0 and not(r1 % 3 == 0))):
+                yes=False
+
+        solution[0][i]['Time'] = r1
+        solution[1][selected_examiner][r1].append(selected_room)
+        solution[2][selected_supervisor][r1] += 1
+        solution[3][selected_room][r1] += 1
+        return solution
     return solution
