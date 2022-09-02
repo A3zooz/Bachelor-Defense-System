@@ -1,0 +1,55 @@
+{
+    "result": [
+        {
+            "id": "40-95861",
+            "name": "Rami",
+            "email": "rami.ahmed@student.guc.edu.eg",
+            "gpa": "1.67",
+            "faculty": "MET",
+            "major": "CSEN",
+            "supervisor": "Nada Hamed",
+            "examiner": "Hanaa Bayoumi",
+            "defense location": "C5.108",
+            "defense slot": "80"
+
+        },
+
+        {
+            "id": "40-15261",
+            "name": "Rana",
+            "email": "rana.ahmed@student.guc.edu.eg",
+            "gpa": "2.4",
+            "faculty": "MET",
+            "major": "DMET",
+            "supervisor": "Milad Ghantous",
+            "examiner": "Asaad Younes",
+            "defense location": "C5.102",
+            "defense slot": "81"
+        },
+
+        {
+            "id": "40-11251",
+            "name": "Sara",
+            "email": "sara.ahmed@student.guc.edu.eg",
+            "gpa": "1.2",
+            "faculty": "MET",
+            "major": "CSEN",
+            "supervisor": "Nada Hamed",
+            "examiner": "Hanaa Bayoumi",
+            "defense location": "C5.108",
+            "defense slot": "25"
+        },
+        {
+            "id": "40-94821",
+            "name": "Mohamed",
+            "email": "mohamed.ahmed@student.guc.edu.eg",
+            "gpa": "1.26",
+            "faculty": "MET",
+            "major": "CSEN",
+            "supervisor": "Amr ElMougy",
+            "examiner": "Hani Mostafa",
+            "defense location": "C5.103",
+            "defense slot": "80"
+        }
+    ]
+}
