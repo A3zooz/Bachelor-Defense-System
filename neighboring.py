@@ -191,14 +191,13 @@ def neighbor(solution):
                 continue
             if(len(solution[1][selected_examiner][(x*15)+y])>=1):
                 temp+=1  
-        if( solution[6][selected_examiner] - 10 > 3): #14 and above
-            if(temp>max and not(temp>=10)):
+        if( solution[6][selected_examiner] > 13): #14 and above
+            if(temp > max and temp < 10):
                 max=temp
                 temp=0
                 mwday=x
         elif(solution[6][selected_examiner] > 10): # 11,12,13
-            if(temp>max and not(temp >= solution[6][selected_examiner]-3) ): #8,9,10
-                max=temp
+            if(temp > max and not(temp >= solution[6][selected_examiner]-3) ): #8,9,10
                 temp=0
                 mwday=x
         else: # <10
@@ -286,3 +285,5 @@ def neighbor(solution):
         solution[3][selected_room][r1] += 1
         return solution
     return solution
+
+    
