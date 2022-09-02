@@ -42,7 +42,7 @@ def evolutionary_algorithm():
             if ftni <= fti:
                 solution = new_solution
             # print the iteration number and the cost for the current solution
-            if j % 10 == 0:
+            if j % 1000 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
@@ -175,73 +175,5 @@ with open('Solution.txt', 'w') as f:
 #         "Mervat Abuelkheir":[], // 15   (Malak,Samir,Adel,Omar)
 #         "Milad Ghantous":[] // 5 (Adel,Omar)
 
-# 75k RUN WITH FIXED COST FUNCTION COST=0 AFTER 6040 RUNS 
 
-# ([{'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-1', 'Time': 100, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-2', 'Time': 51, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-3', 'Time': 58, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-4', 'Time': 93, 'Room': 'C3.333'},
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-5', 'Time': 98, 'Room': 'C1.111'},
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-6', 'Time': 95, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Amr Mougy', 'Student': '40-7', 'Time': 92, 'Room': 'C3.333'},
-# {'Examiner': 'Omar', 'Supervisor': 'Nourhan Ehab', 'Student': '40-21', 'Time': 90, 'Room': 'C1.111'},
-# {'Examiner': 'Omar', 'Supervisor': 'Nourhan Ehab', 'Student': '40-22', 'Time': 50, 'Room': 'C3.333'},        50 51 53 54 55 57 58 
-# {'Examiner': 'Omar', 'Supervisor': 'Nourhan Ehab', 'Student': '40-23', 'Time': 57, 'Room': 'C1.111'},        90 92 93 94 95 96 98 100 101 102
-# {'Examiner': 'Omar', 'Supervisor': 'Nourhan Ehab', 'Student': '40-20', 'Time': 54, 'Room': 'C3.333'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Nourhan Ehab', 'Student': '40-24', 'Time': 55, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-45', 'Time': 96, 'Room': 'C2.222'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-46', 'Time': 101, 'Room': 'C2.222'},
-# {'Examiner': 'Omar', 'Supervisor': 'Milad Ghantous', 'Student': '40-58', 'Time': 94, 'Room': 'C3.333'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Milad Ghantous', 'Student': '40-59', 'Time': 102, 'Room': 'C1.111'}, 
-# {'Examiner': 'Omar', 'Supervisor': 'Milad Ghantous', 'Student': '40-60', 'Time': 53, 'Room': 'C1.111'}, 
-
-
-# {'Examiner': 'Adel', 'Supervisor': 'Amr Mougy', 'Student': '40-8', 'Time': 78, 'Room': 'C3.333'}, 
-# {'Examiner': 'Adel', 'Supervisor': 'Amr Mougy', 'Student': '40-9', 'Time': 80, 'Room': 'C1.111'}, 
-# {'Examiner': 'Adel', 'Supervisor': 'Amr Mougy', 'Student': '40-10', 'Time': 168, 'Room': 'C3.333'}, 
-# {'Examiner': 'Adel', 'Supervisor': 'Amr Mougy', 'Student': '40-11', 'Time': 166, 'Room': 'C1.111'}, 
-# {'Examiner': 'Adel', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-54', 'Time': 77, 'Room': 'C1.111'}, 
-# {'Examiner': 'Adel', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-55', 'Time': 165, 'Room': 'C3.333'},    77 78 80 
-# {'Examiner': 'Adel', 'Supervisor': 'Milad Ghantous', 'Student': '40-56', 'Time': 169, 'Room': 'C2.222'},       165 166 168 169 170
-# {'Examiner': 'Adel', 'Supervisor': 'Milad Ghantous', 'Student': '40-57', 'Time': 170, 'Room': 'C1.111'}, 
-
-
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-12', 'Time': 154, 'Room': 'C2.222'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-13', 'Time': 156, 'Room': 'C3.333'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-14', 'Time': 159, 'Room': 'C3.333'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-15', 'Time': 162, 'Room': 'C1.111'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-16', 'Time': 158, 'Room': 'C2.222'},        152 154 156 158 159 160 162 164
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-17', 'Time': 160, 'Room': 'C2.222'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-18', 'Time': 164, 'Room': 'C2.222'}, 
-# {'Examiner': 'Layla', 'Supervisor': 'Nourhan Ehab', 'Student': '40-19', 'Time': 152, 'Room': 'C1.111'}, 
-
-
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-33', 'Time': 115, 'Room': 'C1.111'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-34', 'Time': 118, 'Room': 'C3.333'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-35', 'Time': 126, 'Room': 'C3.333'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-36', 'Time': 121, 'Room': 'C1.111'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-37', 'Time': 117, 'Room': 'C3.333'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-38', 'Time': 124, 'Room': 'C3.333'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-39', 'Time': 122, 'Room': 'C2.222'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-40', 'Time': 130, 'Room': 'C3.333'},     114 115 117 118 119 121 122 124 126 127 129 130
-# {'Examiner': 'Malak', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-47', 'Time': 127, 'Room': 'C1.111'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-48', 'Time': 129, 'Room': 'C3.333'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-49', 'Time': 119, 'Room': 'C1.111'}, 
-# {'Examiner': 'Malak', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-50', 'Time': 114, 'Room': 'C2.222'}, 
-
-
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-41', 'Time': 6, 'Room': 'C1.111'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-42', 'Time': 5, 'Room': 'C1.111'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-43', 'Time': 8, 'Room': 'C3.333'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-44', 'Time': 4, 'Room': 'C2.222'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-51', 'Time': 135, 'Room': 'C2.222'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-52', 'Time': 137, 'Room': 'C3.333'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Mervat Abuelkheir', 'Student': '40-53', 'Time': 145, 'Room': 'C1.111'},    2 3 4 5 6 7 8
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-25', 'Time': 146, 'Room': 'C1.111'},      135 137 138 139 141 143 145 146
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-26', 'Time': 141, 'Room': 'C3.333'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-27', 'Time': 7, 'Room': 'C3.333'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-28', 'Time': 143, 'Room': 'C3.333'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-29', 'Time': 3, 'Room': 'C1.111'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-30', 'Time': 2, 'Room': 'C2.222'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-31', 'Time': 139, 'Room': 'C2.222'}, 
-# {'Examiner': 'Samir', 'Supervisor': 'Wael Abuelsadat', 'Student': '40-32', 'Time': 138, 'Room': 'C3.333'}]
+#Randomize external at certain k cost at end of iterations.
