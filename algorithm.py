@@ -4,10 +4,11 @@ from tabulate import tabulate
 import cost_function
 import neighboring
 from copy import deepcopy
+import Inputcreation
 
 max_generations = 75000
 num_runs = 1
-input_file = 'Realinput.json'
+input_file = Inputcreation.Create_input()
 # output_file = 'classes/output2.json' #lesa
 cost_function = cost_function.cost
 
