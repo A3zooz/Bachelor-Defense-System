@@ -27,7 +27,7 @@ def cost(solution):
         for i in range(180):
             if len(solution[1][Examiner][i]) > 1:
                 examiner_cost += 1
-                # print("Examiner reserved in same slot violated")
+                print("Examiner reserved in same slot violated")
     for Supervisor in solution[2]:
         for i in range(180):
             if solution[2][Supervisor][i] > 1:
@@ -46,7 +46,8 @@ def cost(solution):
                 x+=1
         if(x>len(solution[3])):
             room_cost += x-len(solution[3])
-                
+            print("More slots than rooms")       
+
     for Examiner in solution[1]:
         for day in range(12):
             temp = 0
@@ -56,7 +57,7 @@ def cost(solution):
                 if (len(solution[1][Examiner][time]) >= 1):
                     if (time - temp - 1 >= 2 and flag1):
                             examiner_cost += (time - temp - 1)
-                            # print("Continouty violated")
+                            print("Continouty violated")
                     flag1=True
                     temp = time  
 
@@ -87,17 +88,20 @@ def cost(solution):
     #             examiner_cost += len(rooms)
     
     
-    # Maximum number of rooms in slot
-    nrooms = len(solution[7])
-    arooms = [0]*180
-    z=0
-    while(z<len(solution[0])):
-        time = solution[0][z]['Time']
-        arooms[time] +=1
-        z+=1
-    for x in arooms:
-        if(x>nrooms):
-            room_cost+=x-nrooms
+    # # Maximum number of rooms in slot
+    # nrooms = len(solution[7])
+    # arooms = [0]*180
+    # z=0
+    # while(z<len(solution[0])):
+    #     time = solution[0][z]['Time']
+    #     arooms[time] +=1
+    #     z+=1
+    # for x in arooms:
+    #     if(x>nrooms):
+    #         room_cost+=x-nrooms
+
+
+
     #Examiner violated time constraints
     for Examiner in solution[1]:
         l = []
@@ -106,7 +110,7 @@ def cost(solution):
         for i in l:
             if len(solution[1][Examiner][i]) >= 1:
                 examiner_cost += 1
-                # print("Examiner time constraint violated")
+                print("Examiner time constraint violated")
 
 
     #Examiner has more than 2 days
@@ -120,7 +124,7 @@ def cost(solution):
                     break
         if working_days > 2:
             examiner_cost += working_days
-            # print("Examiner has more than 2 days violated")
+            print("Examiner has more than 2 days violated")
 
 
 
