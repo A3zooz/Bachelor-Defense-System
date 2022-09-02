@@ -7,7 +7,7 @@ from copy import deepcopy
 
 max_generations = 75000
 num_runs = 1
-input_file = 'input.json'
+input_file = 'Realinput.json'
 # output_file = 'classes/output2.json' #lesa
 cost_function = cost_function.cost
 
@@ -42,7 +42,7 @@ def evolutionary_algorithm():
             if ftni <= fti:
                 solution = new_solution
             # print the iteration number and the cost for the current solution
-            if j % 1000 == 0:
+            if j % 100 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
