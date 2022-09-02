@@ -24,11 +24,11 @@ def cost(solution):
 
     #Examiner, Supervisor and Room can't be reserved more than once
     for Examiner in solution[1]:
-        for i in range(179):
+        for i in range(180):
             if len(solution[1][Examiner][i]) > 1:
                 examiner_cost += 1
     for Supervisor in solution[2]:
-        for i in range(179):
+        for i in range(180):
             if solution[2][Supervisor][i] > 1:
                 supervisor_cost += 1
     # for Room in solution[3]:
@@ -38,7 +38,7 @@ def cost(solution):
     
     # maxmimum number of rooms*13 for day 
     # slot*number
-    for slot in range(179):
+    for slot in range(180):
         x=0
         for i in range(len(solution[0])):
             if(solution[0][i]['Time']==slot):
@@ -46,12 +46,21 @@ def cost(solution):
         if(x>len(solution[3])):
             room_cost += x-len(solution[3])
                 
-                
+    # for Examiner in solution[1]:
+    #     for day in range(12):
+    #         temp = 0
+    #         for slot in range(15):
+    #             time = day * 15 + slot
+    #             if (len(solution[1][Examiner][time]) >= 1):
+    #                 if (time - temp - 1 >= 2):
+    #                         examiner_cost += (time - temp - 1)
+    #                 temp = time  
+
     for Examiner in solution[1]:
-        for day in range(11):
+        for day in range(12):
             last_seen = 0
             found = False
-            for slot in range(14):
+            for slot in range(15):
                 time = day * 15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
                     if not found:
@@ -73,9 +82,9 @@ def cost(solution):
     #         if len(rooms) > 1:
     #             examiner_cost += len(rooms)
     for Examiner in solution[1]:
-        for day in range(11):
+        for day in range(12):
             rooms = []
-            for slot in range(14):
+            for slot in range(15):
                 time = day * 15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
                     rooms=[set(solution[1][Examiner][time])]
@@ -95,8 +104,8 @@ def cost(solution):
     #Examiner has more than 2 days
     for Examiner in solution[1]:
         working_days = 0
-        for day in range(11):
-            for slot in range(14):
+        for day in range(12):
+            for slot in range(15):
                 time = day*15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
                     working_days += 1

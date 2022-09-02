@@ -20,7 +20,6 @@ def load_data(path):
         external.append(data['Defense'][i]['Examiner'])
     for i in range(len(data['Defense'])):
         supervisor.append(data['Defense'][i]['Supervisor'])
-    print(external)
 
     return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor),external
 

@@ -4,7 +4,7 @@ import cost_function
 import neighboring
 from copy import deepcopy
 
-max_generations = 5000
+max_generations = 75000
 num_runs = 1
 input_file = 'input.json'
 # output_file = 'classes/output2.json' #lesa
@@ -37,7 +37,7 @@ def evolutionary_algorithm():
             if ftn <= ft:
                 solution = new_solution
             # print the iteration number and the cost for the current solution
-            if j % 2 == 0:
+            if j % 10 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
@@ -108,24 +108,35 @@ def evolutionary_algorithm():
             examiner_hard = False
         
     for Examiner in solution[1]:
-        for day in range(11):
-            last_seen = 0
-            found = False
-            for slot in range(14):
+        for day in range(12):
+            temp = 0
+            for slot in range(15):
                 time = day * 15 + slot
-                if len(solution[1][Examiner][time]) >= 1:
-                    if not found:
-                        found = True
-                    else:
-                        if (time - last_seen - 1) >= 2:
+                if (len(solution[1][Examiner][time]) >= 1):
+                    if (time - temp - 1 >= 2):
                             continued = False
-                        found = False
-                    last_seen = time
+                    temp = time
+
         
-    print('Are hard restrictions for professors satisfied:', examiner_hard)
-    print('Are hard restrictions for classrooms satisfied:', supervisor_hard)
-    print('Are hard restrictions for groups satisfied:', room_hard)
-    print('Are hard restrictions for allowed classrooms satisfied:', continued)
+    print('Are hard restrictions for Examiner satisfied:', examiner_hard)
+    print('Are hard restrictions for Supervisor satisfied:', supervisor_hard)
+    print('Are hard restrictions for Room satisfied:', room_hard)
+    print('Are hard restrictions for Continouity satisfied:', continued)
     
     
 evolutionary_algorithm()
+
+# "External Constraints":
+#         "Omar":[],  // 17
+#         "Adel":[],  // 8
+#         "Samir":[], // 15
+#         "Malak":[], // 12
+#         "Layla":[]  // 8 
+# "Supervisor Constraints":
+#         "Amr Mougy":[], // 11 (Omar,Adel)
+#         "Nourhan Ehab":[], // 13 (Layla,Omar)
+#         "Wael Abuelsadat":[], // 16 (Samir,Malak)
+#         "Mervat Abuelkheir":[], // 15   (Malak,Samir,Adel,Omar)
+#         "Milad Ghantous":[] // 5 (Adel,Omar)
+
+    
