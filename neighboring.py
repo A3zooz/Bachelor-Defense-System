@@ -9,8 +9,13 @@ def neighbor(solution):
 
     for i in range(len(solution[0])):
 
-
-        
+        w=solution[0][i]['Time']
+        if(not(w-2<0 or w+2>=180)):
+            if( not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
+            len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+2]) == 1)):
+                candidates.append(i)  
+            
+            
         if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) > 1:
             candidates.append(i)
             # print(solution[0][i])

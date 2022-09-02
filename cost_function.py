@@ -27,6 +27,7 @@ def cost(solution):
         for i in range(180):
             if len(solution[1][Examiner][i]) > 1:
                 examiner_cost += 1
+                print("Examiner reserved in same slot violated")
     for Supervisor in solution[2]:
         for i in range(180):
             if solution[2][Supervisor][i] > 1:
@@ -46,30 +47,34 @@ def cost(solution):
         if(x>len(solution[3])):
             room_cost += x-len(solution[3])
                 
-    # for Examiner in solution[1]:
-    #     for day in range(12):
-    #         temp = 0
-    #         for slot in range(15):
-    #             time = day * 15 + slot
-    #             if (len(solution[1][Examiner][time]) >= 1):
-    #                 if (time - temp - 1 >= 2):
-    #                         examiner_cost += (time - temp - 1)
-    #                 temp = time  
-
     for Examiner in solution[1]:
         for day in range(12):
-            last_seen = 0
-            found = False
+            temp = 0
+            flag1=False
             for slot in range(15):
                 time = day * 15 + slot
-                if len(solution[1][Examiner][time]) >= 1:
-                    if not found:
-                        found = True
-                    else:
-                        if (time - last_seen - 1) >= 2:
-                            examiner_cost += (time - last_seen - 1)
-                        found = False
-                    last_seen = time
+                if (len(solution[1][Examiner][time]) >= 1):
+                    if (time - temp - 1 >= 2 and flag1):
+                            examiner_cost += (time - temp - 1)
+                            print("Continouty violated")
+
+                    flag1=True
+                    temp = time  
+
+    # for Examiner in solution[1]:
+    #     for day in range(12):
+    #         last_seen = 0
+    #         found = False
+    #         for slot in range(15):
+    #             time = day * 15 + slot
+    #             if len(solution[1][Examiner][time]) >= 1:
+    #                 if not found:
+    #                     found = True
+    #                 else:
+    #                     if (time - last_seen - 1) >= 2:
+    #                         examiner_cost += (time - last_seen - 1)
+    #                     found = False
+    #                 last_seen = time
 
     # #Examiner in more than one room in a single day
     # for Examiner in solution[1]:
@@ -81,15 +86,16 @@ def cost(solution):
     #                 rooms=[set(solution[1][Examiner][time])]
     #         if len(rooms) > 1:
     #             examiner_cost += len(rooms)
-    for Examiner in solution[1]:
-        for day in range(12):
-            rooms = []
-            for slot in range(15):
-                time = day * 15 + slot
-                if len(solution[1][Examiner][time]) >= 1:
-                    rooms=[set(solution[1][Examiner][time])]
-            if len(rooms) > 1:
-                examiner_cost += len(rooms)
+    
+    # for Examiner in solution[1]:
+    #     for day in range(12):
+    #         rooms = []
+    #         for slot in range(15):
+    #             time = day * 15 + slot
+    #             if len(solution[1][Examiner][time]) >= 1:
+    #                 rooms=[set(solution[1][Examiner][time])]
+    #         if len(rooms) > 1:
+    #             examiner_cost += len(rooms)
 
     #Examiner violated time constraints
     for Examiner in solution[1]:
@@ -99,6 +105,7 @@ def cost(solution):
         for i in l:
             if len(solution[1][Examiner][i]) >= 1:
                 examiner_cost += 1
+                print("Examiner time constraint violated")
 
 
     #Examiner has more than 2 days
@@ -110,13 +117,15 @@ def cost(solution):
                 if len(solution[1][Examiner][time]) >= 1:
                     working_days += 1
                     break
-        if working_days >= 2:
+        if working_days > 2:
             examiner_cost += working_days
+            print("Examiner has more than 2 days violated")
+
 
 
 
     
-    return examiner_cost + supervisor_cost + room_cost
+    return examiner_cost,supervisor_cost,room_cost
 
 
     
