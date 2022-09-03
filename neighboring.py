@@ -249,28 +249,32 @@ def neighbor(solution):
 
 # if external is wrong and supervisor is right work on external
     if(len(solution[1][selected_examiner][r]) > 1 and solution[2][selected_supervisor][r] == 0):
-        w = random.randint(0,2)
-        if(solution[3][selected_room][endslot-max] ==0 and not (endslot-max % 5  == 0 and not(endslot-max % 3 == 0)) 
-        and w==0 and endslot!=0 ):
-            solution[0][i]['Time'] = endslot-max
-            solution[1][selected_examiner][endslot-max].append(selected_room)
-            solution[2][selected_supervisor][endslot-max] += 1
-            solution[3][selected_room][endslot-max] += 1
-            return solution
-        
-        if(solution[3][selected_room][endslot+1] ==0 and not (endslot+1 % 5  == 0 and not(endslot+1 % 3 == 0)) 
-        and w==1 and endslot!=0):
-            solution[0][i]['Time'] = endslot+1
-            solution[1][selected_examiner][endslot+1].append(selected_room)
-            solution[2][selected_supervisor][endslot+1] += 1
-            solution[3][selected_room][endslot+1] += 1 
-            return solution
-        if(solution[3][selected_room][r] == 0 and not (r% 5  == 0 and not(r % 3 == 0)) or w==2 ):
-            solution[0][i]['Time'] = r
-            solution[1][selected_examiner][r].append(selected_room)
-            solution[2][selected_supervisor][r] += 1
-            solution[3][selected_room][r] += 1
-            return solution
+        flago=True
+        while(flago):
+            w = random.randint(0,2)
+            if(endslot - max >= 0):
+                if(solution[3][selected_room][endslot-max] ==0 and not (endslot-max % 5  == 0 and not(endslot-max % 3 == 0)) 
+                and w==0 and endslot!=0 ):
+                    solution[0][i]['Time'] = endslot-max
+                    solution[1][selected_examiner][endslot-max].append(selected_room)
+                    solution[2][selected_supervisor][endslot-max] += 1
+                    solution[3][selected_room][endslot-max] += 1
+                    return solution
+                
+            if(endslot + 1 < 180):
+                if(solution[3][selected_room][endslot+1] ==0 and not (endslot+1 % 5  == 0 and not(endslot+1 % 3 == 0)) 
+                and w==1 and endslot!=0):
+                    solution[0][i]['Time'] = endslot+1
+                    solution[1][selected_examiner][endslot+1].append(selected_room)
+                    solution[2][selected_supervisor][endslot+1] += 1
+                    solution[3][selected_room][endslot+1] += 1 
+                    return solution
+            if(solution[3][selected_room][r] == 0 and not (r% 5  == 0 and not(r % 3 == 0)) or w==2 ):
+                solution[0][i]['Time'] = r
+                solution[1][selected_examiner][r].append(selected_room)
+                solution[2][selected_supervisor][r] += 1
+                solution[3][selected_room][r] += 1
+                return solution
 # if external is right and supervisor is wrong or if external and supervisor wrong randomize 
     else:
         yes=True

@@ -3,7 +3,7 @@ import numpy as np
 import json
 
 def Create_input():
-    df_excel = pd.read_csv('Sc.csv')
+    df_excel = pd.read_csv('InputData.csv')
     print(len(df_excel))
     External = []
     Supervisor = []
@@ -53,6 +53,6 @@ def Create_input():
     json_object = json.dumps(dictionary, indent=4)
 
     # Writing to sample.json
-    with open("Realinput.json", "w") as outfile:
+    with open("InputData.json", "w") as outfile:
         outfile.write(json_object)
-    return "Realinput.json"
+    return "InputData.json"

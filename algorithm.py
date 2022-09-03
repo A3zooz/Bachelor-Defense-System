@@ -5,6 +5,8 @@ import cost_function
 import neighboring
 from copy import deepcopy
 import Inputcreation
+import Outputcreation
+import json
 
 max_generations = 75000
 num_runs = 1
@@ -43,7 +45,7 @@ def evolutionary_algorithm():
             if ftni <= fti:
                 solution = new_solution
             # print the iteration number and the cost for the current solution
-            if j % 100 == 0:
+            if j % 200 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
@@ -160,10 +162,15 @@ x10=["Tuesday",u[135],u[136],u[137],u[138],u[139],u[140],u[141],u[142],u[143],u[
 x11=["Wednesday",u[150],u[151],u[152],u[153],u[154],u[155],u[156],u[157],u[158],u[159],u[160],u[161],u[162],u[163],u[164]]
 x12=["Thursday",u[165],u[166],u[167],u[168],u[169],u[170],u[171],u[172],u[173],u[174],u[175],u[176],u[177],u[178],u[179]]
 
-with open('Solution.txt', 'w') as f: 
-    f.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['Slot 1', 'Slot 2','Slot 3', 'Slot 4','Slot 5', 'Slot 6','Slot 7', 'SLot 8','Slot 9', 'Slot 10','Slot 11', 'Slot 12','Slot 13','Slot 14', 'Slot 15'], tablefmt="grid"))
-
-# "External Constraints":
+with open('Solution.txt', 'w') as e: 
+    e.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['Slot 1', 'Slot 2','Slot 3', 'Slot 4','Slot 5', 'Slot 6','Slot 7', 'SLot 8','Slot 9', 'Slot 10','Slot 11', 'Slot 12','Slot 13','Slot 14', 'Slot 15'], tablefmt="grid"))
+    
+final = json.dumps(f[0], indent=3)
+jsonFile = open("Solution.json", "w")
+jsonFile.write(final)
+jsonFile.close()
+Outputcreation.Create_output()
+# "External Constraints":Create_output
 #         "Omar":[],  // 17
 #         "Adel":[],  // 8
 #         "Layla":[]  // 8 
