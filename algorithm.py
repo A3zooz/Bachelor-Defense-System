@@ -19,13 +19,16 @@ def evolutionary_algorithm():
     best_timetable = None
     data = dt.load_data(input_file)
     neighbor = neighboring.neighbor  # call the neighbor function from neighboring file
+    consecutive = 0
+    flag = True
 
     for i in range(num_runs):
         solution = dt.generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])  # generate a solution by creating the first timetable by random
         for j in range(max_generations):
             # change the new solution by calling the neighbor from neighboring by getteing a deepcopy from the original chromosom
-            new_solution = neighbor(deepcopy(solution))
-
+            wat = neighbor(deepcopy(solution),j,consecutive)
+            new_solution = wat[0]
+            enter = wat[1]
 
             # calculate the cost for the solution
             ft = cost_function(solution)
@@ -40,10 +43,17 @@ def evolutionary_algorithm():
             ftni = ftn[0]+ftn[1]+ftn[2]
             # ---- if the cost for the new_solution less than or equal the cost solution
             # change the value of solution to new_solution ----
-            if ftni <= fti:
+            if ftni <= fti and enter == True:
+                if ftni == fti:
+                    consecutive += 1
+                else:
+                    consecutive = 0
                 solution = new_solution
+            elif enter == False:
+                solution = new_solution
+                consecutive = 0
             # print the iteration number and the cost for the current solution
-            if j % 100 == 0:
+            if j % 1 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))
 
         print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
