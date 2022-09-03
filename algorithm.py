@@ -136,6 +136,10 @@ def evolutionary_algorithm():
     print('Are hard restrictions for Continouity satisfied:', continued)
     return solution
     
+    
+    
+
+
 f = evolutionary_algorithm()
 
 
@@ -165,23 +169,86 @@ x12=["Thursday",u[165],u[166],u[167],u[168],u[169],u[170],u[171],u[172],u[173],u
 with open('Solution.txt', 'w') as e: 
     e.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['Slot 1', 'Slot 2','Slot 3', 'Slot 4','Slot 5', 'Slot 6','Slot 7', 'SLot 8','Slot 9', 'Slot 10','Slot 11', 'Slot 12','Slot 13','Slot 14', 'Slot 15'], tablefmt="grid"))
     
+
+
+
+flagc=True
+c=0
+for Examiner in f[1]:
+    flagc=True
+    c=0            
+    for i in range(180):
+        if len(f[1][Examiner][i]) > 1:
+            while(flagc):
+                if(f[0][c]["Examiner"]==Examiner and f[0][c]["Time"]==i):
+                    f[0][c]["Color"]="Red"
+                    flagc=False
+                c+=1
+flagc=True
+c=0            
+for Supervisor in f[2]:
+    flagc=True
+    c=0
+    for i in range(180):
+        if f[2][Supervisor][i] > 1:
+            while(flagc):
+                if(f[0][c]["Supervisor"]==Supervisor and f[0][c]["Time"]==i):
+                    f[0][c]["Color"]="Red"
+                    flagc=False
+                c+=1
+flagc=True
+c=0                 
+for slot in range(180):
+    x=0
+    flagc=True
+    c=0            
+    for i in range(len(f[0])):
+        if(f[0][i]['Time']==slot):
+            x+=1
+        if(x>len(f[3])):
+            while(flagc):
+                if(f[0][c]["Time"]==i):
+                    f[0][c]["Color"]="Red"
+                    flagc=False
+                c+=1            
+flagc=True
+c=0 
+for Examiner in f[1]:
+    l = []
+    for constrained_timing in f[4][Examiner]:
+        l.append(constrained_timing)
+    for i in l:
+        flagc=True
+        c=0            
+        if len(f[1][Examiner][i]) >= 1:
+            while(flagc):
+                if(f[0][c]["Examiner"]==Examiner and f[0][c]["Time"]==i):
+                    f[0][c]["Color"]="Red"
+                    flagc=False
+                c+=1
+flagc=True
+c=0 
+for Examiner in f[1]:
+    working_days = 0
+    for day in range(12):
+        flagc=True
+        c=0            
+        for slot in range(15):
+            time = day*15 + slot
+            if len(f[1][Examiner][time]) >= 1:
+                working_days += 1
+                break
+        if working_days > 2:
+            while(flagc):
+                if(f[0][c]["Examiner"]==Examiner):
+                    f[0][c]["Color"]="Red"
+                    flagc=False
+                c+=1
+                
+                
 final = json.dumps(f[0], indent=3)
 jsonFile = open("Solution.json", "w")
 jsonFile.write(final)
 jsonFile.close()
 Outputcreation.Create_output()
-# "External Constraints":Create_output
-#         "Omar":[],  // 17
-#         "Adel":[],  // 8
-#         "Layla":[]  // 8 
-#         "Malak":[], // 12
-#         "Samir":[], // 15
-# "Supervisor Constraints":
-#         "Amr Mougy":[], // 11 (Omar,Adel)
-#         "Nourhan Ehab":[], // 13 (Layla,Omar)
-#         "Wael Abuelsadat":[], // 16 (Samir,Malak)
-#         "Mervat Abuelkheir":[], // 15   (Malak,Samir,Adel,Omar)
-#         "Milad Ghantous":[] // 5 (Adel,Omar)
 
-
-#Randomize external at certain k cost at end of iterations.
