@@ -13,7 +13,7 @@
    position: relative;
    width: 50%;
    margin-top: 30px;
-   margin-left: 10px;
+   margin-left: 5px;
 }
 .formTitle{
   position: absolute;
@@ -26,10 +26,28 @@
   padding-top: 10px ;
 
 }
-.divLabel{
+.divLabel-1{
   position: absolute;
   width: 100%;
   margin-top: 60px;
+  left: 2%;
+  font-size: 1rem;
+  font-weight:500;
+  padding: 0.625rem 0.125rem 0.125rem 0.15rem;
+}
+.divLabel-2{
+  position: absolute;
+  width: 100%;
+  margin-top: 120px;
+  left: 2%;
+  font-size: 1rem;
+  font-weight:500;
+  padding: 0.625rem 0.125rem 0.125rem 0.15rem;
+}
+.divLabel-3{
+  position: absolute;
+  width: 100%;
+  margin-top: 180px;
   left: 2%;
   font-size: 1rem;
   font-weight:500;
@@ -76,11 +94,10 @@
   left: 80%;
   letter-spacing: 1px;
   font-weight: bold;
-  text-align: center;
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
-  padding: 15px 32px;
+  padding: 15px ;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -119,15 +136,15 @@
   position: relative;
   width: 50%;
   height: 300px;
-  margin-top: 30px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-left:5px;
 }
 .Constarints-2{
   border: 1px solid rgb(205, 199, 199);
   background-color:#fff;
   position: absolute;
   width: 48%;
-  height: 35%;
+  height: 300px;
   margin-top: -580px;
   margin-left: 49rem;
 }
@@ -137,7 +154,7 @@
   position: absolute;
   width: 48%;
   height: 300px;
-  margin-top: -300px;
+  margin-top: -270px;
   margin-left: 49rem;
 }
 .divTitle{
@@ -150,9 +167,16 @@
   font-weight:500;
   padding: 0.625rem 0.125rem 0.125rem 0.15rem;
 }
-.dropdown{
+.dropdown-1{
   position: absolute;
   margin-top: 70px; 
+  margin-left: 35%;
+  font-size: large;
+  width: 200px;
+}
+.dropdown-2{
+  position: absolute;
+  margin-top: 130px; 
   margin-left: 35%;
   font-size: large;
   width: 200px;
@@ -195,4 +219,30 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
   
+}
+.slots1{
+  position: absolute;
+  display: flex;
+  left: 8%;
+  margin-top: 230px;
+  flex-direction: row;
+}
+.slots1 input{
+  margin-left: 20px;
+}
+.slots1 label{
+  margin-left: 5px;
+}
+.slots2 label{
+  margin-left: 5px;
+}
+.slots2{
+  position: absolute;
+  display: flex;
+  left: 8%;
+  margin-top: 260px;
+  flex-direction: row;
+}
+.slots2 input{
+  margin-left: 20px;
 }
