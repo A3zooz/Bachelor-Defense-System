@@ -19,5 +19,9 @@ from backend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('constrains/', views.constrains)
+    path('external/', views.external),
+    path('allExternals/', views.getAllExternals),
+    path('student/', views.student),
+    path('supervisor/', views.supervisor),
+    path('allSupervisors/', views.getAllSupervisors),
 ]
