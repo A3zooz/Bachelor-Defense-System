@@ -3,14 +3,14 @@ import {slots_1,slots_2} from "./slots"
 function Home(){
     return (
         <div>
-            <form className="addForm" method="post">
+            <form className="addForm" action="/action_page.php" method="post">
         <div className="formTitle">Schedule's Data</div>
         <label className="uploadLabel">
           Upload Excel File <span className="required">*</span>
         </label>
         <label className="info">(.xlsx, .xls, .csv)</label>
         <br></br>
-        <input className="inpt" type="file" accept=".xlsx, .xls, .csv" />
+        <input className="inpt" type="file" name ="ExcelFile" id = "ExcelFile" accept=".xlsx, .xls, .csv" />
         <button className="btn">Sumbit</button>
       </form>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import "./MyConstraints.css"
 function MyConstraints(){
     return( <form className="myConst">
     <div className="divTitle">Added Constraints</div>
