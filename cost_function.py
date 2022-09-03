@@ -105,10 +105,11 @@ def cost(solution):
     #Examiner violated time constraints
     for Examiner in solution[1]:
         l = []
-        for constrained_timing in solution[4][Examiner]:
-            l.append(constrained_timing)
-        for i in l:
-            if len(solution[1][Examiner][i]) >= 1:
+        for c in solution[4][Examiner]:
+            if(solution[4][Examiner][c]==1):
+                l.append(c)
+        for i in range(len(l)):
+            if len(solution[1][Examiner][l[i]]) >= 1:
                 examiner_cost += 1
                 # print("Examiner time constraint violated")
 
@@ -123,8 +124,9 @@ def cost(solution):
                     working_days += 1
                     break
         if working_days > 2:
-            examiner_cost += working_days
-            # print("Examiner has more than 2 days violated")
+            examiner_cost += working_days-2
+    # print("Examiner has more than 2 days violated")
+    
 
 
 

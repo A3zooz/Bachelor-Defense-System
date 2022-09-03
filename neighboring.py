@@ -1,3 +1,4 @@
+from pickle import TRUE
 import random
 import json
 import math
@@ -6,9 +7,39 @@ from copy import deepcopy
 
 def neighbor(solution):
     candidates = []
-
+    # for Examiner in solution[1]:
+    #         working_days = 0
+    #         min = 13
+    #         lwday = 0
+    #         for day in range(12):
+    #             temp1 = 0        
+    #             for slot in range(15):
+    #                 time1 = day*15 + slot
+    #                 if len(solution[1][Examiner][time1]) >= 1:
+    #                     temp1 +=1
+    #                 if(temp1<min and temp1>0):
+    #                     lwday=day
+    #                     min=temp1
+    #             if(temp1>=1):
+    #                 working_days += 1
+    #         if working_days > 2:
+    #             u=lwday*15
+    #             ue=lwday*15 + 15
+    #             for k in range(len(solution[0])):
+    #                 if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=u and solution[0][k]["Time"]<ue ):
+    #                     candidates.append(k)
+    for slot in range(180):
+        x1=0
+        w=[]
+        for i in range(len(solution[0])):
+            if(solution[0][i]['Time']==slot):
+                x1+=1
+                w.append(i)
+        if(x1>len(solution[3])):
+            for t in range(len(w)) :
+                candidates.append(w[t])
+                break
     for i in range(len(solution[0])):
-
         w=solution[0][i]['Time']
         if(not(w-2<0 or w+2>=180)):
             if( not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
@@ -25,8 +56,8 @@ def neighbor(solution):
             #print(solution[0][i])
 
     
-        if solution[3][solution[0][i]['Room']][solution[0][i]['Time']] > 1:
-            candidates.append(i)
+        # if solution[3][solution[0][i]['Room']][solution[0][i]['Time']] > 1:
+        #     candidates.append(i)
             #print(solution[0][i])
 
         if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) >= 1 and solution[4][solution[0][i]['Examiner']][solution[0][i]['Time']] == 1:
@@ -35,11 +66,21 @@ def neighbor(solution):
         if solution[2][solution[0][i]['Supervisor']][solution[0][i]['Time']] >= 1 and solution[5][solution[0][i]['Supervisor']][solution[0][i]['Time']] == 1:
             candidates.append(i)
 
+    # if not candidates and candidates2:
+    #     h = random.randrange(0,2)
+    #     if(h==0):
+    #             i = random.choice(candidates2)
+    #             print("Candidates 2")
+    #     else:
+    #             i = random.randrange(len(solution[0]))
+    #             print("Random")
+    # else:
+    #     i = random.choice(candidates)
+        
     if not candidates:
         i = random.randrange(len(solution[0]))
     else:
         i = random.choice(candidates)
-    
 
     time = solution[0][i]['Time']
     selected_examiner = solution[0][i]['Examiner']
