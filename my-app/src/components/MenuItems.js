@@ -3,8 +3,12 @@ export const menuItems =[
      url :'/',
      cName : 'nav-links'
     },
+    {title : 'YourConstraints',
+     url :'/myConst',
+     cName : 'nav-links'
+    },
     {title : 'AboutUs',
-     url :'http://www.facebook.com/',
+     url :'/about',
      cName : 'nav-links'
     }
 ]
