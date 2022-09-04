@@ -42,9 +42,12 @@ def evolutionary_algorithm():
 
     for i in range(num_runs):
         solution = dt.generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])  # generate a solution by creating the first timetable by random
+        flag =False
+        c=0
         for j in range(max_generations):
             # change the new solution by calling the neighbor from neighboring by getteing a deepcopy from the original chromosom
-            new_solution = neighbor(deepcopy(solution))
+
+            new_solution = neighbor(deepcopy(solution),flag)
 
 
             # calculate the cost for the solution
@@ -60,8 +63,16 @@ def evolutionary_algorithm():
             ftni = ftn[0]+ftn[1]+ftn[2]
             # ---- if the cost for the new_solution less than or equal the cost solution
             # change the value of solution to new_solution ----
-            if ftni <= fti:
+            if(ftni >= fti):
+                c+=1
+            if(c >= 600):
+                flag=True
+            if(ftni < fti):
+                c=0
+                flag=False                
+            if (ftni <= fti):
                 solution = new_solution
+
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
                 print('Iteration', j, 'cost', cost_function(solution))

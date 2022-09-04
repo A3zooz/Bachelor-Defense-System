@@ -129,6 +129,19 @@ def cost(solution):
     
 
 
+    # less than 3 or more than 10 slots per day
+    # for Examiner in solution[1]:
+    #         for day in range(12):
+    #             temp = 0        
+    #             for slot in range(15):
+    #                 time1 = day*15 + slot
+    #                 if len(solution[1][Examiner][time1]) >= 1:
+    #                     temp +=1
+    #             if(temp>10):
+    #                 examiner_cost+=1
+    #             if(temp<3 and temp>0):
+    #                 examiner_cost+=1
+                    
 
 
     

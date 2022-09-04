@@ -5,7 +5,7 @@ import math
 from copy import deepcopy
 
 
-def neighbor(solution):
+def neighbor(solution,flag1):
     candidates = []
     # for Examiner in solution[1]:
     #         working_days = 0
@@ -28,6 +28,18 @@ def neighbor(solution):
     #             for k in range(len(solution[0])):
     #                 if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=u and solution[0][k]["Time"]<ue ):
     #                     candidates.append(k)
+    for Examiner in solution[1]:
+            for day in range(12):
+                temp1 = 0        
+                for slot in range(15):
+                    time1 = day*15 + slot
+                    if len(solution[1][Examiner][time1]) >= 1:
+                        temp1 +=1
+                if(temp1>10 or (temp1<3 and temp1>0)):
+                    for k in range(len(solution[0])):
+                        if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=day*15 and solution[0][k]["Time"]<(day*15+15) ):
+                            candidates.append(k)
+
     for slot in range(180):
         x1=0
         w=[]
@@ -38,7 +50,6 @@ def neighbor(solution):
         if(x1>len(solution[3])):
             for t in range(len(w)) :
                 candidates.append(w[t])
-                break
     for i in range(len(solution[0])):
         w=solution[0][i]['Time']
         if(not(w-2<0 or w+2>=180)):
@@ -77,8 +88,9 @@ def neighbor(solution):
     # else:
     #     i = random.choice(candidates)
         
-    if not candidates:
+    if not candidates or flag1:
         i = random.randrange(len(solution[0]))
+        print("Randommm")
     else:
         i = random.choice(candidates)
 
