@@ -6,10 +6,10 @@ function Card() {
     <>
       {items.map((item, index) => {
         return (
-          <form className={"Constarints-" + item.Num}>
+          <form key={index} className={"Constarints-" + item.Num}>
             <div className="divTitle">{item.title + "'s Constraints"}</div>
             <label className="divLabel-1">
-              please select Examiners <span className="required">*</span>
+              please select {item.title} <span className="required">*</span>
             </label>
             <label className="divLabel-2">
               Choose non available day <span className="required">*</span>
@@ -26,13 +26,12 @@ function Card() {
             <div className="slots1">
               {slots_1.map((slot, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <input
                       type="checkbox"
-                      id={slot.title + item.title}
                       name={slot.title}
                     />
-                    <label for={slot.title}>{slot.title}</label>
+                    <label >{slot.title}</label>
                   </div>
                 );
               })}
@@ -40,13 +39,12 @@ function Card() {
             <div className="slots2">
               {slots_2.map((slot, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <input
                       type="checkbox"
-                      id={slot.title + item.title}
                       name={slot.title}
                     />
-                    <label for={slot.title}>{slot.title}</label>
+                    <label >{slot.title}</label>
                   </div>
                 );
               })}
