@@ -3,9 +3,11 @@ import random
 import json
 import math
 from copy import deepcopy
+import cost_function
 
 
 def neighbor(solution,flag1):
+    cost = cost_function
     candidates = []
     # for Examiner in solution[1]:
     #         working_days = 0
@@ -35,10 +37,17 @@ def neighbor(solution,flag1):
                     time1 = day*15 + slot
                     if len(solution[1][Examiner][time1]) >= 1:
                         temp1 +=1
-                if(temp1>10 or (temp1<3 and temp1>0)):
-                    for k in range(len(solution[0])):
-                        if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=day*15 and solution[0][k]["Time"]<(day*15+15) ):
-                            candidates.append(k)
+                if solution[6][Examiner] > 12:        
+                    if(temp1 > 10 or (temp1<3 and temp1>0)):
+                        for k in range(len(solution[0])):
+                            if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=day*15 and solution[0][k]["Time"]<(day*15+15) ):
+                                candidates.append((k,"maxAndMin"))
+                else:
+                    if(temp1 < 3 and temp1 > 0):
+                        for k in range(len(solution[0])):
+                            if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=day*15 and solution[0][k]["Time"]<(day*15+15) ):
+                                candidates.append((k,"maxAndMin"))
+
 
     for slot in range(180):
         x1=0
@@ -49,21 +58,21 @@ def neighbor(solution,flag1):
                 w.append(i)
         if(x1>len(solution[3])):
             for t in range(len(w)) :
-                candidates.append(w[t])
+                candidates.append((w[t],"slotMoreThanRooms"))
     for i in range(len(solution[0])):
         w=solution[0][i]['Time']
         if(not(w-2<0 or w+2>=180)):
             if( not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
             len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+2]) == 1)):
-                candidates.append(i)  
+                candidates.append((i,"continuity"))  
             
             
         if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) > 1:
-            candidates.append(i)
+            candidates.append((i,"examinerRepeat"))
             # print(solution[0][i])
 
         if solution[2][solution[0][i]['Supervisor']][solution[0][i]['Time']] > 1:
-            candidates.append(i)
+            candidates.append((i,"supervisorRepeat"))
             #print(solution[0][i])
 
     
@@ -72,10 +81,10 @@ def neighbor(solution,flag1):
             #print(solution[0][i])
 
         if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) >= 1 and solution[4][solution[0][i]['Examiner']][solution[0][i]['Time']] == 1:
-            candidates.append(i)
+            candidates.append((i,"examinerConstraint"))
         
         if solution[2][solution[0][i]['Supervisor']][solution[0][i]['Time']] >= 1 and solution[5][solution[0][i]['Supervisor']][solution[0][i]['Time']] == 1:
-            candidates.append(i)
+            candidates.append((i,"supervisorConstraint"))
 
     # if not candidates and candidates2:
     #     h = random.randrange(0,2)
@@ -87,12 +96,50 @@ def neighbor(solution,flag1):
     #             print("Random")
     # else:
     #     i = random.choice(candidates)
-        
+    reason = []
     if not candidates or flag1:
         i = random.randrange(len(solution[0]))
-        print("Randommm")
+        solution2 = deepcopy(solution)
+        r = random.randrange(0,180)
+        while(True):
+            for Room in solution[3]:
+                if solution[3][Room][r] == 0:
+                    break
+                else:
+                    r = random.randrange(0,180)
+            break
+        print("random")
+        
+        time = solution2[0][i]['Time']
+        selected_examiner = solution2[0][i]['Examiner']
+        selected_supervisor = solution2[0][i]['Supervisor']
+        selected_room = solution2[0][i]['Room']    
+        
+        #Remove assignment from slot
+        solution2[1][selected_examiner][time].remove(selected_room)
+        solution2[2][selected_supervisor][time] -= 1
+        solution2[3][selected_room][time] -= 1
+
+        solution2[0][i]['Time'] = r
+        solution2[1][selected_examiner][r].append(selected_room)
+        solution2[2][selected_supervisor][r] += 1
+        solution2[3][selected_room][r] += 1
+
+        
+        return solution2
+
+
     else:
-        i = random.choice(candidates)
+        tuple = random.choice(candidates)
+        i = tuple[0]
+        for choice in candidates:
+            if choice[0] == i:
+                reason.append(choice[1])
+                if len(candidates) <= 5:
+                    print(candidates)
+        
+        
+
 
     time = solution[0][i]['Time']
     selected_examiner = solution[0][i]['Examiner']
@@ -107,6 +154,8 @@ def neighbor(solution,flag1):
     # Swap Room for the external 
     sday = (math.ceil(time/15)-1)*15
     eday = math.ceil(time/15)*15
+
+
     
 
     # check if this day doesnt break his constraint
@@ -235,29 +284,51 @@ def neighbor(solution,flag1):
 
     max = 0
     mwday = 0
-    for x in range(12):
-        temp = 0
-        for y in range(15):
-            if(solution[4][selected_examiner][(x*15)+y] == 1):
+    # for x in range(12):
+    #     temp = 0
+    #     for y in range(15):
+    #         if(solution[4][selected_examiner][(x*15)+y] == 1): #?
+    #             continue
+    #         if(y % 5  == 0 and not(y % 3 == 0)) :
+    #             continue
+    #         if(len(solution[1][selected_examiner][(x*15)+y])>=1):
+    #             temp+=1  
+    #     if( solution[6][selected_examiner] > 13): #14 and above
+    #         if(temp > max and temp < 10):
+    #             max=temp
+    #             temp=0
+    #             mwday=x
+    #     elif(solution[6][selected_examiner] > 10): # 11,12,13
+    #         if(temp > max and not(temp >= solution[6][selected_examiner]-3) ): #8,9,10
+    #             temp=0
+    #             mwday=x
+    #     else: # <10
+    #         if(temp>max):
+    #             max=temp 
+    #             temp=0
+    #             mwday=x
+
+    for day in range(12):
+        noOfSlots = 0
+        mwday = 0
+        for slot in range(15):
+            if(solution[4][selected_examiner][(day*15)+slot] == 1): 
                 continue
-            if(y % 5  == 0 and not(y % 3 == 0)) :
+            if(slot % 5  == 0 and not(slot % 3 == 0)) :
                 continue
-            if(len(solution[1][selected_examiner][(x*15)+y])>=1):
-                temp+=1  
-        if( solution[6][selected_examiner] > 13): #14 and above
-            if(temp > max and temp < 10):
-                max=temp
-                temp=0
-                mwday=x
-        elif(solution[6][selected_examiner] > 10): # 11,12,13
-            if(temp > max and not(temp >= solution[6][selected_examiner]-3) ): #8,9,10
-                temp=0
-                mwday=x
-        else: # <10
-            if(temp>max):
-                max=temp 
-                temp=0
-                mwday=x
+            if(len(solution[1][selected_examiner][(day*15)+slot])>=1):
+                noOfSlots += 1
+            # >12 then all slots in one day
+        if solution[6][selected_examiner] > 12 and noOfSlots < 12 and noOfSlots > max: 
+            mwday = day
+            max = noOfSlots
+        # <12 then we can fill
+        elif solution[6][selected_examiner]  <= 12 and noOfSlots > max:
+            mwday = day
+            max = noOfSlots
+            
+
+
     max = 0
     temp = 0
     endslot = 0
@@ -299,7 +370,26 @@ def neighbor(solution,flag1):
         if(mwday!=0):
             r = r + (mwday*15)
 
+    if "maxAndMin" in reason:
+        selected_day = solution[0][i]['Time'] // 12
+        if solution[6][selected_examiner] > 12:
+            slots = 0
+            for slot in range(selected_day, selected_day + 15):
+                if len(solution[1][selected_examiner][slot]) >= 1:
+                    slots += 1
+            if slots > 12:
+                mwday = maxWorkingDay(selected_day,solution,selected_examiner)
+                r = r + (mwday*15)
 
+
+
+        
+        
+    if "slotMoreThanRooms" in reason:
+        while(r == solution[0][i]['Time']):
+            r  = random.randint(0,14)
+            r = r + (mwday*15)
+    
 # if external is wrong and supervisor is right work on external
     if(len(solution[1][selected_examiner][r]) > 1 and solution[2][selected_supervisor][r] == 0):
         flago=True
@@ -328,6 +418,14 @@ def neighbor(solution,flag1):
                 solution[2][selected_supervisor][r] += 1
                 solution[3][selected_room][r] += 1
                 return solution
+            elif solution[3][selected_room][r] >= 1 and not (r% 5  == 0 and not(r % 3 == 0)) or w==2:
+                mwday = maxWorkingDay(mwday,solution,selected_examiner)
+                r = r + mwday * 15
+                solution[0][i]['Time'] = r
+                solution[1][selected_examiner][r].append(selected_room)
+                solution[2][selected_supervisor][r] += 1
+                solution[3][selected_room][r] += 1
+                return solution
 # if external is right and supervisor is wrong or if external and supervisor wrong randomize 
     else:
         yes=True
@@ -342,5 +440,31 @@ def neighbor(solution,flag1):
         solution[3][selected_room][r1] += 1
         return solution
     return solution
+
+
+def maxWorkingDay (exception, solution,selected_examiner):
+    max = 0
+    mwday = 0
+    for day in range(12):
+        noOfSlots = 0
+        if day == exception:
+            continue
+        for slot in range(15):
+            if(solution[4][selected_examiner][(day*15)+slot] == 1): 
+                continue
+            if(slot % 5  == 0 and not(slot % 3 == 0)) :
+                continue
+            if(len(solution[1][selected_examiner][(day*15)+slot])>=1):
+                noOfSlots += 1
+            # >12 then all slots in one day
+        if solution[6][selected_examiner] > 12 and noOfSlots < 12 and noOfSlots > max: 
+            mwday = day
+            max = noOfSlots
+        # <12 then we can fill
+        elif solution[6][selected_examiner]  <= 12 and noOfSlots > max:
+            mwday = day
+            max = noOfSlots
+
+    return mwday
 
     

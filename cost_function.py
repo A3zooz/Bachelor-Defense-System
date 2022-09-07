@@ -115,17 +115,43 @@ def cost(solution):
 
 
     #Examiner has more than 2 days
-    for Examiner in solution[1]:
-        working_days = 0
-        for day in range(12):
-            for slot in range(15):
-                time = day*15 + slot
-                if len(solution[1][Examiner][time]) >= 1:
-                    working_days += 1
-                    break
-        if working_days > 2:
-            examiner_cost += working_days-2
+    # for Examiner in solution[1]:
+    #     working_days = 0
+    #     for day in range(12):
+    #         for slot in range(15):
+    #             time = day*15 + slot
+    #             if len(solution[1][Examiner][time]) >= 1:
+    #                 working_days += 1
+    #                 break
+    #     if working_days > 2:
+    #         examiner_cost += 0.25
     # print("Examiner has more than 2 days violated")
+
+
+    #Examiner if he has 12 slots or less then on one day
+
+    for Examiner in solution[1]:
+        if solution[6][Examiner] <= 12:
+            working_days = 0
+            for day in range(12):
+                for slot in range(15):
+                    time = day*15 + slot
+                    if len(solution[1][Examiner][time]) >= 1:
+                        working_days += 1
+                        break
+            if working_days > 1:
+                examiner_cost += working_days - 1
+        else:
+            for day in range(12):
+                noOfSlots = 0
+                for slot in range(15):
+                    if len(solution[1][Examiner][slot] >= 1):
+                        noOfSlots += 1
+                if noOfSlots > 10:
+                    examiner_cost += noOfSlots - 10
+                    
+
+
     
 
 

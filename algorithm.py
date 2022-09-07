@@ -55,7 +55,7 @@ def evolutionary_algorithm():
             fti=[]
             fti = ft[0] + ft[1] + ft[2]
             # if the cost for the solution == 0 -> optimal solution (no violate of hard and soft constraint)
-            if fti == 0:
+            if fti <= 0.75:
                 break
             # calculate the cost for the solution
             ftn = cost_function(new_solution)
@@ -65,7 +65,7 @@ def evolutionary_algorithm():
             # change the value of solution to new_solution ----
             if(ftni >= fti):
                 c+=1
-            if(c >= 600):
+            if(c >= 4000):
                 flag=True
             if(ftni < fti):
                 c=0
@@ -193,7 +193,7 @@ c=0
 
 # more than 2 per slot for supervisor           
 for Supervisor in f[2]:
-    flagc=True
+    flagc=True  
     c=0
     for i in range(180):
         if f[2][Supervisor][i] > 1:
