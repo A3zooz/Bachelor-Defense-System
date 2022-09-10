@@ -65,7 +65,7 @@ def evolutionary_algorithm():
             # change the value of solution to new_solution ----
             if(ftni >= fti):
                 c+=1
-            if(c >= 4000):
+            if(c >= 800):
                 flag=True
             if(ftni < fti):
                 c=0

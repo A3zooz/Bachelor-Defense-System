@@ -128,10 +128,10 @@ def cost(solution):
     # print("Examiner has more than 2 days violated")
 
 
-    #Examiner if he has 12 slots or less then on one day
+    #Examiner if he has 10 slots or less then all of them on one day
 
     for Examiner in solution[1]:
-        if solution[6][Examiner] <= 12:
+        if solution[6][Examiner] <= 10:
             working_days = 0
             for day in range(12):
                 for slot in range(15):
@@ -141,32 +141,29 @@ def cost(solution):
                         break
             if working_days > 1:
                 examiner_cost += working_days - 1
-        else:
-            for day in range(12):
-                noOfSlots = 0
-                for slot in range(15):
-                    if len(solution[1][Examiner][slot] >= 1):
-                        noOfSlots += 1
-                if noOfSlots > 10:
-                    examiner_cost += noOfSlots - 10
+
                     
 
 
     
 
 
-    # less than 3 or more than 10 slots per day
-    # for Examiner in solution[1]:
-    #         for day in range(12):
-    #             temp = 0        
-    #             for slot in range(15):
-    #                 time1 = day*15 + slot
-    #                 if len(solution[1][Examiner][time1]) >= 1:
-    #                     temp +=1
-    #             if(temp>10):
-    #                 examiner_cost+=1
-    #             if(temp<3 and temp>0):
-    #                 examiner_cost+=1
+    #less than 3 or more than 10 slots per day
+    for Examiner in solution[1]:
+            for day in range(12):
+                temp = 0        
+                for slot in range(15):
+                    time1 = day*15 + slot
+                    if len(solution[1][Examiner][time1]) >= 1:
+                        temp +=1
+                if solution[6][Examiner] <= 10:
+                    if(temp<3 and temp>0):
+                        examiner_cost+=1
+                else:
+                    if (temp > 10):
+                        examiner_cost+=1
+                    if(temp<3 and temp>0):
+                        examiner_cost+=1 
                     
 
 
