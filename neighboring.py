@@ -78,7 +78,7 @@ def neighbor(solution,flag1):
         w=solution[0][i]['Time']
         if(not(w-2<0 or w+2>=180)):
 
-            if (not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
+            if (not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time'] - 1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
             len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+1]) == 1) and
             solution[0][i]['Time'] % 15 == 13):
                 candidates.append((i,"continuity"))
@@ -164,7 +164,7 @@ def neighbor(solution,flag1):
         # solution2[3][selected_room][r] += 1
 
         
-        # return solution2
+        # return solution, candidates2
 
 
     else:
@@ -300,7 +300,7 @@ def neighbor(solution,flag1):
                     solution[1][selected_examiner][endslot-max].append(selected_room)
                     solution[2][selected_supervisor][endslot-max] += 1
                     solution[3][selected_room][endslot-max] += 1
-                    return solution
+                    return solution, candidates
                 
             if(endslot + 1 < 180):
                 if(solution[3][selected_room][endslot+1] ==0 and not (endslot+1 % 5  == 0 and not(endslot+1 % 3 == 0)) 
@@ -309,13 +309,13 @@ def neighbor(solution,flag1):
                     solution[1][selected_examiner][endslot+1].append(selected_room)
                     solution[2][selected_supervisor][endslot+1] += 1
                     solution[3][selected_room][endslot+1] += 1 
-                    return solution
+                    return solution, candidates
             if(solution[3][selected_room][r] == 0 and not (r% 5  == 0 and not(r % 3 == 0)) or w==2 ):
                 solution[0][i]['Time'] = r
                 solution[1][selected_examiner][r].append(selected_room)
                 solution[2][selected_supervisor][r] += 1
                 solution[3][selected_room][r] += 1
-                return solution
+                return solution, candidates
             elif solution[3][selected_room][r] >= 1 and not (r% 5  == 0 and not(r % 3 == 0)) or w==2:
                 mwday = maxWorkingDay(mwday,solution,selected_examiner)
                 r = r + mwday * 15
@@ -323,7 +323,7 @@ def neighbor(solution,flag1):
                 solution[1][selected_examiner][r].append(selected_room)
                 solution[2][selected_supervisor][r] += 1
                 solution[3][selected_room][r] += 1
-                return solution
+                return solution, candidates
 # if external is right and supervisor is wrong or if external and supervisor wrong randomize 
     else:
         yes=True
@@ -336,8 +336,8 @@ def neighbor(solution,flag1):
         solution[1][selected_examiner][r1].append(selected_room)
         solution[2][selected_supervisor][r1] += 1
         solution[3][selected_room][r1] += 1
-        return solution
-    return solution
+        return solution, candidates
+    return solution, candidates
 
 
 def maxWorkingDay (exception, solution,selected_examiner):

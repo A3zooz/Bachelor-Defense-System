@@ -8,7 +8,7 @@ import Inputcreation
 import Outputcreation
 import json
 
-max_generations = 80000
+max_generations = 10000
 num_runs = 1
 input_file = Inputcreation.Create_input()
 # output_file = 'classes/output2.json' #lesa
@@ -38,16 +38,16 @@ def drawschedule(f):
 def evolutionary_algorithm():
     best_timetable = None
     data = dt.load_data(input_file)
-    neighbor = neighboring.neighbor  # call the neighbor function from neighboring file
-
+    neighbors = neighboring.neighbor  # call the neighbor function from neighboring file
     for i in range(num_runs):
         solution = dt.generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])  # generate a solution by creating the first timetable by random
         flag =False
         c=0
         for j in range(max_generations):
             # change the new solution by calling the neighbor from neighboring by getteing a deepcopy from the original chromosom
-
-            new_solution = neighbor(deepcopy(solution),flag)
+            neighborss = neighbors(deepcopy(solution),flag)
+            new_solution = neighborss[0]
+            candidates = neighborss[1]
 
 
             # calculate the cost for the solution
@@ -165,6 +165,7 @@ def evolutionary_algorithm():
     print('Are hard restrictions for Supervisor satisfied:', supervisor_hard)
     # print('Are hard restrictions for Room satisfied:', room_hard)
     print('Are hard restrictions for Continouity satisfied:', continued)
+    print(candidates)
     return solution
     
     
@@ -263,12 +264,13 @@ for Examiner in f[1]:
             if(f[0][k]["Examiner"]==Examiner and f[0][k]["Time"]>=u and f[0][k]["Time"]<ue ):
                 f[0][k]["Color"]="Red"    
                     
-                    
+    
 final = json.dumps(f[0], indent=3)
 jsonFile = open("Solution.json", "w")
 jsonFile.write(final)
 jsonFile.close()
 Outputcreation.Create_output()
+
 
 
 
