@@ -1,22 +1,23 @@
 import React, {useState} from "react";
 import axios from 'axios'
+import writeXlsxFile from 'write-excel-file'
 function Form() {
   const[file ,setFile ]= useState();
   const handleChange = (event)=> {
-     setFile(event.taget.files[0]);
+     setFile(event.target.files[0]);
   }
   const handleSumbit = (event)=> {
      event.preventDefault();
-     const url = 'https://postman-echo.com/post';
+     const url = 'http://localhost:5000/upload-file';
      const formData = new FormData();
      formData.append('File',file);
-     console.log(formData)
+     console.log(formData.get('File'))
      const config = {
       headers: {
         'content-type': 'multipart/form-data',
       },
     };
-     axios.post(url, formData,config).then((response) => {
+     axios.post(url,formData,config).then((response) => {
       console.log(response.data);
     });
     
