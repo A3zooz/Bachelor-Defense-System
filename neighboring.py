@@ -90,7 +90,7 @@ def neighbor(solution,flag1):
         
     if not candidates or flag1:
         i = random.randrange(len(solution[0]))
-        print("Randommm")
+        # print("Randommm")
     else:
         i = random.choice(candidates)
 

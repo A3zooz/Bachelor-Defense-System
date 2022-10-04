@@ -1,4 +1,7 @@
 # from tkinter import SOLID
+from importlib.resources import as_file
+
+from sqlalchemy import null
 import data as dt
 from tabulate import tabulate
 import cost_function
@@ -7,8 +10,9 @@ from copy import deepcopy
 import Inputcreation
 import Outputcreation
 import json
+import random
 
-max_generations = 80000
+max_generations = 20000
 num_runs = 1
 input_file = Inputcreation.Create_input()
 # output_file = 'classes/output2.json' #lesa
@@ -65,7 +69,7 @@ def evolutionary_algorithm():
             # change the value of solution to new_solution ----
             if(ftni >= fti):
                 c+=1
-            if(c >= 600):
+            if(c >= 1000):
                 flag=True
             if(ftni < fti):
                 c=0
@@ -262,8 +266,53 @@ for Examiner in f[1]:
         for k in range(len(f[0])):
             if(f[0][k]["Examiner"]==Examiner and f[0][k]["Time"]>=u and f[0][k]["Time"]<ue ):
                 f[0][k]["Color"]="Red"    
-                    
-                    
+
+
+def Room(solution):
+    examiners=[""]*180
+    numberofexaminers=[0]*180
+    # rooms = [[solution[7]] for x in range(180)]
+    p=[""]*len(solution[7])
+    for x in range(len(solution[7])):
+        p[x] = solution[7][x]
+    availablerooms = [["C5.112","C5.108","C5.106","C5.301"] for x in range(180)]
+    examinerroomdict = {}
+    for x in range(len(solution[0])):
+        examiners[solution[0][x]['Time']] += (solution[0][x]['Examiner']) + ","
+    for j in range(len(examiners)):
+        numberofexaminers[j] += examiners[j].count(',')
+    for x in range(12):
+        # all rooms are now empty 
+        # empty all dics
+        examinerroomdict = {}
+        for y in range(15):
+            f =  examiners[x*15+y].split(",")
+            if len(f) > 0:
+                del f[len(f)-1:]
+            for w in range(len(f)):
+                if f[w] in examinerroomdict:
+                    continue
+                if len(availablerooms[x*15+y]) == 0:
+                    continue
+                croom = random.choice(availablerooms[x*15+y])
+                availablerooms[x*15+y].remove(croom)
+                examinerroomdict[f[w]] = croom  
+                for u in range(len(solution[0])):
+                    if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+y):
+                        solution[0][u]["Room"] = croom
+                for r in range(15):
+                    t =  examiners[x*15+r].split(",")
+                    if len(t) > 0:
+                        del t[len(t)-1:]
+                    for z in range(len(t)):                                  
+                        if(t[z] == f[w]):
+                            for u in range(len(solution[0])):
+                                if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+r):
+                                    solution[0][u]["Room"] = croom
+                                    if( availablerooms[x*15+r].count(croom) >= 1):
+                                        availablerooms[x*15+r].remove(croom)
+    return solution
+f = Room(f)     
 final = json.dumps(f[0], indent=3)
 jsonFile = open("Solution.json", "w")
 jsonFile.write(final)
@@ -271,6 +320,9 @@ jsonFile.close()
 Outputcreation.Create_output()
 
 
+            
+            
+            
 
 
 # for Examiner in f[1]:
