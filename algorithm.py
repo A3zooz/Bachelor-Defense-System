@@ -14,7 +14,7 @@ import random
 
 max_generations = 20000
 num_runs = 1
-input_file = Inputcreation.Create_input()
+#sinput_file = Inputcreation.Create_input()
 # output_file = 'classes/output2.json' #lesa
 cost_function = cost_function.cost
 def drawschedule(f):
@@ -41,7 +41,7 @@ def drawschedule(f):
 
 def evolutionary_algorithm():
     best_timetable = None
-    data = dt.load_data(input_file)
+    data = dt.load_data("InputData.json")
     neighbor = neighboring.neighbor  # call the neighbor function from neighboring file
 
     for i in range(num_runs):
@@ -69,7 +69,7 @@ def evolutionary_algorithm():
             # change the value of solution to new_solution ----
             if(ftni >= fti):
                 c+=1
-            if(c >= 1000):
+            if(c >= 2000):
                 flag=True
             if(ftni < fti):
                 c=0
@@ -151,6 +151,7 @@ def evolutionary_algorithm():
         if len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']]) >= 1 and solution[4][solution[0][i]['Examiner']][solution[0][i]['Time']] == 1:
             examiner_hard = False
         
+    
     for Examiner in solution[1]:
         for day in range(12):
             temp = 0
