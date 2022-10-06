@@ -6,6 +6,8 @@ Genetic algorithm was used to find near optimal solution.
 The system takes as input:
 1. Constraints
 2. Assignments (External Examiners, Supervisors, Student IDs)
+
+
 Constraints:
 1. Continuity between slots.
 2. Each examiner must be in one room the whole day.
