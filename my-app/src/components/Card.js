@@ -1,7 +1,23 @@
 import React from "react";
 import { items } from "./cardItems";
 import { slots_1, slots_2 } from "./slots";
+import { useState } from "react";
+
 function Card() {
+  const getInitialState = () => {
+    const inst = "NoExaminer";
+    return inst;
+  };
+  const getInitialState2 = () => {
+    const day  = "NoDay";
+    return day;
+  };
+  const [inst, setInst] = useState(getInitialState);
+  const handleChange = (e) => { setInst(e.target.value); };
+  const [day, setDay] = useState(getInitialState2);
+  const handleChange2 = (e) => { setDay(e.target.value); };
+  const [check ,setCheck]=useState([]);
+  const handleChange3=(e)=>{setCheck(arr => [...arr,e.target.value])}
   return (
     <>
       {items.map((item, index) => {
@@ -17,11 +33,13 @@ function Card() {
             <label className="divLabel-3">
               Choose non available slot <span className="required">*</span>
             </label>
-            <select className="dropdown-1">
-              <option value="volvo">##</option>
+            <select value={inst} onChange={handleChange} key = {index} className="dropdown-1">
+            <option value="-">-</option>
+            <option value="ahmed">ahmed</option>
             </select>
-            <select className="dropdown-2">
-              <option value="volvo">17/3/2022</option>
+            <select value={day} onChange={handleChange2} key = {index} className="dropdown-2">
+              <option value="-">-</option>
+              <option value="date">17/3/2001</option>
             </select>
             <div className="slots1">
               {slots_1.map((slot, index) => {
@@ -30,6 +48,8 @@ function Card() {
                     <input
                       type="checkbox"
                       name={slot.title}
+                      value={slot.title}
+                      onChange={handleChange3}
                     />
                     <label >{slot.title}</label>
                   </div>
@@ -49,6 +69,7 @@ function Card() {
                 );
               })}
             </div>
+            <p>{`You selected ${day} +${inst}+${check} `}</p>
             <button className="btn-const">ADD</button>
           </form>
         );
