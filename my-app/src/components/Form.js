@@ -3,20 +3,20 @@ import axios from 'axios'
 function Form() {
   const[file ,setFile ]= useState();
   const handleChange = (event)=> {
-     setFile(event.taget.files[0]);
+     setFile(event.target.files[0]);
   }
   const handleSumbit = (event)=> {
      event.preventDefault();
-     const url = 'https://postman-echo.com/post';
+     const url = "https//localhost:3000/postfile";
      const formData = new FormData();
      formData.append('File',file);
-     console.log(formData)
+     console.log(formData.get('File'))
      const config = {
       headers: {
         'content-type': 'multipart/form-data',
       },
     };
-     axios.post(url, formData,config).then((response) => {
+     axios.post(url,formData,config).then((response) => {
       console.log(response.data);
     });
     
