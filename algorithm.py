@@ -25,7 +25,7 @@ import random
 days = 12
 slots = days*15
 
-max_generations = 40000
+max_generations = 4000
 num_runs = 1
 sinput_file = Inputcreation.Create_input(days,slots)
 # output_file = 'classes/output2.json' #lesa
@@ -288,7 +288,7 @@ def Room(solution):
     p=[""]*len(solution[7])
     for x in range(len(solution[7])):
         p[x] = solution[7][x]
-    availablerooms = [["C5.112","C5.108","C5.106","C5.301"] for x in range(slots)]
+    availablerooms = [ solution[7] for x in range(slots)]
     for x in range(len(solution[0])):
         examiners[solution[0][x]['Time']] += (solution[0][x]['Examiner']) + ","
     for j in range(len(examiners)):
