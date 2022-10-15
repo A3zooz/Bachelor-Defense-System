@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from rest_framework import status
 import data as dt
 import json
-import algorithm as algo
 from Inputcreation import Create_input
 
 @api_view(['POST'])
