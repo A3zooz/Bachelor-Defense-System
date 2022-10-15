@@ -20,14 +20,13 @@ def uploadFile(request):
 @api_view(['POST'])
 def generate(request):
     if request.method == 'POST':
-        algo.evolutionary_algorithm()
         res=[]
-        with open('InputData.json', 'r') as read_file:
+        with open('Solution.json', 'r') as read_file:
             inputData = json.load(read_file) 
         for i in inputData:
             if(i.get('color')=="Red"):
                 res.append(i)
-        return Response(res)
+        return Response(res,status=status.HTTP_200_OK)
 
 @api_view(['POST','GET','DELETE'])
 def external(request):
