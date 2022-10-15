@@ -28,6 +28,7 @@ def generate(request):
             if(i.get('color')=="Red"):
                 res.append(i)
         return Response(res)
+
 @api_view(['POST','GET','DELETE'])
 def external(request):
     if request.method == 'POST':
