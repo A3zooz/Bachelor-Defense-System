@@ -21,7 +21,7 @@ def load_data(path):
     for i in range(len(data['Defense'])):
         supervisor.append(data['Defense'][i]['Supervisor'])
 
-    return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor),external
+    return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor),external,data['dates']
 
 def load_solution(path):
     with open(path, 'r') as read_file:
