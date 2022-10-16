@@ -17,11 +17,20 @@ def uploadFile(request):
         return Response({'data':'done'},status=status.HTTP_200_OK)
 
 @api_view(['POST'])
+def downloadFile(request):
+    if request.method == 'POST':
+        f = open('Solution.json', "r")
+        response = Response({'data':f},status=status.HTTP_200_OK)
+        f.close()
+        return response
+
+@api_view(['POST'])
 def generate(request):
     if request.method == 'POST':
         res=[]
         with open('Solution.json', 'r') as read_file:
             inputData = json.load(read_file) 
+        # generate function
         for i in inputData:
             if(i.get('color')=="Red"):
                 res.append(i)
