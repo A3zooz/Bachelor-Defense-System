@@ -2,12 +2,13 @@ import pandas as pd
 import numpy as np
 import json
 
-def Create_input(name, Dates,rooms):
+def Create_input():
     df_excel = pd.read_csv('InputData.csv')
     print(len(df_excel))
     External = []
     Supervisor = []
     ID = []
+    Room = []
 
     for i in range(len(df_excel)-1):
         External.append(df_excel["External Reviewer"][i])
@@ -15,12 +16,15 @@ def Create_input(name, Dates,rooms):
         Supervisor.append(df_excel["Supervisor"][i])
     for i in range(len(df_excel)-1):
         ID.append(df_excel["uniq_app_no"][i])
+    for i in range(len(df_excel)-1):
+        Room.append(df_excel["Defense Location"][i])
         
+    Room2=list(set(Room))
     External2=list(set(External))
     Supervisor2=list(set(Supervisor))
 
     dictionary = {
-        "Rooms": rooms,
+        "Rooms": Room2,
         "Defense": [],
         "External constraints":[],
         "Supervisor constraints":[]
@@ -36,17 +40,19 @@ def Create_input(name, Dates,rooms):
         
     for i in range(len(External2)):
         test = {}
-        test[External2[i]]=[0]*len(Dates)*15
+        test[External2[i]]=[0]*180
+        # dic2.setdefault(External2[i], [])
         dictionary["External constraints"].append(test)
     for i in range(len(Supervisor2)):
         test = {}
-        test[Supervisor2[i]]=[0]*len(Dates)*15
+        test[Supervisor2[i]]=[0]*180
+        # dic2.setdefault(External2[i], [])
         dictionary["Supervisor constraints"].append(test)
 
-    dictionary["dates"]=Dates
     # Serializing json
     json_object = json.dumps(dictionary, indent=4)
 
+    # Writing to sample.json
     with open("InputData.json", "w") as outfile:
         outfile.write(json_object)
     return "InputData.json"

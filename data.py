@@ -11,22 +11,17 @@ def load_data(path):
     supervisor = []
     rooms = data['Rooms']
     defense = data['Defense']
-    # external_constraints = data['External Constraints']
-    # supervisor_constraints = data['Supervisor Constraints']
-    external_constraints = {}
-    supervisor_constraints = {}
+    external_constraints = data['External constraints']
+    supervisor_constraints = data['Supervisor constraints']
+    # external_constraints = {}
+    # supervisor_constraints = {}
 
     for i in range(len(data['Defense'])):
         external.append(data['Defense'][i]['Examiner'])
     for i in range(len(data['Defense'])):
         supervisor.append(data['Defense'][i]['Supervisor'])
 
-    return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor),external,data['dates']
-
-def load_solution(path):
-    with open(path, 'r') as read_file:
-        data = json.load(read_file)
-    return data
+    return defense,rooms,external_constraints,supervisor_constraints,set(external),set(supervisor),external
 
 def generate_solution(defense, rooms, external, supervisor,external_constraints,supervisor_constraints,externalc):
     externals = {}
@@ -40,11 +35,11 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     number_of_rooms = len(rooms)
     for single_external in external:
         externals[single_external] = [[]*number_of_rooms for i in range(180)] #create 2d list of external and his rooms
-        external_constraints[single_external] = [0]*180
+        #external_constraints[single_external] = [0]*180
         externalslots[single_external] = externalc.count(single_external)
     for single_supervisor in supervisor:
         supervisors[single_supervisor] = [0]*180
-        supervisor_constraints[single_supervisor] = [0]*180
+        # supervisor_constraints[single_supervisor] = [0]*180
 
     for single_room in rooms:
         room[single_room] = [0] * 180
@@ -68,14 +63,16 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     
     return new_data, externals, supervisors,room,external_constraints,supervisor_constraints,externalslots,rooms
 
-# data = load_data('input.json')
+data = load_data("InputData.json")
 
-# sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])
+sol = generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])
 
 # print(sol[0])
 # neighboring.neighbor(sol)
 # print("After Swap Testing")
 # print(sol[0])
 # print(sol[6])
+print(sol[4])
+print(data[2])
 
 

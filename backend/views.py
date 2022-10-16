@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 import data as dt
 import json
+import algorithm as algo
 from Inputcreation import Create_input
 
 @api_view(['POST'])
@@ -30,7 +31,7 @@ def generate(request):
         res=[]
         with open('Solution.json', 'r') as read_file:
             inputData = json.load(read_file) 
-        # generate function
+        algo.evolutionary_algorithm()
         for i in inputData:
             if(i.get('color')=="Red"):
                 res.append(i)
