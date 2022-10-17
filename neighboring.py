@@ -1,11 +1,10 @@
 from pickle import TRUE
 import random
-import json
 import math
 from copy import deepcopy
 
 
-def neighbor(solution,flag1):
+def neighbor(solution,flag1,days,slots):
     candidates = []
     # for Examiner in solution[1]:
     #         working_days = 0
@@ -29,7 +28,7 @@ def neighbor(solution,flag1):
     #                 if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=u and solution[0][k]["Time"]<ue ):
     #                     candidates.append(k)
     for Examiner in solution[1]:
-            for day in range(12):
+            for day in range(days):
                 temp1 = 0        
                 for slot in range(15):
                     time1 = day*15 + slot
@@ -42,7 +41,7 @@ def neighbor(solution,flag1):
 
     for Examiner in solution[1]:
         working_days = 0
-        for day in range(12):
+        for day in range(days):
             for slot in range(15):
                 time = day*15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
@@ -55,7 +54,7 @@ def neighbor(solution,flag1):
         
     
 
-    for slot in range(180):
+    for slot in range(slots):
         x1=0
         w=[]
         for i in range(len(solution[0])):
@@ -68,7 +67,7 @@ def neighbor(solution,flag1):
 
     for i in range(len(solution[0])):
         w=solution[0][i]['Time']
-        if(not(w-2<0 or w+2>=180)):
+        if(not(w-2<0 or w+2>=slots)):
 
             if (not(len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time'] - 1]) == 1 or len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']-2]) == 1 or
             len(solution[1][solution[0][i]['Examiner']][solution[0][i]['Time']+1]) == 1) and
@@ -132,8 +131,8 @@ def neighbor(solution,flag1):
         for choice in candidates:
             if choice[0] == i:
                 reason.append(choice[1])
-                if len(candidates) <= 10:
-                    print(candidates)
+                # if len(candidates) <= 10:
+                #     print(candidates)
 
     time = solution[0][i]['Time']
     selected_examiner = solution[0][i]['Examiner']
@@ -299,7 +298,7 @@ def neighbor(solution,flag1):
     #             max=temp 
     #             temp=0
     #             mwday=x
-    for day in range(12):
+    for day in range(days):
         noOfSlots = 0
         mwday = 0
         for slot in range(15):
@@ -339,7 +338,7 @@ def neighbor(solution,flag1):
             continue
         if(len(solution[1][selected_examiner][x])>=1):
             temp+=1
-        elif(x+1!=180):
+        elif(x+1!=slots):
             if (len(solution[1][selected_examiner][x+1])>=1):
                 temp+=1
         else:
@@ -365,14 +364,14 @@ def neighbor(solution,flag1):
             r = r + (mwday*15)
         if(len(solution[1][selected_examiner][r])==0 and c>45 and not(r % 5  == 0 and not(r % 3 == 0))):
             flag=False
-        elif( (r+1<180 and r-1>=0) ):
+        elif( (r+1<slots and r-1>=0) ):
             if(len(solution[1][selected_examiner][r])==0 and (len(solution[1][selected_examiner][r+1])>=1
             or len(solution[1][selected_examiner][r-1])>=1) and not(r % 5  == 0 and not(r % 3 == 0))):
                 flag=False
         elif r == 0:
             if len(solution[1][selected_examiner][r])==0 and len(solution[1][selected_examiner][r+1])>=1 and not(r % 5  == 0 and not(r % 3 == 0)):
                 flag = False
-        elif r == 179:
+        elif r == slots-1:
             if len(solution[1][selected_examiner][r])==0 and len(solution[1][selected_examiner][r-1])>=1 and not(r % 5  == 0 and not(r % 3 == 0)):
                 flag = False
 
@@ -403,7 +402,7 @@ def neighbor(solution,flag1):
                     solution[3][selected_room][endslot-max] += 1
                     return solution, candidates
                 
-            if(endslot + 1 < 180):
+            if(endslot + 1 < slots):
                 if(solution[3][selected_room][endslot+1] ==0 and not (endslot+1 % 5  == 0 and not(endslot+1 % 3 == 0)) 
                 and w==1 and endslot!=0):
                     solution[0][i]['Time'] = endslot+1
@@ -435,7 +434,7 @@ def neighbor(solution,flag1):
     else:
         yes=True
         while(yes):
-            r1 = random.randint(0,179)
+            r1 = random.randint(0,slots-1)
             if(not(r1 % 5  == 0 and not(r1 % 3 == 0))):
                 yes=False
 
@@ -446,10 +445,10 @@ def neighbor(solution,flag1):
         return solution
     return solution
 
-def maxWorkingDay (exception, solution,selected_examiner):
+def maxWorkingDay (exception, solution,selected_examiner,days,slots):
     max = 0
     mwday = 0
-    for day in range(12):
+    for day in range(days):
         noOfSlots = 0
         if day == exception:
             continue

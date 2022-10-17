@@ -1,7 +1,5 @@
-import json
 
-
-def cost(solution):
+def cost(solution,days,slots):
     examiner_cost = 0
     supervisor_cost = 0
     room_cost = 0
@@ -24,12 +22,12 @@ def cost(solution):
 
     #Examiner, Supervisor and Room can't be reserved more than once
     for Examiner in solution[1]:
-        for i in range(180):
+        for i in range(slots):
             if len(solution[1][Examiner][i]) > 1:
                 examiner_cost += 1
                 # print("Examiner reserved in same slot violated")
     for Supervisor in solution[2]:
-        for i in range(180):
+        for i in range(slots):
             if solution[2][Supervisor][i] > 1:
                 supervisor_cost += 1
     # for Room in solution[3]:
@@ -39,7 +37,7 @@ def cost(solution):
     
     # maxmimum number of rooms*13 for day 
     # slot*number
-    for slot in range(180):
+    for slot in range(slots):
         x=0
         for i in range(len(solution[0])):
             if(solution[0][i]['Time']==slot):
@@ -49,7 +47,7 @@ def cost(solution):
             # print("More slots than rooms")       
 
     for Examiner in solution[1]:
-        for day in range(12):
+        for day in range(days):
             temp = 0
             flag1=False
             for slot in range(15):
@@ -117,7 +115,7 @@ def cost(solution):
     # Examiner has more than 2 days
     for Examiner in solution[1]:
         working_days = 0
-        for day in range(12):
+        for day in range(days):
             for slot in range(15):
                 time = day*15 + slot
                 if len(solution[1][Examiner][time]) >= 1:
@@ -129,7 +127,7 @@ def cost(solution):
 
     #Time cosntraints
     for Examiner in solution[1]:
-        for day in range(12):
+        for day in range(days):
             for slot in range(15):
                 time = day*15 + slot
                 if len(solution[1][Examiner][time]) >= 1 and solution[4][Examiner][time] == 1:

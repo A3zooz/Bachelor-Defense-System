@@ -1,18 +1,37 @@
 # from tkinter import SOLID
+from importlib.resources import as_file
+from sqlalchemy import null
 import data as dt
 from tabulate import tabulate
 import cost_function
 import neighboring
 from copy import deepcopy
-import Inputcreation
+import Inputcreation 
 import Outputcreation
 import json
+import random
 
-max_generations = 80000
-num_runs = 1
-#sinput_file = Inputcreation.Create_input()
+# Dates = Inputcreation.Create_input()
+# Dates2=list(Dates)
+# FinalDates=[""]*len(Dates2)
+# for i in range(len(Dates2)):
+#     Dates2[i] = Dates2[i].split()
+#     if(len(Dates2[i])>=1):
+#         FinalDates[i]=Dates2[i][1]
+# FinalDates = list(filter(None, FinalDates))
+# FinalDates=list(set(FinalDates))
+# FinalDates.sort()
+# print(FinalDates)
+
+
 # output_file = 'classes/output2.json' #lesa
-cost_function = cost_function.cost
+dates = [1,2,3,4,5,6,7,8,9,10,11,12]
+rooms =["c5 108","c5 109","c5 110","c5 111"]
+Name = ""
+sinput_file = Inputcreation.Create_input(Name,dates,rooms)
+cost_function = cost_function.cost  
+
+
 def drawschedule(f):
     u=[""]*180
     for x in range(len(f[0])):
@@ -36,29 +55,35 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
+    max_generations = 2000
+    num_runs = 1
     best_timetable = None
     data = dt.load_data("InputData.json")
+    dates = data[7]
+    days =len(dates)
+    slots = len(dates)*15
     neighbor = neighboring.neighbor  # call the neighbor function from neighboring file
 
     for i in range(num_runs):
-        solution = dt.generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6])  # generate a solution by creating the first timetable by random
+        solution = dt.generate_solution(data[0],data[1],data[4],data[5],data[2],data[3],data[6],days,slots) # generate a solution by creating the first timetable by random
+        
         flag =False
         c=0
         for j in range(max_generations):
             # change the new solution by calling the neighbor from neighboring by getteing a deepcopy from the original chromosom
 
-            new_solution = neighbor(deepcopy(solution),flag)
+            new_solution = neighbor(deepcopy(solution),flag,days,slots)
 
 
             # calculate the cost for the solution
-            ft = cost_function(solution)
+            ft = cost_function(solution,days,slots)
             fti=[]
             fti = ft[0] + ft[1] + ft[2]
             # if the cost for the solution == 0 -> optimal solution (no violate of hard and soft constraint)
             if fti == 0:
                 break
             # calculate the cost for the solution
-            ftn = cost_function(new_solution)
+            ftn = cost_function(new_solution,days,slots)
             ftni = []
             ftni = ftn[0]+ftn[1]+ftn[2]
             # ---- if the cost for the new_solution less than or equal the cost solution
@@ -75,12 +100,12 @@ def evolutionary_algorithm():
 
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
-                print('Iteration', j, 'cost', cost_function(solution))
+                print('Iteration', j, 'cost', cost_function(solution,days,slots))
             if j % 5000 == 0:
                 drawschedule(solution)
 
-        print('Run', i + 1, 'cost', cost_function(solution), 'solution', solution)
-        print(cost_function(solution))
+        print('Run', i + 1, 'cost', cost_function(solution,days,slots), 'solution', solution)
+        print(cost_function(solution,days,slots))
         # Soft constraint not important yet
         # if best_timetable is None or cost_function2(solution) <= cost_function2(best_timetable):
         if best_timetable is None:
@@ -149,7 +174,7 @@ def evolutionary_algorithm():
         
     
     for Examiner in solution[1]:
-        for day in range(12):
+        for day in range(days):
             temp = 0
             flag1=False
             for slot in range(15):
@@ -166,68 +191,66 @@ def evolutionary_algorithm():
     print('Are hard restrictions for Supervisor satisfied:', supervisor_hard)
     # print('Are hard restrictions for Room satisfied:', room_hard)
     print('Are hard restrictions for Continouity satisfied:', continued)
-    f = solution
-    
+
     flagc=True
     c=0
-
     # more than 2 per slot for examiner
-    for Examiner in f[1]:
+    for Examiner in solution[1]:
         flagc=True
         c=0            
-        for i in range(180):
-            if len(f[1][Examiner][i]) > 1:
+        for i in range(slots):
+            if len(solution[1][Examiner][i]) > 1:
                 while(flagc):
-                    if(f[0][c]["Examiner"]==Examiner and f[0][c]["Time"]==i):
-                        f[0][c]["Color"]="Red"
+                    if(solution[0][c]["Examiner"]==Examiner and solution[0][c]["Time"]==i):
+                        solution[0][c]["Color"]="Red"
                         flagc=False
                     c+=1
     flagc=True
     c=0 
 
     # more than 2 per slot for supervisor           
-    for Supervisor in f[2]:
+    for Supervisor in solution[2]:
         flagc=True
         c=0
-        for i in range(180):
-            if f[2][Supervisor][i] > 1:
+        for i in range(slots):
+            if solution[2][Supervisor][i] > 1:
                 while(flagc):
-                    if(f[0][c]["Supervisor"]==Supervisor and f[0][c]["Time"]==i):
-                        f[0][c]["Color"]="Red"
+                    if(solution[0][c]["Supervisor"]==Supervisor and solution[0][c]["Time"]==i):
+                        solution[0][c]["Color"]="Red"
                         flagc=False
                     c+=1
     flagc=True
     c=0  
     # more slots than room
-    for slot in range(180):
+    for slot in range(slots):
         x=0
         flagc=True
         c=0            
-        for i in range(len(f[0])):
-            if(f[0][i]['Time']==slot):
+        for i in range(len(solution[0])):
+            if(solution[0][i]['Time']==slot):
                 x+=1
-            if(x>len(f[3])):
+            if(x>len(solution[3])):
                 c=0
                 while(flagc):
-                    if(f[0][c]["Time"]==slot):
-                        f[0][c]["Color"]="Red"
+                    if(solution[0][c]["Time"]==slot):
+                        solution[0][c]["Color"]="Red"
                         flagc=False
                     c+=1            
     flagc=True
     c=0 
     # slot of examiner in external constraint
-    for Examiner in f[1]:
+    for Examiner in solution[1]:
         l = []
-        for g in f[4][Examiner]:
-            if(f[4][Examiner][g]==1):
+        for g in solution[4][Examiner]:
+            if(solution[4][Examiner][g]==1):
                 l.append(g)
         for i in range(len(l)):
             flagc=True
             c=0  
-            if len(f[1][Examiner][l[i]]) >= 1:
+            if len(solution[1][Examiner][l[i]]) >= 1:
                 while(flagc):
-                    if(f[0][c]["Examiner"]==Examiner and f[0][c]["Time"]==l[i]):
-                        f[0][c]["Color"]="Red"
+                    if(solution[0][c]["Examiner"]==Examiner and solution[0][c]["Time"]==l[i]):
+                        solution[0][c]["Color"]="Red"
                         flagc=False
                     c+=1
     flagc=True
@@ -235,15 +258,15 @@ def evolutionary_algorithm():
 
                     
     #the slots of the least working day for the examiner
-    for Examiner in f[1]:
+    for Examiner in solution[1]:
         working_days = 0
         min = 13
         lwday = 0
-        for day in range(12):
+        for day in range(days):
             temp = 0        
             for slot in range(15):
                 time = day*15 + slot
-                if len(f[1][Examiner][time]) >= 1:
+                if len(solution[1][Examiner][time]) >= 1:
                     temp +=1
                 if(temp<min and temp>0):
                     lwday=day
@@ -253,41 +276,71 @@ def evolutionary_algorithm():
         if working_days > 2:
             u=lwday*15
             ue=lwday*15 + 15
-            for k in range(len(f[0])):
-                if(f[0][k]["Examiner"]==Examiner and f[0][k]["Time"]>=u and f[0][k]["Time"]<ue ):
-                    f[0][k]["Color"]="Red"    
-                        
-                        
-    final = json.dumps(f[0], indent=3)
+            for k in range(len(solution[0])):
+                if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=u and solution[0][k]["Time"]<ue ):
+                    solution[0][k]["Color"]="Red"
+                    
+                    
+    examiners=[""]*slots
+    numberofexaminers=[0]*slots
+    p=[""]*len(solution[7])
+    for x in range(len(solution[7])):
+        p[x] = solution[7][x]
+    availablerooms = [ solution[7] for x in range(slots)]
+    for x in range(len(solution[0])):
+        examiners[solution[0][x]['Time']] += (solution[0][x]['Examiner']) + ","
+    for j in range(len(examiners)):
+        numberofexaminers[j] += examiners[j].count(',')
+    for x in range(days):
+        # all rooms are now empty 
+        # empty all dics
+        examinerroomdict = {}
+        for y in range(15):
+            f =  examiners[x*15+y].split(",")
+            if len(f) > 0:
+                del f[len(f)-1:]
+            for w in range(len(f)):
+                if f[w] in examinerroomdict:
+                    continue
+                if len(availablerooms[x*15+y]) == 0:
+                    continue
+                croom = random.choice(availablerooms[x*15+y])
+                availablerooms[x*15+y].remove(croom)
+                examinerroomdict[f[w]] = croom  
+                for u in range(len(solution[0])):
+                    if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+y):
+                        solution[0][u]["Room"] = examinerroomdict[f[w]]
+                for r in range(15):
+                    t =  examiners[x*15+r].split(",")
+                    if len(t) > 0:
+                        del t[len(t)-1:]
+                    for z in range(len(t)):                                  
+                        if(t[z] == f[w]):
+                            for u in range(len(solution[0])):
+                                if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+r):
+                                    solution[0][u]["Room"] = examinerroomdict[f[w]]
+                                    if( availablerooms[x*15+r].count(examinerroomdict[f[w]]) >= 1):
+                                        availablerooms[x*15+r].remove(examinerroomdict[f[w]])
+    final = json.dumps(solution[0], indent=3)
     jsonFile = open("Solution.json", "w")
     jsonFile.write(final)
     jsonFile.close()
     Outputcreation.Create_output()
-    return final
+    return solution
+
+
+f = evolutionary_algorithm()
+
     
+
+
+
+
     
-    
 
 
 
+            
+            
+            
 
-
-
-
-
-# for Examiner in f[1]:
-#     working_days = 0
-#     for day in range(12):
-#         flagc=True
-#         c=0            
-#         for slot in range(15):
-#             time = day*15 + slot
-#             if len(f[1][Examiner][time]) >= 1:
-#                 working_days += 1
-#                 break
-#         if working_days > 2:
-#             while(flagc):
-#                 if(f[0][c]["Examiner"]==Examiner):
-#                     f[0][c]["Color"]="Red"
-#                     flagc=False
-#                 c+=1
