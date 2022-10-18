@@ -6,7 +6,7 @@ class Navbar extends Component{
    render(){
     return(
       <nav className="NavbarItems">
-        <h1 className="navbar-logo">Bachelor Defense Scheduler</h1>
+        <h1 className="navbar-logo">Bachelor Defense Schedule</h1>
         <ul className="nav-menu">
           {
             menuItems.map((item , index) =>{return (<li key={index}><Link to={item.url}  className={item.cName}>{item.title}</Link></li>)} )}

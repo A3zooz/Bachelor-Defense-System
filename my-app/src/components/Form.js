@@ -73,7 +73,7 @@ function Form() {
         ))}
       </ul>
     </div>
-      <button className="btn">Sumbit</button>
+      <button className="btn">Submit</button>
       </form>
     </>
     );

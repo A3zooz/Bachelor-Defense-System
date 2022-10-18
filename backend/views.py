@@ -42,13 +42,17 @@ def external(request):
     if request.method == 'POST':
         with open('InputData.json', 'r') as read_file:
             inputData = json.load(read_file) 
-        for i in len(inputData["External constraints"]):
-            if i.keys()== request.data.keys():
-                inputData["External constraints"][inputData["External constraints"].index(i)]=request.data
+        print(inputData[1])
+        # for i in inputData[2]:
+        #     print(inputData[2][i])
+        ename = list(request.data.keys())[0]
+        eslots =  request.data[ename]
+        inputData[1][ename] = eslots
+        # inputData[2][inputData[2].index(i)]=request.data
         json_object = json.dumps(inputData, indent=4)
-
         with open("InputData.json", "w") as outfile:
             outfile.write(json_object)
+            
         return Response(inputData)
     elif request.method == 'DELETE':
         pass

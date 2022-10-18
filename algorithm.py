@@ -101,8 +101,8 @@ def evolutionary_algorithm():
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
                 print('Iteration', j, 'cost', cost_function(solution,days,slots))
-            if j % 5000 == 0:
-                drawschedule(solution)
+            # if j % 5000 == 0:
+            #     drawschedule(solution)
 
         print('Run', i + 1, 'cost', cost_function(solution,days,slots), 'solution', solution)
         print(cost_function(solution,days,slots))

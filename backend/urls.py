@@ -20,7 +20,7 @@ from backend import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-file/', views.uploadFile),
-    path('downloadFile/', views.uploadFile),
+    path('downloadFile/', views.downloadFile),
     path('external/', views.external),
     path('allExternals/', views.getAllExternals),
     path('student/', views.student),

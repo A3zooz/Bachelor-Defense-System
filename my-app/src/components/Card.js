@@ -11,7 +11,7 @@ function Card() {
   const [SelectedDate, setSelectedDate] = useState({ value: "", label: "" });
   const [day, setDay] = useState([]);
   const [dates,setDates]=useState([]);
-  const [selectedslots,setSelectedslots]=useState(Array(dates.length*15).fill(1));
+  const [selectedslots,setSelectedslots]=useState(Array(dates.length*15).fill(0));
   const slotOptions = [
     { value: 0, label: '1st' },
     { value: 1, label: '2nd' },
@@ -50,14 +50,14 @@ function Card() {
 
   const changeExaminar = (value) => {
     setSelectedExaminar(value);
-    setSelectedslots(Array(dates.length*15).fill(1));
+    setSelectedslots(Array(dates.length*15).fill(0));
     setDay([])
   }
 
   const changeDate = (value) => {
     const tmp=dates.indexOf(SelectedDate.value)*15
     let tmplist = [...selectedslots];
-    day.forEach((s) =>tmplist[tmp+s.value]=0)
+    day.forEach((s) =>tmplist[tmp+s.value]=1)
     setSelectedslots(tmplist);
     setDay([])
     setSelectedDate(value)  
@@ -67,12 +67,15 @@ function Card() {
     event.preventDefault()
     const tmp=dates.indexOf(SelectedDate.value)*15
     let tmplist = [...selectedslots];
-    day.forEach((s) =>tmplist[tmp+s.value]=0)
+    day.forEach((s) =>tmplist[tmp+s.value]=1)
     setSelectedslots(tmplist);
     let res={};
-    res[SelectedExaminar.value]=selectedslots
+    res[SelectedExaminar.value]=tmplist;
+    console.log(tmplist);
+    console.log("Done with temp")
+    console.log(selectedslots);
     axios.post('http://localhost:5000/external/',res)
-    setSelectedslots(Array(dates.length*15).fill(1));
+    setSelectedslots(Array(dates.length*15).fill(0));
   }
 
   return (
@@ -83,10 +86,10 @@ function Card() {
           please select Examiner <span className="required">*</span>
         </label>
         <label className="divLabel-2">
-          Choose available day <span className="required">*</span>
+          Choose unavailable day <span className="required">*</span>
         </label>
         <label className="divLabel-3">
-          Choose available slot <span className="required">*</span>
+          Choose unavailable slot <span className="required">*</span>
         </label>
         <AsyncSelect
           className="dropdown-1"
@@ -115,7 +118,7 @@ function Card() {
           onChange={setDay}
           options={slotOptions}
         />
-        <button className="btn-const" onClick={handleSubmit}>ADD</button>
+        <button className="btn-const" onClick={handleSubmit}>Add</button>
       </form>
     </>
   );
