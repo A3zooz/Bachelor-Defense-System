@@ -9,17 +9,17 @@ function Form() {
   const[rooms ,setRooms ]= useState([]);
   const[room ,setRoom ]= useState('');
   const handleChange = (event)=> {
-     setFile(event.target.files[0]);
+    setFile(event.target.files[0]);
   }
   const handleSumbit = (event)=> {
     event.preventDefault();
-     const url = 'http://localhost:5000/upload-file/';
-     const formData = new FormData();
-     formData.append('File',file);
-     formData.append('Dates',dates);
-     formData.append('Rooms',rooms);
-     console.log(formData.get('File'))
-     axios.post(url,formData).then((response) => {
+    const url = 'http://localhost:5000/upload-file/';
+    const formData = new FormData();
+    formData.append('File',file);
+    formData.append('Dates',dates);
+    formData.append('Rooms',rooms);
+    console.log(formData.get('File'))
+    axios.post(url,formData).then((response) => {
       console.log(response.data);
     });
   }

@@ -42,7 +42,7 @@ def external(request):
     if request.method == 'POST':
         with open('InputData.json', 'r') as read_file:
             inputData = json.load(read_file) 
-        for i in inputData["External constraints"]:
+        for i in len(inputData["External constraints"]):
             if i.keys()== request.data.keys():
                 inputData["External constraints"][inputData["External constraints"].index(i)]=request.data
         json_object = json.dumps(inputData, indent=4)

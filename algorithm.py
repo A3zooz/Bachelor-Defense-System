@@ -329,7 +329,7 @@ def evolutionary_algorithm():
     return solution
 
 
-f = evolutionary_algorithm()
+# f = evolutionary_algorithm()
 
     
 
