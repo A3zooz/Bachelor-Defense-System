@@ -1,5 +1,6 @@
 # from tkinter import SOLID
 from importlib.resources import as_file
+import math
 from sqlalchemy import null
 import data as dt
 from tabulate import tabulate
@@ -25,10 +26,10 @@ import random
 
 
 # output_file = 'classes/output2.json' #lesa
-dates = [1,2,3,4,5,6,7,8,9,10,11,12]
-rooms =["c5 108","c5 109","c5 110","c5 111"]
-Name = ""
-sinput_file = Inputcreation.Create_input(Name,dates,rooms)
+# dates = [1,2,3,4,5,6,7,8,9,10,11,12]
+# rooms =["c5 108","c5 109","c5 110","c5 111"]
+# Name = ""
+# sinput_file = Inputcreation.Create_input(Name,dates,rooms)
 cost_function = cost_function.cost  
 
 
@@ -55,12 +56,12 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
-    max_generations = 2000
+    max_generations = 80000
     num_runs = 1
     best_timetable = None
     data = dt.load_data("InputData.json")
     dates = data[7]
-    days =len(dates)
+    days = len(dates)
     slots = len(dates)*15
     neighbor = neighboring.neighbor  # call the neighbor function from neighboring file
 
@@ -321,6 +322,14 @@ def evolutionary_algorithm():
                                     solution[0][u]["Room"] = examinerroomdict[f[w]]
                                     if( availablerooms[x*15+r].count(examinerroomdict[f[w]]) >= 1):
                                         availablerooms[x*15+r].remove(examinerroomdict[f[w]])
+                                        
+    ndays = len(data[7])
+    slottimes =["9 am","9:30 am","10 am","10:30 am","11 am","11:30 am","12 pm","12:30 pm","1 pm","1:30 pm","2 pm","2:30 pm","3 pm","3:30 pm","4 pm"]                    
+    for i in range(len(solution[0])):
+        ctime = solution[0][i]['Time']
+        cslottime = slottimes[ctime%15]
+        datetime = data[7][(math.ceil((ctime+1)/15)-1)]
+        solution[0][i]['Time'] = "( " + datetime + " " + cslottime + " )"
     final = json.dumps(solution[0], indent=3)
     jsonFile = open("Solution.json", "w")
     jsonFile.write(final)
@@ -329,7 +338,7 @@ def evolutionary_algorithm():
     return solution
 
 
-# f = evolutionary_algorithm()
+f = evolutionary_algorithm()
 
     
 

@@ -67,8 +67,10 @@ function Card() {
     event.preventDefault()
     const tmp=dates.indexOf(SelectedDate.value)*15
     let tmplist = [...selectedslots];
+
     day.forEach((s) =>tmplist[tmp+s.value]=1)
     setSelectedslots(tmplist);
+
     let res={};
     res[SelectedExaminar.value]=tmplist;
     console.log(tmplist);
@@ -80,11 +82,14 @@ function Card() {
 
   return (
     <>
-      <form className={"Constarints"}>
+      <form className={"Constarints-1"}>
         <div className="divTitle">Examiner's Constraints</div>
+
+
         <label className="divLabel-1">
           please select Examiner <span className="required">*</span>
         </label>
+
         <label className="divLabel-2">
           Choose unavailable day <span className="required">*</span>
         </label>
@@ -111,12 +116,16 @@ function Card() {
           loadOptions={loadDates}
           onChange={changeDate}
         />
-        <Select
+        <Select  
+          className="dropdown-3" 
           components={animatedComponents}
           isMulti
           value={day}
           onChange={setDay}
           options={slotOptions}
+    //       autosize={true}
+    //       menuPlacement="auto"
+    // menuPosition="fixed"
         />
         <button className="btn-const" onClick={handleSubmit}>Add</button>
       </form>

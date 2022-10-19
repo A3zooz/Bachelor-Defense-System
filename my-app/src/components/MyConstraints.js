@@ -3,7 +3,7 @@ import "./MyConstraints.css";
 import Card from  "./Card.js"
 function MyConstraints() {
   return (
-    <form className="myConst">
+    <form >
       <Card></Card>
     </form>
   );
