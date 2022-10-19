@@ -1,13 +1,4 @@
-.myConst {
-  border: 1px solid rgb(205, 199, 199);
-  background-color: #fff;
-  position: absolute;
-  width: 90%;
-  height: 36.25rem;
-  margin-top: 20px;
-  margin-left: 5%;
-  overflow: scroll;
-}
+/*   */
 table {
   margin-top: 49px;
   font-family: arial, sans-serif;

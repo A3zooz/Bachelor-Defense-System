@@ -3,7 +3,7 @@ import {menuItems} from "./MenuItems"
 import {Link} from "react-router-dom"
 import "./Navbar.css"
 class Navbar extends Component{
-   render(){
+  render(){
     return(
       <nav className="NavbarItems">
         <h1 className="navbar-logo">Bachelor Defense Schedule</h1>
@@ -15,6 +15,6 @@ class Navbar extends Component{
       </nav>
     
       )
-   }
+  }
 }
 export default Navbar;

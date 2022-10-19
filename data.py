@@ -29,6 +29,7 @@ def generate_solution(defense, rooms, external, supervisor,external_constraints,
     new_data = []
     externalslots = {}
 
+
     number_of_runs = 0
     number_of_rooms = len(rooms)
     for single_external in external:
