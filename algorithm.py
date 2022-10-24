@@ -56,7 +56,7 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
-    max_generations = 800
+    max_generations = 10000
     num_runs = 1
     best_timetable = None
     data = dt.load_data("InputData.json")
@@ -287,30 +287,36 @@ def evolutionary_algorithm():
     p=[""]*len(solution[7])
     for x in range(len(solution[7])):
         p[x] = solution[7][x]
-    availablerooms = [ solution[7] for x in range(slots)]
+    availablerooms = [ [solution[7][f] for f in range(len(solution[7]))]  for x in range(slots)]
     for x in range(len(solution[0])):
         examiners[solution[0][x]['Time']] += (solution[0][x]['Examiner']) + ","
     for j in range(len(examiners)):
         numberofexaminers[j] += examiners[j].count(',')
+
     for x in range(days):
-        # all rooms are now empty 
         # empty all dics
         examinerroomdict = {}
         for y in range(15):
-            f =  examiners[x*15+y].split(",")
+            f =  examiners[(x*15)+y].split(",")
             if len(f) > 0:
                 del f[len(f)-1:]
             for w in range(len(f)):
                 if f[w] in examinerroomdict:
+                    print("here")
                     continue
-                if len(availablerooms[x*15+y]) == 0:
+                if len(availablerooms[(x*15)+y]) == 0:
+                    print("HERE")
                     continue
                 croom = random.choice(availablerooms[x*15+y])
-                availablerooms[x*15+y].remove(croom)
+                print(availablerooms[(x*15)+y])
+                availablerooms[(x*15)+y].remove(croom)
+                print(availablerooms[(x*15)+y])
                 examinerroomdict[f[w]] = croom  
+                print(examinerroomdict)
                 for u in range(len(solution[0])):
                     if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+y):
                         solution[0][u]["Room"] = examinerroomdict[f[w]]
+                        break
                 for r in range(15):
                     t =  examiners[x*15+r].split(",")
                     if len(t) > 0:
@@ -322,7 +328,8 @@ def evolutionary_algorithm():
                                     solution[0][u]["Room"] = examinerroomdict[f[w]]
                                     if( availablerooms[x*15+r].count(examinerroomdict[f[w]]) >= 1):
                                         availablerooms[x*15+r].remove(examinerroomdict[f[w]])
-                                        
+
+
     ndays = len(data[7])
     slottimes =["9 am","9:30 am","10 am","10:30 am","11 am","11:30 am","12 pm","12:30 pm","1 pm","1:30 pm","2 pm","2:30 pm","3 pm","3:30 pm","4 pm"]                    
     for i in range(len(solution[0])):
@@ -338,7 +345,7 @@ def evolutionary_algorithm():
     return solution
 
 
-# f = evolutionary_algorithm()
+f = evolutionary_algorithm()
 
 # def track(runs,total):
 #     return runs,total

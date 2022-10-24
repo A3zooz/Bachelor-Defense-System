@@ -2,6 +2,10 @@ import React, { useState, } from "react";
 import AsyncSelect from "react-select/async";
 import makeAnimated from 'react-select/animated';
 import Select from 'react-select';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const axios = require("axios").default;
 const url = "http://localhost:5000/allExternals/";
 const animatedComponents = makeAnimated();
@@ -98,6 +102,7 @@ function Card() {
       console.log("Done with temp")
       console.log(tmplist);
       axios.post('http://localhost:5000/external/',res)
+      toast("Examiner constraints successfully added !!!");
     }
   
     return (
@@ -152,6 +157,7 @@ function Card() {
       // menuPosition="fixed"
           />
           <button className="btn-const" onClick={handleSubmit}>Add</button>
+          <ToastContainer />
         </form>
       </>
     );

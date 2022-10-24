@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import DatePicker from "react-multi-date-picker"
 import DatePanel from "react-multi-date-picker/plugins/date_panel"
 import { Text, View, FlatList, TouchableOpacity} from 'react-native';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const axios = require('axios').default;
 
@@ -24,6 +26,8 @@ function Form() {
     axios.post(url,formData).then((response) => {
       console.log(response.data);
     });
+    toast("Data successfully added !!!");
+
   }
     return (
       <>
@@ -39,7 +43,7 @@ function Form() {
           type="file"
           name = "file"
           onChange={handleChange}
-          accept=".xlsx, .xls, .csv"
+          accept=".csv"
         />
       <label className="dateLabel">
         Choose Dates <span className="required">*</span>
@@ -99,8 +103,8 @@ function Form() {
 
     
       </div>
-      <button className="btn">Submit</button>
-
+      <button className="btn" onClick={handleSumbit}>Submit</button>
+      <ToastContainer />
 
       </form>
       
