@@ -31,11 +31,11 @@ def generate(request):
         res=[]
         with open('Solution.json', 'r') as read_file:
             inputData = json.load(read_file) 
-        algo.evolutionary_algorithm()
-        for i in inputData:
+        w = algo.evolutionary_algorithm()
+        for i in w[0]:
             if(i.get('color')=="Red"):
                 res.append(i)
-        return Response(res,status=status.HTTP_200_OK)
+        return Response(w,status=status.HTTP_200_OK)
 
 @api_view(['POST','GET','DELETE'])
 def external(request):
@@ -43,12 +43,9 @@ def external(request):
         with open('InputData.json', 'r') as read_file:
             inputData = json.load(read_file) 
         print(inputData[1])
-        # for i in inputData[2]:
-        #     print(inputData[2][i])
         ename = list(request.data.keys())[0]
         eslots =  request.data[ename]
         inputData[1][ename] = eslots
-        # inputData[2][inputData[2].index(i)]=request.data
         json_object = json.dumps(inputData, indent=4)
         with open("InputData.json", "w") as outfile:
             outfile.write(json_object)
