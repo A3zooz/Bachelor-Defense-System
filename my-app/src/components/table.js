@@ -1,6 +1,7 @@
 import React, { Component,useState,table, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import Timetable from 'react-scheduler-table'
+import { Link } from 'react-router-dom';
 const axios = require("axios").default;
 export default function Table(){
     // const loadDates = (searchDate) => {
@@ -29,11 +30,7 @@ export default function Table(){
             return table;
     });
     };
-    const onDownload=()=>{
-        return axios.post('http://localhost:5000/downloadFile/').then((res) => {
-        console.log(res.data)
-    });
-    };
+
 
 
 
@@ -41,8 +38,7 @@ export default function Table(){
 
         <div> 
         <button onClick={onGenerate}>Generate Solution</button>
-        <button onClick={onDownload}>Downlaod Solution</button>
-        <a href='/Solution.json' download>Click to download</a>
+        <a href='http://localhost:5000/downloadFile/' download>Click to download</a>
 
         </div> 
 

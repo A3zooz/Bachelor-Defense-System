@@ -5,6 +5,7 @@ import data as dt
 import json
 import algorithm as algo
 from Inputcreation import Create_input
+from django.http import HttpResponse
 
 @api_view(['POST'])
 def uploadFile(request):
@@ -17,12 +18,11 @@ def uploadFile(request):
         Create_input(upload.name,request.data.get('Dates').split(','),request.data.get('Rooms').split(','))
         return Response({'data':'done'},status=status.HTTP_200_OK)
 
-@api_view(['POST'])
+@api_view(['GET'])
 def downloadFile(request):
-    if request.method == 'POST':
-        f = open('Solution.json', "r")
-        response = Response({'data':f},status=status.HTTP_200_OK)
-        f.close()
+    if request.method == 'GET':
+        f = open('Solution.csv', "r")
+        response = HttpResponse(f.read(),content_type='text/csv')
         return response
 
 @api_view(['POST'])
