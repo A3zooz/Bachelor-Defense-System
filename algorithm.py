@@ -56,7 +56,7 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
-    max_generations = 10000
+    max_generations = 80000
     num_runs = 1
     best_timetable = None
     data = dt.load_data("InputData.json")
@@ -340,7 +340,7 @@ def evolutionary_algorithm():
     return solution
 
 
-f = evolutionary_algorithm()
+# f = evolutionary_algorithm()
 
 # def track(runs,total):
 #     return runs,total
