@@ -38,7 +38,6 @@
             <LoadingScreen
             loading={true}
             logoSrc={spinner}
-            // text="Loading..."
             />
             ) : (
             <>

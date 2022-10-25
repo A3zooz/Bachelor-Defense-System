@@ -8,7 +8,7 @@ class Navbar extends Component{
   render(){
     return(
       <nav className="NavbarItems">
-        <img  style={{ width: "10%", height: "100%" ,marginRight: "5%"}} src={logo}  alt="Logo" />
+        <img  style={{ width: "9%", height: "96%" ,marginRight: "5%"}} src={logo}  alt="Logo" />
         <h1 className="navbar-logo">Bachelor Defense Schedule</h1>
         <ul className="nav-menu">
           {

@@ -34,24 +34,24 @@ cost_function = cost_function.cost
 
 
 def drawschedule(f):
-    u=[""]*180
+    u=[""]*270
     for x in range(len(f[0])):
-        u[f[0][x]['Time']] += "("+ (f[0][x]['Examiner'] +" , "+ f[0][x]['Supervisor']) +")  "
-    x1=["Saturday",u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8],u[9],u[10],u[11],u[12],u[13],u[14]]
-    x2=["Sunday",u[15],u[16],u[17],u[18],u[19],u[20],u[21],u[22],u[23],u[24],u[25],u[26],u[27],u[28],u[29]]
-    x3=["Monday",u[30],u[31],u[32],u[33],u[34],u[35],u[36],u[37],u[38],u[39],u[40],u[41],u[42],u[43],u[44]]
-    x4=["Tuesday",u[45],u[46],u[47],u[48],u[49],u[50],u[51],u[52],u[53],u[54],u[55],u[56],u[57],u[58],u[59]]
-    x5=["Wednesday",u[60],u[61],u[62],u[63],u[64],u[65],u[66],u[67],u[68],u[69],u[70],u[71],u[72],u[73],u[74]]
-    x6=["Thursday",u[75],u[76],u[77],u[78],u[79],u[80],u[81],u[82],u[83],u[84],u[85],u[86],u[87],u[88],u[89]]
-    x7=["Saturday",u[90],u[91],u[92],u[93],u[94],u[95],u[96],u[97],u[98],u[99],u[100],u[101],u[102],u[103],u[104]]
-    x8=["Sunday",u[105],u[106],u[107],u[108],u[109],u[110],u[111],u[112],u[113],u[114],u[115],u[116],u[117],u[118],u[119]]
-    x9=["Monday",u[120],u[121],u[122],u[123],u[124],u[125],u[126],u[127],u[128],u[129],u[130],u[131],u[132],u[133],u[134]]
-    x10=["Tuesday",u[135],u[136],u[137],u[138],u[139],u[140],u[141],u[142],u[143],u[144],u[145],u[146],u[147],u[148],u[149]]
-    x11=["Wednesday",u[150],u[151],u[152],u[153],u[154],u[155],u[156],u[157],u[158],u[159],u[160],u[161],u[162],u[163],u[164]]
-    x12=["Thursday",u[165],u[166],u[167],u[168],u[169],u[170],u[171],u[172],u[173],u[174],u[175],u[176],u[177],u[178],u[179]]
+        u[f[0][x]['Time']] += "("+ (f[0][x]['Examiner'] +" , "+ f[0][x]['Supervisor']) + " , " + f[0][x]['Room'] +")  "
+    x1=["Day 1",u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8],u[9],u[10],u[11],u[12],u[13],u[14]]
+    x2=["Day 2",u[15],u[16],u[17],u[18],u[19],u[20],u[21],u[22],u[23],u[24],u[25],u[26],u[27],u[28],u[29]]
+    x3=["Day 3",u[30],u[31],u[32],u[33],u[34],u[35],u[36],u[37],u[38],u[39],u[40],u[41],u[42],u[43],u[44]]
+    x4=["Day 4",u[45],u[46],u[47],u[48],u[49],u[50],u[51],u[52],u[53],u[54],u[55],u[56],u[57],u[58],u[59]]
+    x5=["Day 5",u[60],u[61],u[62],u[63],u[64],u[65],u[66],u[67],u[68],u[69],u[70],u[71],u[72],u[73],u[74]]
+    x6=["Day 6",u[75],u[76],u[77],u[78],u[79],u[80],u[81],u[82],u[83],u[84],u[85],u[86],u[87],u[88],u[89]]
+    x7=["Day 7",u[90],u[91],u[92],u[93],u[94],u[95],u[96],u[97],u[98],u[99],u[100],u[101],u[102],u[103],u[104]]
+    x8=["Day 8",u[105],u[106],u[107],u[108],u[109],u[110],u[111],u[112],u[113],u[114],u[115],u[116],u[117],u[118],u[119]]
+    x9=["Day 9",u[120],u[121],u[122],u[123],u[124],u[125],u[126],u[127],u[128],u[129],u[130],u[131],u[132],u[133],u[134]]
+    x10=["Day 10",u[135],u[136],u[137],u[138],u[139],u[140],u[141],u[142],u[143],u[144],u[145],u[146],u[147],u[148],u[149]]
+    x11=["Day 11",u[150],u[151],u[152],u[153],u[154],u[155],u[156],u[157],u[158],u[159],u[160],u[161],u[162],u[163],u[164]]
+    x12=["Day 12",u[165],u[166],u[167],u[168],u[169],u[170],u[171],u[172],u[173],u[174],u[175],u[176],u[177],u[178],u[179]]
 
     with open('Solution.txt', 'w') as e: 
-        e.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['Slot 1', 'Slot 2','Slot 3', 'Slot 4','Slot 5', 'Slot 6','Slot 7', 'SLot 8','Slot 9', 'Slot 10','Slot 11', 'Slot 12','Slot 13','Slot 14', 'Slot 15'], tablefmt="grid"))
+        e.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['9 am', '9:30 am','10 am', '10:30 am','11 am', 'Break',' 12 pm', '12:30 pm,','1 pm', '1:30 pm','Break', '2:30 pm','3 pm','3:30 pm', '4 pm'], tablefmt="grid"))
 
 
 
@@ -103,7 +103,6 @@ def evolutionary_algorithm():
             if j % 200 == 0:
                 print('Iteration', j, 'cost', cost_function(solution,days,slots))
             # if j % 5000 == 0:
-            #     drawschedule(solution)
 
         print('Run', i + 1, 'cost', cost_function(solution,days,slots), 'solution', solution)
         print(cost_function(solution,days,slots))
@@ -324,7 +323,7 @@ def evolutionary_algorithm():
                                     if( availablerooms[x*15+r].count(examinerroomdict[f[w]]) >= 1):
                                         availablerooms[x*15+r].remove(examinerroomdict[f[w]])
 
-
+    drawschedule(solution)
     ndays = len(data[7])
     slottimes =["9 am","9:30 am","10 am","10:30 am","11 am","11:30 am","12 pm","12:30 pm","1 pm","1:30 pm","2 pm","2:30 pm","3 pm","3:30 pm","4 pm"]                    
     for i in range(len(solution[0])):
@@ -337,6 +336,7 @@ def evolutionary_algorithm():
     jsonFile.write(final)
     jsonFile.close()
     Outputcreation.Create_output()
+
     return solution
 
 
