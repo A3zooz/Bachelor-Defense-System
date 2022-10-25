@@ -302,17 +302,12 @@ def evolutionary_algorithm():
                 del f[len(f)-1:]
             for w in range(len(f)):
                 if f[w] in examinerroomdict:
-                    print("here")
                     continue
                 if len(availablerooms[(x*15)+y]) == 0:
-                    print("HERE")
                     continue
                 croom = random.choice(availablerooms[x*15+y])
-                print(availablerooms[(x*15)+y])
                 availablerooms[(x*15)+y].remove(croom)
-                print(availablerooms[(x*15)+y])
                 examinerroomdict[f[w]] = croom  
-                print(examinerroomdict)
                 for u in range(len(solution[0])):
                     if(solution[0][u]["Examiner"] == f[w] and solution[0][u]["Time"] == x*15+y):
                         solution[0][u]["Room"] = examinerroomdict[f[w]]
