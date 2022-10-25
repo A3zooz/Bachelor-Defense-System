@@ -330,7 +330,7 @@ def evolutionary_algorithm():
         ctime = solution[0][i]['Time']
         cslottime = slottimes[ctime%15]
         datetime = data[7][(math.ceil((ctime+1)/15)-1)]
-        solution[0][i]['Time'] = "( " + datetime + " " + cslottime + " )"
+        solution[0][i]['Time'] = "" + datetime + " " + cslottime + ""
     final = json.dumps(solution[0], indent=3)
     jsonFile = open("Solution.json", "w")
     jsonFile.write(final)
