@@ -5,7 +5,7 @@ import json
 
 
 def Create_input(Name,dates,rooms):
-    df_excel = pd.read_csv('InputData.csv')
+    df_excel = pd.read_csv(Name)
     slots = len(dates) * 15
     # print(len(df_excel))
     External = []
@@ -16,13 +16,11 @@ def Create_input(Name,dates,rooms):
     # for i in range(len(df_excel)-1):
     #     Dates.append(df_excel["Defense Date"][i])
     for i in range(len(df_excel)-1):
-        External.append(df_excel["External Reviewer"][i])
+        External.append(df_excel["External Reviewer Name"][i])
     for i in range(len(df_excel)-1):
-        Supervisor.append(df_excel["Supervisor"][i])
+        Supervisor.append(df_excel["GUC Supervisor"][i])
     for i in range(len(df_excel)-1):
-        ID.append(df_excel["uniq_app_no"][i])
-    for i in range(len(df_excel)-1):
-        Room.append(df_excel["Defense Location"][i])
+        ID.append(df_excel["Student ID"][i])
         
     Room2=list(set(Room))
     External2=list(set(External))

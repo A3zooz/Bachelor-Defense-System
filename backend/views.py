@@ -67,7 +67,7 @@ def external(request):
 @api_view(['GET'])
 def getAllExternals(request):
     if request.method == 'GET':
-        defense,rooms,external_constraints,supervisor_constraints,external,supervisor,ex,dates =dt.load_data('inputData.json')
+        defense,rooms,external_constraints,supervisor_constraints,external,supervisor,ex,dates =dt.load_data('InputData.json')
         return Response({'externals':external,'dates':dates},status=status.HTTP_200_OK)
 
 @api_view(['POST','GET','DELETE'])
@@ -80,7 +80,7 @@ def supervisor(request):
     elif request.method == 'DELETE':
         pass
     elif request.method == 'GET':
-        inputData = dt.load_solution('solution.json')
+        inputData = dt.load_solution('Solution.json')
         data = request.data
         if data.get('Name'):
             res=[{}]*180
@@ -106,7 +106,7 @@ def student(request):
     elif request.method == 'DELETE':
         pass
     elif request.method == 'GET':
-        inputData = dt.load_solution('solution.json')
+        inputData = dt.load_solution('Solution.json')
         data = request.data
         if data.get('Name'):
             res=[{}]*180

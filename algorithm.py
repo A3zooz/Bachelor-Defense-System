@@ -56,7 +56,7 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
-    max_generations = 80000
+    max_generations = 2000
     num_runs = 1
     best_timetable = None
     data = dt.load_data("InputData.json")
@@ -279,7 +279,18 @@ def evolutionary_algorithm():
             for k in range(len(solution[0])):
                 if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=u and solution[0][k]["Time"]<ue ):
                     solution[0][k]["Color"]="Red"
-                    
+
+        for Examiner in solution[1]:
+            for day in range(days):
+                temp1 = 0        
+                for slot in range(15):
+                    time1 = day*15 + slot
+                    if len(solution[1][Examiner][time1]) >= 1:
+                        temp1 +=1
+                if(temp1>10 or (temp1<3 and temp1>0)):
+                    for k in range(len(solution[0])):
+                        if(solution[0][k]["Examiner"]==Examiner and solution[0][k]["Time"]>=day*15 and solution[0][k]["Time"]<(day*15+15) ):
+                            solution[0][k]["Color"] = "Red"                 
                     
     examiners=[""]*slots
     numberofexaminers=[0]*slots
