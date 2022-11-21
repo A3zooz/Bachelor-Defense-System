@@ -6,7 +6,9 @@
     import CSVRenderer from './CSVRenderer'; 
     import { ToastContainer, toast } from 'react-toastify';
     import 'react-toastify/dist/ReactToastify.css';
+    import "./table.css"
     const axios = require("axios").default;
+
 
     export default function Table(){
         const [data, setData] = useState();
@@ -18,7 +20,6 @@
             setShowButton(false)
             setdownButton(true)
             return axios.post('http://localhost:5000/generate/').then((res) => {
-                console.log("HELLOOO")
                 console.log(res.data[0])
                 setData(res.data[0]);
                 console.log(data)
@@ -42,10 +43,11 @@
             ) : (
             <>
 
+            
             {showButton ? (<button  className="btn-const1" onClick={onGenerate}>Generate Solution</button>) :<> </> }
             {downButton ? (
             <> 
-            <CSVRenderer data={data}></CSVRenderer>
+            <CSVRenderer data={data} cssClass="table"></CSVRenderer>
             <form action='http://localhost:5000/downloadFile/'>
             <input onClick={handleSubmit} className="btn-const2" type="submit" value="Download Solution" />
             </form>
@@ -53,7 +55,7 @@
             </> ) :
             <></>}
             </>
-            )}
+            )}  
 
             </div> 
 

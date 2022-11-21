@@ -12,6 +12,10 @@ def Create_input(Name,dates,rooms):
     Supervisor = []
     ID = []
     Room = []
+    name = []
+    email = []
+    topic = []
+
     # Dates = [""]
     # for i in range(len(df_excel)-1):
     #     Dates.append(df_excel["Defense Date"][i])
@@ -21,10 +25,22 @@ def Create_input(Name,dates,rooms):
         Supervisor.append(df_excel["GUC Supervisor"][i])
     for i in range(len(df_excel)-1):
         ID.append(df_excel["Student ID"][i])
+    for i in range(len(df_excel)-1):
+        name.append(df_excel["Student Name"][i])
+    # for i in range(len(df_excel)-1):
+    
+    #     email.append(df_excel["Student Email"][i])
+    for i in range(len(df_excel)-1):
+        if df_excel["Topic Title"][i] != None:
+            topic.append(df_excel["Topic Title"][i])
+        else:
+            topic.append("")
+        
         
     Room2=list(set(Room))
     External2=list(set(External))
     Supervisor2=list(set(Supervisor))
+
 
     dictionary = {
         "Rooms": rooms,
@@ -35,7 +51,10 @@ def Create_input(Name,dates,rooms):
         dic ={
             "Examiner":External[i],
             "Supervisor":Supervisor[i],
-            "Student": ID[i]
+            "Student": ID[i],
+            "Studentname": name[i],
+            #"Studentemail": email[i],
+            "Topic": topic[i]
         }
         dictionary["Defense"].append(dic)
     dic2 = {}   
@@ -53,7 +72,7 @@ def Create_input(Name,dates,rooms):
     dictionary = dictionary , dic2 , dic3 , dic4
 
     # Serializing json
-    json_object = json.dumps(dictionary, indent=4)
+    json_object = json.dumps(dictionary, indent=4 ,allow_nan=True)
 
     # Writing to sample.json
     with open("InputData.json", "w") as outfile:
