@@ -27,9 +27,8 @@ def Create_input(Name,dates,rooms):
         ID.append(df_excel["Student ID"][i])
     for i in range(len(df_excel)-1):
         name.append(df_excel["Student Name"][i])
-    # for i in range(len(df_excel)-1):
-    
-    #     email.append(df_excel["Student Email"][i])
+    for i in range(len(df_excel)-1):
+        email.append(df_excel["Student Email"][i])
     for i in range(len(df_excel)-1):
         if df_excel["Topic Title"][i] != None:
             topic.append(df_excel["Topic Title"][i])
@@ -53,7 +52,7 @@ def Create_input(Name,dates,rooms):
             "Supervisor":Supervisor[i],
             "Student": ID[i],
             "Studentname": name[i],
-            #"Studentemail": email[i],
+            "Studentemail": email[i],
             "Topic": topic[i]
         }
         dictionary["Defense"].append(dic)

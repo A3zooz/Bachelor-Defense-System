@@ -12,7 +12,7 @@
             <th>Supervisor</th>
             <th>Student ID</th>
             <th>Student Name</th>
-            {/* <th>Student Email</th> */}
+            <th>Student Email</th>
             <th>Topic</th>
             <th>Time</th>
             <th>Room</th>
@@ -29,7 +29,7 @@
         <td>{data.Supervisor}</td>
         <td>{data.Student}</td>
         <td>{data.Studentname}</td>
-        {/* <td>{data.Studentemail}</td> */}
+        <td>{data.Studentemail}</td>
         <td>{data.Topic}</td>
         <td>{data.Time}</td>
         <td>{data.Room}</td>
