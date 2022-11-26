@@ -16,6 +16,7 @@
     "package": "^1.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-refresh": "^0.11.0",
     "react-dom": "^18.2.0",
     "react-loading-screen": "0.0.17",
     "react-multi-date-picker": "^3.3.1",
