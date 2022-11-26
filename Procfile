@@ -1,2 +1,5 @@
-release: python manage.py migrate
-web: sh -c 'cd backend && python manage.py runserver 5000'
+
+
+web: sh -c 'cd backend && gunicorn backend.wsgi --preload'
+
+worker: npm start
