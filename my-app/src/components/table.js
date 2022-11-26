@@ -1,8 +1,6 @@
     import React, { Component,useState,table, useEffect } from 'react'
     import LoadingScreen from "react-loading-screen";
     import spinner from'./download.gif'
-    import ReactDOM from 'react-dom'
-    import Timetable from 'react-scheduler-table'
     import CSVRenderer from './CSVRenderer'; 
     import { ToastContainer, toast } from 'react-toastify';
     import 'react-toastify/dist/ReactToastify.css';
