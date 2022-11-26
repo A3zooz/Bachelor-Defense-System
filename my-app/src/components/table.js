@@ -1,4 +1,5 @@
-    import React, { Component,useState,table, useEffect } from 'react'
+    import React, { Component,useState, useEffect } from 'react'
+    import table from 'react'
     import LoadingScreen from "react-loading-screen";
     import spinner from'./download.gif'
     import { ToastContainer, toast } from 'react-toastify';
