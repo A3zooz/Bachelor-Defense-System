@@ -1,3 +1,3 @@
 release: python manage.py migrate
-api: gunicorn defense-scheduler.backend.wsgi --log-file -
+worker: gunicorn defense-scheduler.backend.wsgi --log-file -
 web: npm start
