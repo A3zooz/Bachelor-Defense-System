@@ -4,7 +4,8 @@
   "description": "Automatic Bachelor Defense scheduling system for the German University in Cairo.\r Genetic algorithm was used to find near optimal solution.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-prebuild": "cd my-app && npm install && npm run build",
+    "start": "cd my-app && npm start"
   },
   "repository": {
     "type": "git",
@@ -17,4 +18,6 @@
     "url": "https://github.com/A3zooz/Bachelor-Defense-System/issues"
   },
   "homepage": "https://github.com/A3zooz/Bachelor-Defense-System#readme"
+
+  
 }
