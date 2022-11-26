@@ -1,1 +1,2 @@
-web: gunicorn backend.wsgi --preload
+web: gunicorn backend.wsgi
+web: npm start
