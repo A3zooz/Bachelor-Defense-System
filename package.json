@@ -1,0 +1,20 @@
+{
+  "name": "bachelor-defense-system",
+  "version": "1.0.0",
+  "description": "Automatic Bachelor Defense scheduling system for the German University in Cairo.\r Genetic algorithm was used to find near optimal solution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A3zooz/Bachelor-Defense-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A3zooz/Bachelor-Defense-System/issues"
+  },
+  "homepage": "https://github.com/A3zooz/Bachelor-Defense-System#readme"
+}
