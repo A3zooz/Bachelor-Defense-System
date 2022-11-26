@@ -18,6 +18,7 @@ from django.urls import path
 from backend import views
 
 urlpatterns = [
+    path('',views.uploadFile),
     path('admin/', admin.site.urls),
     path('upload-file/', views.uploadFile),
     path('downloadFile/', views.downloadFile),
