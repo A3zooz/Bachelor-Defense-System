@@ -1,5 +1,5 @@
     import React from "react";
-    import { Table } from "react-bootstrap";
+    import  Table from "react-bootstrap";
 
     // 3. create customers table component
     const CSVRenderer = ({ data }) => {
