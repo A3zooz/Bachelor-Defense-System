@@ -1,3 +1,3 @@
 release: python manage.py migrate
-web: gunicorn backend.wsgi --log-file -
+api: gunicorn backend.wsgi --log-file -
 web: npm start
