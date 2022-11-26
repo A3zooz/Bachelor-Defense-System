@@ -1,3 +1,3 @@
 release: python manage.py migrate
-worker: gunicorn defense-scheduler.backend.wsgi --log-file -
+worker: sh -c 'cd backend && python manage.py runserver 5000'
 web: npm start
