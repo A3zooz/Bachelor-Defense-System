@@ -1,5 +1,1 @@
-
-
-web: sh -c 'cd backend && gunicorn backend.wsgi --preload'
-
-worker: npm start
+web: gunicorn hello:app
