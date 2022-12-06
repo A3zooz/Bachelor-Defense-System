@@ -17,7 +17,8 @@
   "bugs": {
     "url": "https://github.com/A3zooz/Bachelor-Defense-System/issues"
   },
-  "homepage": "https://github.com/A3zooz/Bachelor-Defense-System#readme"
-
-  
+  "homepage": "https://github.com/A3zooz/Bachelor-Defense-System#readme",
+  "dependencies": {
+    "tabulate": "^1.0.0"
+  }
 }
