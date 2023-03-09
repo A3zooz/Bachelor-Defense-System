@@ -5,9 +5,8 @@
             "Student": "49-14632",
             "Studentname": "Abdallah Mohamed Adel Mamoun Sayed Ahmed Nada",
             "Topic": "Investigating Reinforcement Learning for Mitigative Actions Addressing Network Vulnerabilities",
-            "Time": "2023/03/07 1:30 pm",
-            "Room": "CED",
-            "Color": "Red"
+            "Time": "2023/03/14 2:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Galal Nadim",
@@ -15,8 +14,8 @@
             "Student": "32-17306",
             "Studentname": "Abdallah Mohamed Ahmed Moussa Mohamed",
             "Topic": "Remote Sensing Image Captioning Using Convolutional Neural Networks",
-            "Time": "2023/03/11 11 am",
-            "Room": "RE",
+            "Time": "2023/03/09 12 pm",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -25,9 +24,8 @@
             "Student": "31-5774",
             "Studentname": "Abdel-haliem Ahmed Elsayed Refaat Shokeir",
             "Topic": "Algorithms for Conjunctive Query Evaluation I",
-            "Time": "2023/03/09 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 1 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -35,8 +33,8 @@
             "Student": "46-11334",
             "Studentname": "Abdelrahman Ahmed Mohamed Badran",
             "Topic": "Data Preparation and Annotation Pipelines for Natural Language Analysis Tasks",
-            "Time": "2023/03/11 1:30 pm",
-            "Room": "CED"
+            "Time": "2023/03/13 9:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Samar Hesham",
@@ -44,8 +42,8 @@
             "Student": "46-2085",
             "Studentname": "Abdelrahman Hany Farouk Abdelbaky",
             "Topic": "The Virtual Turing Machine",
-            "Time": "2023/03/14 11 am",
-            "Room": "dwecd",
+            "Time": "2023/03/12 12 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -54,8 +52,8 @@
             "Student": "46-12167",
             "Studentname": "Abdelrahman Mahmoud Mohamed Hafez",
             "Topic": "Graphical Automata Simulator",
-            "Time": "2023/03/10 9 am",
-            "Room": "FRE",
+            "Time": "2023/03/10 9:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -64,8 +62,8 @@
             "Student": "43-15041",
             "Studentname": "Abdelrahman Mohamed Abdelrahman Omar",
             "Topic": "Model Agnostic Methods for Explainable AI: Counterfactuals-Based Explanations",
-            "Time": "2023/03/11 2:30 pm",
-            "Room": "",
+            "Time": "2023/03/09 3:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -74,8 +72,8 @@
             "Student": "46-12187",
             "Studentname": "Abdelrahman Mohamed Hegab Abdelhady",
             "Topic": "Combining Various Networks for Sound Event Localization and Detection",
-            "Time": "2023/03/08 12:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/12 3:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Hassen Taher Dorrah",
@@ -83,8 +81,8 @@
             "Student": "46-1292",
             "Studentname": "Abdelrahman Mostafa Salahelden Ahmed",
             "Topic": "Autoregressive Domain-Dependent Model for Anomalous Sounds Detection",
-            "Time": "2023/03/09 10 am",
-            "Room": "WS"
+            "Time": "2023/03/11 3:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -92,8 +90,8 @@
             "Student": "46-4048",
             "Studentname": "Abdelrahman Sherif Fathy Abdelsattar",
             "Topic": "Waves Experiment Simulation using Unity (Co-Supervised by Dr. Hesham Othman))",
-            "Time": "2023/03/09 1:30 pm",
-            "Room": "RE",
+            "Time": "2023/03/14 3 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -102,8 +100,9 @@
             "Student": "46-1001",
             "Studentname": "Abdelrhman Khaled Mohamed Masoud",
             "Topic": "Night Vision for Autonomous Vehicles using Monocular Depth Estimation",
-            "Time": "2023/03/14 11 am",
-            "Room": ""
+            "Time": "2023/03/09 3:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -111,9 +110,8 @@
             "Student": "46-4677",
             "Studentname": "Abdullah Ahmed Abdelaziz Ahmed Saafan",
             "Topic": "Image to 3D Model Construction for E-Commerce Applications - Augmania Egypt",
-            "Time": "2023/03/08 12:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/11 4 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -121,9 +119,8 @@
             "Student": "46-1817",
             "Studentname": "Adel Mohamed Elsayed Ahmed Elhenawy",
             "Topic": "Evolving UIs: Adapting UI Design to Support Evolving Usability",
-            "Time": "2023/03/07 10:30 am",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/09 11 am",
+            "Room": "g"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -131,8 +128,9 @@
             "Student": "46-0388",
             "Studentname": "Adham Amr Mohamed Hassan Shamseldin",
             "Topic": "Internet of Wearable Medical Things (IoWMT) for Covid-19 : Data Analysis & App Development",
-            "Time": "2023/03/09 3 pm",
-            "Room": "AAA"
+            "Time": "2023/03/09 4 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -140,7 +138,7 @@
             "Student": "46-7855",
             "Studentname": "Adham Ayman Ali Kamel Almadany",
             "Topic": "Audio-based Quran Verses Recognition Using Deep Learning Models",
-            "Time": "2023/03/13 3 pm",
+            "Time": "2023/03/09 4 pm",
             "Room": "",
             "Color": "Red"
       },
@@ -150,8 +148,8 @@
             "Student": "46-2887",
             "Studentname": "Adham Ehab Abdelmoghny Mohamed Elsheikh",
             "Topic": "Mobile Net v2 Baseline for Anomalous Sounds Detection",
-            "Time": "2023/03/08 10:30 am",
-            "Room": "AAA",
+            "Time": "2023/03/12 9:30 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -160,8 +158,8 @@
             "Student": "46-0746",
             "Studentname": "Adham Hisham Elsadek Kandeel",
             "Topic": "Exploring the Behavior of Thermal Cameras in Autonomous Vehicles",
-            "Time": "2023/03/14 12 pm",
-            "Room": ""
+            "Time": "2023/03/11 3 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -169,8 +167,8 @@
             "Student": "46-3274",
             "Studentname": "Adham Mohamed Salaheldeen Abdelhafiz Mohamed",
             "Topic": "Texture 3D Furniture",
-            "Time": "2023/03/07 2:30 pm",
-            "Room": "WS",
+            "Time": "2023/03/13 10:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -179,9 +177,8 @@
             "Student": "46-7344",
             "Studentname": "Adham Tarek Fathy Abdallah",
             "Topic": "Emotional Agent Desktop Replacement III (CV)",
-            "Time": "2023/03/07 10 am",
-            "Room": "FRE",
-            "Color": "Red"
+            "Time": "2023/03/10 1 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Walaa Ibrahim Gabr",
@@ -189,8 +186,8 @@
             "Student": "46-16450",
             "Studentname": "Ahmad Hassan Sayed Ahmad Taha",
             "Topic": "DSP Runtime Emulator on FPGA",
-            "Time": "2023/03/08 12:30 pm",
-            "Room": "CED",
+            "Time": "2023/03/10 4 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -199,9 +196,8 @@
             "Student": "46-2859",
             "Studentname": "Ahmed Abdelraheem Saad Elamory",
             "Topic": "Explainable AI meets Knowledge Graphs I",
-            "Time": "2023/03/08 4 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/11 1 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -209,8 +205,8 @@
             "Student": "46-4554",
             "Studentname": "Ahmed Ahmed Ahmed Eletreiby",
             "Topic": "3-D virtual grocery store Task I",
-            "Time": "2023/03/14 1 pm",
-            "Room": "AAA",
+            "Time": "2023/03/10 1 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -219,8 +215,8 @@
             "Student": "46-4982",
             "Studentname": "Ahmed Alaa Mohamed Youssef Attawia",
             "Topic": "Federated Learning for Personalizing Autocomplete Models",
-            "Time": "2023/03/13 11 am",
-            "Room": "R"
+            "Time": "2023/03/13 12:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -228,8 +224,9 @@
             "Student": "43-1530",
             "Studentname": "Ahmed Alaa Mostafa Hamouda",
             "Topic": "Incorporating Auxiliary Data for Urban Sound Tagging System 1",
-            "Time": "2023/03/09 1 pm",
-            "Room": "RE"
+            "Time": "2023/03/09 2:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -237,8 +234,9 @@
             "Student": "46-2138",
             "Studentname": "Ahmed Amin Abdelghafar Mosalam Naem",
             "Topic": "Incorporating Auxiliary Data for Urban Sound Tagging System 3",
-            "Time": "2023/03/12 1 pm",
-            "Room": "WS"
+            "Time": "2023/03/09 3 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -246,9 +244,8 @@
             "Student": "46-3694",
             "Studentname": "Ahmed Amr Abdalsalam Mohamed Atwan",
             "Topic": "fMRI-based Recognition of Alzheimer\u2019s Disease",
-            "Time": "2023/03/14 12 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/13 9:30 am",
+            "Room": "ds"
       },
       {
             "Examiner": "Galal Nadim",
@@ -256,8 +253,8 @@
             "Student": "34-14498",
             "Studentname": "Ahmed Ashraf Ahmed Mohamed",
             "Topic": "ECG Analysis Based on Deep Compressed Sensing techniques\\",
-            "Time": "2023/03/09 10 am",
-            "Room": "R",
+            "Time": "2023/03/14 1 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -266,8 +263,9 @@
             "Student": "40-17002",
             "Studentname": "Ahmed Ashraf Ahmed Zaki Ibrahim Ali",
             "Topic": "Edge computing for burst computational needs",
-            "Time": "2023/03/14 3 pm",
-            "Room": "FRE"
+            "Time": "2023/03/13 3:30 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -275,8 +273,9 @@
             "Student": "43-3187",
             "Studentname": "Ahmed Atef Abdelmaksoud Marouf",
             "Topic": "Creating smooth Bezier surfaces utilizing corners in 3D space",
-            "Time": "2023/03/16 9 am",
-            "Room": "RE"
+            "Time": "2023/03/11 1 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Gamal Eldin Mohamed Aly",
@@ -284,8 +283,8 @@
             "Student": "46-3547",
             "Studentname": "Ahmed Ayman Mamdouh Abdelmonem Eloraby",
             "Topic": "Home Robots Control using P300-based Brain-Computer Interface",
-            "Time": "2023/03/14 10:30 am",
-            "Room": "R"
+            "Time": "2023/03/15 10:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -293,8 +292,8 @@
             "Student": "46-2004",
             "Studentname": "Ahmed Diaa Mahmoud Ali Fahmy",
             "Topic": "A Comparative Study On Different approaches for Arabic Sentiment Analysis",
-            "Time": "2023/03/08 2:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 11 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -302,8 +301,9 @@
             "Student": "34-3465",
             "Studentname": "Ahmed Hossam Eldin Ahmed Abd Elfatah Mohamed",
             "Topic": "Explainable Ontologies",
-            "Time": "2023/03/12 4 pm",
-            "Room": "FRE"
+            "Time": "2023/03/09 9 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Sahar Selim",
@@ -311,8 +311,8 @@
             "Student": "34-0722",
             "Studentname": "Ahmed Hossam Mostafa Hassan Mostafa",
             "Topic": "Using the DREAM Generation Platform to Simulate Different Weather Conditions to experiment with Autonomous Driving Tasks",
-            "Time": "2023/03/12 3:30 pm",
-            "Room": "WS",
+            "Time": "2023/03/12 3 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -321,9 +321,8 @@
             "Student": "46-4861",
             "Studentname": "Ahmed Hossameldin Zakaria Mohamed Ali",
             "Topic": "Smart Bike Intrusion Detection System",
-            "Time": "2023/03/08 1 pm",
-            "Room": "CED",
-            "Color": "Red"
+            "Time": "2023/03/15 12 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -331,8 +330,8 @@
             "Student": "46-0726",
             "Studentname": "Ahmed Hussein Youssif Marzouk",
             "Topic": "Investigating Explanation Methods for Deep Neural Networks I",
-            "Time": "2023/03/08 3:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 2:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -340,8 +339,9 @@
             "Student": "46-8041",
             "Studentname": "Ahmed Ibrahim Ahmed Ibrahim",
             "Topic": "Conflicting Moral Codes Simulation for Self Driving Cars: The Single Car Case (Co-Supervised with Assoc. Prof. Amr Elmougy)",
-            "Time": "2023/03/14 11 am",
-            "Room": "RE"
+            "Time": "2023/03/09 12 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -349,8 +349,9 @@
             "Student": "46-0663",
             "Studentname": "Ahmed Ihab Abdelaziz Mohamed",
             "Topic": "Context-Sensitive Explainable AI Systems",
-            "Time": "2023/03/08 1:30 pm",
-            "Room": "R"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -358,9 +359,8 @@
             "Student": "46-0458",
             "Studentname": "Ahmed Khaled Ekram Rifky Mahmoud Abdelkhaliq",
             "Topic": "Multi-label Multi-layer perceptron for Urban Sound Tagging",
-            "Time": "2023/03/07 11 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/12 10:30 am",
+            "Room": "g"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -368,9 +368,8 @@
             "Student": "46-6594",
             "Studentname": "Ahmed Khaled Mohamed Rashad",
             "Topic": "Emotional Agent Desktop Replacement I (NLP)",
-            "Time": "2023/03/07 10:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/11 3:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -378,8 +377,8 @@
             "Student": "46-1955",
             "Studentname": "Ahmed Mohamed Abuelyazeed Zaher Ahmed Emara",
             "Topic": "Federated Reinforcement Learning",
-            "Time": "2023/03/09 12 pm",
-            "Room": "WS"
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Galal Nadim",
@@ -387,8 +386,8 @@
             "Student": "46-12591",
             "Studentname": "Ahmed Mohamed Farouk Mohamed Abdelsalam",
             "Topic": "Tracking Moving Objects for Visual Prosthesis",
-            "Time": "2023/03/15 9 am",
-            "Room": "R",
+            "Time": "2023/03/09 11 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -397,8 +396,9 @@
             "Student": "46-16589",
             "Studentname": "Ahmed Mohamed Ramadan Mohamed",
             "Topic": "Analysis of Emotional Arcs in Music Playlists for Improved Recommendations",
-            "Time": "2023/03/15 9 am",
-            "Room": "dwecd"
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -406,8 +406,8 @@
             "Student": "43-15549",
             "Studentname": "Ahmed Mohammed Abdelghany Alfiki",
             "Topic": "Information Revision in Java SNePS 3.0",
-            "Time": "2023/03/11 9:30 am",
-            "Room": "R",
+            "Time": "2023/03/16 3:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -416,8 +416,9 @@
             "Student": "46-13429",
             "Studentname": "Ahmed Mohammed Osman Serry Abdelrahman",
             "Topic": "Modeling and Analysis of Business Process Workflows",
-            "Time": "2023/03/13 12:30 pm",
-            "Room": "R"
+            "Time": "2023/03/10 11 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Magdy Abdlghany Soliman Aboelela",
@@ -425,8 +426,8 @@
             "Student": "46-4717",
             "Studentname": "Ahmed Mostafa Ahmed Fawzy Mostafa Abdelkhalek",
             "Topic": "Face Voice & Gesture Recognition For Smart Homes",
-            "Time": "2023/03/10 1 pm",
-            "Room": "R",
+            "Time": "2023/03/09 9:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -435,8 +436,8 @@
             "Student": "46-18324",
             "Studentname": "Ahmed Ramadan Mohamed Hassan",
             "Topic": "Predicting Human Visual Brain fMRI Responses to Short Video Clips using Deep Learning",
-            "Time": "2023/03/13 11 am",
-            "Room": "dwecd"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -444,8 +445,8 @@
             "Student": "46-0466",
             "Studentname": "Ahmed Sameh Alshabrawi Ahmed",
             "Topic": "Automated IoT metrics",
-            "Time": "2023/03/09 3:30 pm",
-            "Room": "AAA"
+            "Time": "2023/03/15 12:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Fatma Omara",
@@ -453,8 +454,8 @@
             "Student": "46-6310",
             "Studentname": "Ahmed Sameh Mohamed Noureldin Abdelrazik Fahmy",
             "Topic": "Creating a Digital Twin to Control the xArm6 (Co-Supervised with Dr. Maggie Mashaly)",
-            "Time": "2023/03/07 11 am",
-            "Room": "R",
+            "Time": "2023/03/10 10:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -463,8 +464,8 @@
             "Student": "46-1819",
             "Studentname": "Ahmed Shamel Nabil Nazmy",
             "Topic": "Autoregressive Domain-independent Model for Anomalous Sounds Detection",
-            "Time": "2023/03/09 1:30 pm",
-            "Room": "RE"
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -472,8 +473,8 @@
             "Student": "46-3494",
             "Studentname": "Ahmed Tamer Ahmed Abdelaleem Lokma",
             "Topic": "Building a Simulator for Task-oriented Dialogue System",
-            "Time": "2023/03/10 11 am",
-            "Room": "WS"
+            "Time": "2023/03/09 9 am",
+            "Room": "g"
       },
       {
             "Examiner": "Abeer ElKorany",
@@ -481,8 +482,8 @@
             "Student": "46-5386",
             "Studentname": "Ahmed Tamer Ahmed Mohamed Moussa",
             "Topic": "Smart Bike Insurance Safety metrics: Software",
-            "Time": "2023/03/10 11 am",
-            "Room": "",
+            "Time": "2023/03/09 12:30 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -491,8 +492,8 @@
             "Student": "46-6560",
             "Studentname": "Ahmed Yasser Abdelhamid Ahmed Elfarrash",
             "Topic": "Multi-tasking models for Urban Sound Tagging",
-            "Time": "2023/03/08 2:30 pm",
-            "Room": "AAA",
+            "Time": "2023/03/09 3:30 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -501,8 +502,8 @@
             "Student": "46-5197",
             "Studentname": "Ahmed Yehia Mohamed Kamel Taksira",
             "Topic": "AI Applications in Health Care II: Exploring IBM Watson's Diagnostic Platform (Co-supervised by Dr. Nourhan Ehab)",
-            "Time": "2023/03/07 2:30 pm",
-            "Room": "CED",
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -511,9 +512,8 @@
             "Student": "46-12699",
             "Studentname": "Alaa Amr Mohamed Abdelazeem Mohamed",
             "Topic": "Decoding Electromyography (EMG) Signals to Identify Movements",
-            "Time": "2023/03/07 9 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 3 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -521,8 +521,8 @@
             "Student": "46-2595",
             "Studentname": "Alfarouk Amr Ali Sabry",
             "Topic": "Simulation of Driving Profiles in Challenging Weather Conditions and Scenarios",
-            "Time": "2023/03/09 3:30 pm",
-            "Room": "R",
+            "Time": "2023/03/14 10:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -531,8 +531,8 @@
             "Student": "46-2960",
             "Studentname": "Ali Amr Mostafa Abdelhamid Youssef",
             "Topic": "Scheduling mobile app for GUC staff and students",
-            "Time": "2023/03/08 4 pm",
-            "Room": "R"
+            "Time": "2023/03/11 1 pm",
+            "Room": ""
       },
       {
             "Examiner": "Mona Farouk",
@@ -540,9 +540,8 @@
             "Student": "46-3674",
             "Studentname": "Ali Helmy Youssef Mohamed Qrdash",
             "Topic": "GUC campus AR app for halls and offices and food outlet localization",
-            "Time": "2023/03/07 12 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/11 9 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -550,8 +549,9 @@
             "Student": "46-8124",
             "Studentname": "Ali Khaled Ali Hassan Elsayed Elbarbary",
             "Topic": "LiDAR-based Scene Understanding for Autonomous Vehicles",
-            "Time": "2023/03/10 9:30 am",
-            "Room": "AAA"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -559,8 +559,8 @@
             "Student": "46-13806",
             "Studentname": "Ali Mohamed Farid Elsayed Massoud",
             "Topic": "Design of a visualization GUI for atomistic modeling of materials",
-            "Time": "2023/03/11 12:30 pm",
-            "Room": "",
+            "Time": "2023/03/14 1:30 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -569,8 +569,8 @@
             "Student": "43-12207",
             "Studentname": "Ali Mohamed Kamal Abdelaziz",
             "Topic": "I-REDU: Interpretable Recommender System for Learning and Educational Purposes",
-            "Time": "2023/03/15 1:30 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/14 11 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Azza Taha",
@@ -578,8 +578,8 @@
             "Student": "46-1010",
             "Studentname": "Ali Rasheed Mazhar Ali Mazhar",
             "Topic": "Abduction in Log_A G",
-            "Time": "2023/03/10 12:30 pm",
-            "Room": "AAA"
+            "Time": "2023/03/09 9 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -587,8 +587,8 @@
             "Student": "46-7537",
             "Studentname": "Alia Ahmed Saddik Mohamed Saleh",
             "Topic": "Java/Web3 Framework II",
-            "Time": "2023/03/13 3 pm",
-            "Room": "AAA"
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -596,8 +596,8 @@
             "Student": "46-2207",
             "Studentname": "Alia Mahmoud Ali Sayed Ahmed Khalifa",
             "Topic": "Semantic image segmentation for speedbump detection",
-            "Time": "2023/03/10 10:30 am",
-            "Room": "R"
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -605,9 +605,8 @@
             "Student": "46-1784",
             "Studentname": "Aly Ahmed Hatem Elsayed Youssef Elashram",
             "Topic": "ITS-ML based pollution measurement of CAIRO",
-            "Time": "2023/03/07 3 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/15 1 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -615,8 +614,8 @@
             "Student": "46-1545",
             "Studentname": "Aly Bahaa Elsaid Ahmed Nasr",
             "Topic": "Model Agnostic Methods for Explainable AI: Local Surrogate (LIME)",
-            "Time": "2023/03/12 3 pm",
-            "Room": "FRE",
+            "Time": "2023/03/11 1:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -625,8 +624,9 @@
             "Student": "46-4657",
             "Studentname": "Aly Nader Sobhy Helmy Mansour",
             "Topic": "Spectrotemporally-Aligned Features and Gated Recurrent Unit for Sound Event Localization and Detection",
-            "Time": "2023/03/13 10 am",
-            "Room": "dwecd"
+            "Time": "2023/03/09 10:30 am",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Fatma Omara",
@@ -634,8 +634,8 @@
             "Student": "46-0371",
             "Studentname": "Aly Yasser Fathy Sayed Hegazy",
             "Topic": "Augmented reality for outdoor monuments",
-            "Time": "2023/03/10 9:30 am",
-            "Room": "R",
+            "Time": "2023/03/11 3:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -644,8 +644,9 @@
             "Student": "46-0254",
             "Studentname": "Amina Yasser Azmy Abdelhamid Sakr",
             "Topic": "Automatic Instrument Recognition and Music Scripting Using Machine Learning Techniques",
-            "Time": "2023/03/14 12 pm",
-            "Room": "R"
+            "Time": "2023/03/09 11 am",
+            "Room": "ds",
+            "Color": "Red"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -653,8 +654,8 @@
             "Student": "46-1073",
             "Studentname": "Amira Hossameldin Roshdy Abdelbaky Omar",
             "Topic": "IoT malware analysis II",
-            "Time": "2023/03/08 9 am",
-            "Room": "CED",
+            "Time": "2023/03/11 11 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -663,8 +664,8 @@
             "Student": "46-7305",
             "Studentname": "Amira Salah Fathy Ibrahim Soliman",
             "Topic": "Predicting Epileptic Seizures from Brain Activity using Deep Learning Techniques",
-            "Time": "2023/03/11 1:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 2:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Abeer ElKorany",
@@ -672,9 +673,8 @@
             "Student": "43-2982",
             "Studentname": "Amr Ahmed Ibrahim Lamei Mohamed",
             "Topic": "Mind GRAF: Message Passing II (Co-Supervised with Assoc. Prof. Haythem Ismail)",
-            "Time": "2023/03/09 3:30 pm",
-            "Room": "dwecd",
-            "Color": "Red"
+            "Time": "2023/03/15 11 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Cherif Salama",
@@ -682,8 +682,8 @@
             "Student": "46-13257",
             "Studentname": "Amr Aly Mahmoud Hoballah",
             "Topic": "Algobucks: A Private Blockchain for Electronic Healthcare Records and Clinic Management",
-            "Time": "2023/03/13 10 am",
-            "Room": "R"
+            "Time": "2023/03/14 1 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -691,8 +691,9 @@
             "Student": "46-6226",
             "Studentname": "Anas Alaaeldin Abdelmoanem Elnemr",
             "Topic": "Ethical Frameworks for Self Driving Cars: The Deontological Framework (Co-Supervised with Assoc. Prof. Amr Elmougy)",
-            "Time": "2023/03/10 9 am",
-            "Room": "R"
+            "Time": "2023/03/15 1 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -700,8 +701,9 @@
             "Student": "46-9403",
             "Studentname": "Anas Ayman Ahmed Abdelghany Hassanin",
             "Topic": "Multiplatform Tour-guiding Backend",
-            "Time": "2023/03/11 12:30 pm",
-            "Room": "CED"
+            "Time": "2023/03/09 10:30 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Azza Taha",
@@ -709,9 +711,8 @@
             "Student": "46-12721",
             "Studentname": "Andrew Ashraf Attia Melouka",
             "Topic": "Algorithms for Belief State Compression: Correctness Proofs",
-            "Time": "2023/03/14 9:30 am",
-            "Room": "dwecd",
-            "Color": "Red"
+            "Time": "2023/03/09 9:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Cherif Salama",
@@ -719,9 +720,8 @@
             "Student": "46-9045",
             "Studentname": "Andrew Hany Shaker Morgan Gaser",
             "Topic": "A Moral Machine for Self-Driving Cars using the CARLA Simulator (Co-supervised by Dr. Nourhan Ehab)",
-            "Time": "2023/03/16 2:30 pm",
-            "Room": "RE",
-            "Color": "Red"
+            "Time": "2023/03/14 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -729,8 +729,9 @@
             "Student": "43-10239",
             "Studentname": "Antony Makram Wahba Zakhary",
             "Topic": "Mind GRAF: Revision II (Co-Supervised with Assoc. Prof. Haythem Ismail)",
-            "Time": "2023/03/16 3 pm",
-            "Room": "FRE"
+            "Time": "2023/03/09 12:30 pm",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -738,8 +739,9 @@
             "Student": "43-4245",
             "Studentname": "Anwar Mohamed Alaaeldin Hamed Anwar Elshenawy",
             "Topic": "Creating smooth NURBS surfaces utilizing corners in 3D space",
-            "Time": "2023/03/16 10 am",
-            "Room": "RE"
+            "Time": "2023/03/10 12 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Mona Farouk",
@@ -747,9 +749,8 @@
             "Student": "46-3527",
             "Studentname": "Anwar Rehab Anwar Hamada",
             "Topic": "Explainable AI meets Knowledge Graphs II",
-            "Time": "2023/03/10 10:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 1:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -757,8 +758,8 @@
             "Student": "46-3902",
             "Studentname": "Ayaallah Ahmed Ali Sayed Ahmed Saleh",
             "Topic": "Visual programming for computational/architectural design II",
-            "Time": "2023/03/13 12 pm",
-            "Room": "FRE"
+            "Time": "2023/03/10 9:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -766,8 +767,8 @@
             "Student": "46-2545",
             "Studentname": "Badr Mohammad Badreldin Alsayed",
             "Topic": "ResNet Domain Adaptation for Anomalous Sounds Detection",
-            "Time": "2023/03/08 9 am",
-            "Room": "R"
+            "Time": "2023/03/14 12:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -775,8 +776,9 @@
             "Student": "49-21642",
             "Studentname": "Begad Ahmed Sabry Roston",
             "Topic": "Detection of 3D Corners",
-            "Time": "2023/03/14 12 pm",
-            "Room": "R"
+            "Time": "2023/03/09 10:30 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Walaa Ibrahim Gabr",
@@ -784,7 +786,7 @@
             "Student": "46-0285",
             "Studentname": "Carol Emad Abdelmonem Halim",
             "Topic": "Smart Bike Automatic Autonomy adaptation for rider assistance",
-            "Time": "2023/03/10 10 am",
+            "Time": "2023/03/12 12:30 pm",
             "Room": "",
             "Color": "Red"
       },
@@ -794,8 +796,8 @@
             "Student": "46-2078",
             "Studentname": "Danial Amir Ayad Shehata",
             "Topic": "Creating Character Animation in Maya using MEL",
-            "Time": "2023/03/13 11 am",
-            "Room": "R"
+            "Time": "2023/03/16 9 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -803,9 +805,8 @@
             "Student": "46-0416",
             "Studentname": "Dareen Mohamed Abuelmagd Abdelwareth",
             "Topic": "Image and point cloud fusion for pedestrians detection",
-            "Time": "2023/03/12 3 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/16 10 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -813,9 +814,8 @@
             "Student": "46-5880",
             "Studentname": "Daryn Essam Moustafa Abdelgalil Abouhashish",
             "Topic": "Animating cartoon characters with augmented reality - Augmania Egypt",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/14 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -823,9 +823,8 @@
             "Student": "46-10582",
             "Studentname": "David Edwar Attia Shwail",
             "Topic": "Model Ensemble Domain Adaptation for Anomalous Sounds Detection",
-            "Time": "2023/03/16 10:30 am",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/10 3:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -833,8 +832,8 @@
             "Student": "46-0768",
             "Studentname": "David Said Wahba Zarif Said Abdelmalek",
             "Topic": "Automated Quality Control in Industry 4.0 : Digital Twinning for Robotic Arm (co-supervised with Dr. Nada Sharaf)",
-            "Time": "2023/03/07 1 pm",
-            "Room": "RE",
+            "Time": "2023/03/14 1 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -843,8 +842,8 @@
             "Student": "46-18006",
             "Studentname": "Dinah Waref Mohamed Lamei Shalaby",
             "Topic": "Efficiency and Privacy in Deep Learning Using Split Federated Learning",
-            "Time": "2023/03/09 12:30 pm",
-            "Room": "WS"
+            "Time": "2023/03/14 10:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mona Farouk",
@@ -852,9 +851,8 @@
             "Student": "46-12691",
             "Studentname": "Donia Mohamed Shahin Youssef Mohamed",
             "Topic": "Shape grammar for computational/architectural design I",
-            "Time": "2023/03/15 4 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/11 10 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Sahar Selim",
@@ -862,8 +860,8 @@
             "Student": "46-7934",
             "Studentname": "Eman Osama Saad Abdelaziz",
             "Topic": "Developing a Simulation Environment of Visual Pathway Neuronal Activity",
-            "Time": "2023/03/12 3 pm",
-            "Room": "WS",
+            "Time": "2023/03/10 10 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -872,8 +870,8 @@
             "Student": "46-18482",
             "Studentname": "Engy Khaled Ahmed Abdelkader Ezz Elarab",
             "Topic": "Wheelchair Control using Steady-state Visual Evoked Potential (SSVEP) Brain-Computer Interfaces",
-            "Time": "2023/03/14 9:30 am",
-            "Room": "R"
+            "Time": "2023/03/13 10 am",
+            "Room": "g"
       },
       {
             "Examiner": "Ismail Mohammed Hafez",
@@ -881,8 +879,8 @@
             "Student": "46-3759",
             "Studentname": "Eslam Tamer Mohamed Adel Mohamed Tawfick",
             "Topic": "Smart Power Signature for IOT Security Analysis",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "RE",
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -891,8 +889,8 @@
             "Student": "46-1666",
             "Studentname": "Esraa Ahmed Abdelmotagaly Mohammed Elashmawy",
             "Topic": "Multimodal medical image fusion",
-            "Time": "2023/03/15 10:30 am",
-            "Room": "CED"
+            "Time": "2023/03/12 11 am",
+            "Room": "g"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -900,8 +898,9 @@
             "Student": "46-2018",
             "Studentname": "Ezzat Mohammed Ezzat Mohamed Abuelkheir",
             "Topic": "Building a Business Supply Chain Simulator",
-            "Time": "2023/03/08 11 am",
-            "Room": "AAA"
+            "Time": "2023/03/16 1:30 pm",
+            "Room": "sd",
+            "Color": "Red"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -909,8 +908,9 @@
             "Student": "46-9988",
             "Studentname": "Fadi Saber Gamil Asham",
             "Topic": "Mobile: Smart Parking Spot Finder Using IP Cameras and Smartphone GPS",
-            "Time": "2023/03/10 2:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -918,9 +918,8 @@
             "Student": "46-19149",
             "Studentname": "Fady Gerges Rezk Samaan",
             "Topic": "Navigation Enhancement for Visual Prostheses",
-            "Time": "2023/03/12 10:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/12 9 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -928,8 +927,9 @@
             "Student": "46-0819",
             "Studentname": "Fady Magdy Mikhail Salama",
             "Topic": "Studying User Understanding/Attitude/Feeling towards Crypto Currency and Crypto Transactions (Qualitative Study)",
-            "Time": "2023/03/08 9:30 am",
-            "Room": "AAA"
+            "Time": "2023/03/11 1 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -937,9 +937,8 @@
             "Student": "46-0896",
             "Studentname": "Fady Samy Farahat Ibrahim",
             "Topic": "Generation and Analysis of Touristic Walking Trips",
-            "Time": "2023/03/07 10 am",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/09 1:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Azza Taha",
@@ -947,8 +946,8 @@
             "Student": "46-8240",
             "Studentname": "Farah Ayman Taha Moghazy",
             "Topic": "Non-Monotonic Reasoning Patterns in Log_A G",
-            "Time": "2023/03/10 1:30 pm",
-            "Room": "AAA"
+            "Time": "2023/03/09 10:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Ismail Mohammed Hafez",
@@ -956,8 +955,8 @@
             "Student": "46-6815",
             "Studentname": "Farah Ehab Fawzi Abdelkawi",
             "Topic": "Smart Power Signature for IOT Security Analysis",
-            "Time": "2023/03/07 12 pm",
-            "Room": "RE",
+            "Time": "2023/03/09 9:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -966,8 +965,8 @@
             "Student": "46-4649",
             "Studentname": "Farah Hassan Mohamed Ali",
             "Topic": "Effect of Virtual Store Layouts on Customers\u2019 experience",
-            "Time": "2023/03/09 4 pm",
-            "Room": "WS"
+            "Time": "2023/03/11 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Yasmin Afify",
@@ -975,8 +974,9 @@
             "Student": "46-0383",
             "Studentname": "Farah Mohamed Elsaeed Elsayed Temraz",
             "Topic": "Quality of Interpretations for Recommender Systems",
-            "Time": "2023/03/15 3 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/12 12:30 pm",
+            "Room": "sd",
+            "Color": "Red"
       },
       {
             "Examiner": "Galal Nadim",
@@ -984,9 +984,8 @@
             "Student": "46-0728",
             "Studentname": "Farah Walid Mohamed Mohamed Ghonema",
             "Topic": "Gesture Detection for Touchless Fast Food Menus",
-            "Time": "2023/03/09 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/10 11 am",
+            "Room": "ds"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -994,8 +993,8 @@
             "Student": "46-0919",
             "Studentname": "Faress Ahmed Hamed Gad",
             "Topic": "EfficientNet-B3 Architecture for Urban Sound Tagging",
-            "Time": "2023/03/08 3:30 pm",
-            "Room": "AAA",
+            "Time": "2023/03/14 2:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1004,8 +1003,8 @@
             "Student": "46-0305",
             "Studentname": "Farida Ashraf Ragaey Azab",
             "Topic": "ITS-multi-vehicle pollution management system",
-            "Time": "2023/03/12 3 pm",
-            "Room": "FRE"
+            "Time": "2023/03/13 10:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -1013,8 +1012,9 @@
             "Student": "46-2291",
             "Studentname": "Farida Ayman Elsayed Elgenedi",
             "Topic": "Game development using Unity and Oculus",
-            "Time": "2023/03/14 9:30 am",
-            "Room": "RE"
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -1022,9 +1022,8 @@
             "Student": "46-0402",
             "Studentname": "Farida Samer Ahmed Aldesouky",
             "Topic": "Creating Character Animation in Maya using Python",
-            "Time": "2023/03/07 2:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/11 1:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1032,8 +1031,8 @@
             "Student": "46-4994",
             "Studentname": "George Kamal Aniss Abdulraouf Haroon",
             "Topic": "Per-Channel Image Super Resolution",
-            "Time": "2023/03/08 3 pm",
-            "Room": "FRE"
+            "Time": "2023/03/14 2:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1041,8 +1040,8 @@
             "Student": "46-10249",
             "Studentname": "George Naguib Kameel Naguib Shedoudy",
             "Topic": "CRNN baseline for Sound Event Localization and Detection",
-            "Time": "2023/03/08 10:30 am",
-            "Room": "FRE"
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -1050,8 +1049,9 @@
             "Student": "46-0855",
             "Studentname": "Habiba Sherif Fathy Omar",
             "Topic": "Development of an AI-assisted tool for Industry 4.0: Backend development",
-            "Time": "2023/03/16 9:30 am",
-            "Room": "RE"
+            "Time": "2023/03/15 3 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -1059,9 +1059,8 @@
             "Student": "46-0280",
             "Studentname": "Hadeer Elhussen Badereldin Ibrahim Fahmy",
             "Topic": "Creating interactive web contents using Blend4Web and JavaScript",
-            "Time": "2023/03/07 1:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/12 9 am",
+            "Room": "g"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -1069,8 +1068,8 @@
             "Student": "46-1804",
             "Studentname": "Haidy Ayman Abdelkhalek Abdelrazik Tohfa",
             "Topic": "Smart Planter System IV",
-            "Time": "2023/03/08 10:30 am",
-            "Room": "R"
+            "Time": "2023/03/11 9 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1078,8 +1077,8 @@
             "Student": "43-1051",
             "Studentname": "Hamed Ashraf Hamed Mohamed",
             "Topic": "Recipient-Sensitive Explainable AI Systems",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "R",
+            "Time": "2023/03/09 9:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1088,8 +1087,8 @@
             "Student": "46-0377",
             "Studentname": "Hana Adel Mohamed Shaaban",
             "Topic": "Medical Image Classification Using Cross-Silo Federated Learning",
-            "Time": "2023/03/13 10 am",
-            "Room": "R"
+            "Time": "2023/03/12 10 am",
+            "Room": "g"
       },
       {
             "Examiner": "Cherif Salama",
@@ -1097,8 +1096,8 @@
             "Student": "46-0555",
             "Studentname": "Hana Ehab Mohamed Abdelfattah Mongi",
             "Topic": "Using AI for Appointment/Availability Forecasting and Optimization in Healthcare Clinics",
-            "Time": "2023/03/16 1:30 pm",
-            "Room": "RE"
+            "Time": "2023/03/14 12 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Abeer ElKorany",
@@ -1106,8 +1105,8 @@
             "Student": "46-1816",
             "Studentname": "Hana Hussein Ahmed Khalifa",
             "Topic": "Smart Bike Path odometry",
-            "Time": "2023/03/13 2:30 pm",
-            "Room": "R",
+            "Time": "2023/03/09 12 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -1116,8 +1115,9 @@
             "Student": "46-1450",
             "Studentname": "Hania Ashraf Hamed Mahmoud Hamed",
             "Topic": "Using high performance computing to predict electronic properties of materials",
-            "Time": "2023/03/10 10 am",
-            "Room": "R"
+            "Time": "2023/03/09 12:30 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -1125,8 +1125,9 @@
             "Student": "46-7291",
             "Studentname": "Hassan Mohamed Hassan Mohamed Ibrahim",
             "Topic": "Registration of points in 3D space",
-            "Time": "2023/03/14 10:30 am",
-            "Room": "RE"
+            "Time": "2023/03/09 1:30 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Ismail Mohammed Hafez",
@@ -1134,8 +1135,8 @@
             "Student": "46-6959",
             "Studentname": "Hatem Naier Mohamed Ahmed Dawa",
             "Topic": "Model Agnostic Methods for Explainable AI: Argumentation-Based Explanations",
-            "Time": "2023/03/11 9 am",
-            "Room": "AAA",
+            "Time": "2023/03/15 12:30 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1144,9 +1145,8 @@
             "Student": "46-2472",
             "Studentname": "Haya Tawakol Mohamed Mounir Abdelghafour",
             "Topic": "Algorithms for Conjunctive Query Evaluation II",
-            "Time": "2023/03/10 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 11 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -1154,9 +1154,8 @@
             "Student": "46-3469",
             "Studentname": "Hazem Ahmed Fahmy Aly Hetaba",
             "Topic": "STEM Experiment Designer II (Augmented Reality - Runtime Android-based Environment)",
-            "Time": "2023/03/07 1 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/12 3 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -1164,8 +1163,8 @@
             "Student": "46-7679",
             "Studentname": "Hazem Effat Mohamed Fakhry Khalaf",
             "Topic": "Adaptive Hybrid Convolution for Sound Event Localization and Detection",
-            "Time": "2023/03/13 11 am",
-            "Room": "FRE"
+            "Time": "2023/03/10 11 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -1173,8 +1172,9 @@
             "Student": "46-13128",
             "Studentname": "Hazem Hisham Omran Hassan",
             "Topic": "Object Recognition Enhancement for Visual Prostheses",
-            "Time": "2023/03/13 12 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/13 12:30 pm",
+            "Room": "sd",
+            "Color": "Red"
       },
       {
             "Examiner": "Galal Nadim",
@@ -1182,9 +1182,8 @@
             "Student": "46-20606",
             "Studentname": "Hesham Mohamed Moneer Saleh",
             "Topic": "Eye Detection and Face Recognition for Visual Prostheses",
-            "Time": "2023/03/09 11 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/10 1 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Gamal Eldin Mohamed Aly",
@@ -1192,8 +1191,8 @@
             "Student": "46-1492",
             "Studentname": "Honey Mohamed Ali Abdelkader",
             "Topic": "Play Bricks III: Building 3D Architectural Models in VR",
-            "Time": "2023/03/14 1:30 pm",
-            "Room": "R"
+            "Time": "2023/03/13 11 am",
+            "Room": "g"
       },
       {
             "Examiner": "Hassen Taher Dorrah",
@@ -1201,8 +1200,8 @@
             "Student": "46-2935",
             "Studentname": "Hossam Magdy Mohamed Elhattab",
             "Topic": "Adaptivity in V-Commerce",
-            "Time": "2023/03/08 3:30 pm",
-            "Room": "R",
+            "Time": "2023/03/13 10 am",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -1211,8 +1210,8 @@
             "Student": "46-17614",
             "Studentname": "Hossam Mohamed Ali Abdellatif",
             "Topic": "An Integrated Tracking Framework for omni-directional conveyor using Computer Vision",
-            "Time": "2023/03/11 2:30 pm",
-            "Room": "R"
+            "Time": "2023/03/10 1 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -1220,8 +1219,9 @@
             "Student": "46-4640",
             "Studentname": "Hussein Magdy Gamal Abdelkader Youssef",
             "Topic": "Smart Contract EcoSystem I (Consensus Algorithms)",
-            "Time": "2023/03/11 10:30 am",
-            "Room": ""
+            "Time": "2023/03/13 12:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1229,8 +1229,8 @@
             "Student": "46-4587",
             "Studentname": "Ibrahim Ahmed Ibrahim Elmetwally Fahim",
             "Topic": "EfficientNet-B4 Architecture for Urban Sound Tagging",
-            "Time": "2023/03/07 10 am",
-            "Room": "R",
+            "Time": "2023/03/15 10:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1239,9 +1239,8 @@
             "Student": "46-4847",
             "Studentname": "Ismail Ahmed Hamed Anwar Elshinnawy",
             "Topic": "Food Ordering App I",
-            "Time": "2023/03/11 4 pm",
-            "Room": "RE",
-            "Color": "Red"
+            "Time": "2023/03/13 1:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Sahar Selim",
@@ -1249,8 +1248,8 @@
             "Student": "46-0269",
             "Studentname": "Jana Tamer Mohamed Elraggal",
             "Topic": "Play Bricks III: Integrating Architectural Style with Desktop Play Bricks App",
-            "Time": "2023/03/13 4 pm",
-            "Room": "dwecd",
+            "Time": "2023/03/16 4 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -1259,8 +1258,8 @@
             "Student": "46-2999",
             "Studentname": "John Magdy Bekheet Hanna Khla",
             "Topic": "Single-tasking models for Urban Sound Tagging",
-            "Time": "2023/03/12 12 pm",
-            "Room": "WS"
+            "Time": "2023/03/15 11 am",
+            "Room": "g"
       },
       {
             "Examiner": "Walaa Ibrahim Gabr",
@@ -1268,8 +1267,8 @@
             "Student": "46-3935",
             "Studentname": "John Moenes Hanna Halim Sedrak",
             "Topic": "Robotic Arm Control using P300-based Brain-Computer Interfaces",
-            "Time": "2023/03/10 10:30 am",
-            "Room": "",
+            "Time": "2023/03/11 10 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -1278,9 +1277,8 @@
             "Student": "46-19160",
             "Studentname": "Jomana Wael Salaheldeen Mohamed",
             "Topic": "Deep fashion: virtual try-on",
-            "Time": "2023/03/16 11 am",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/10 3 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Magdy Abdlghany Soliman Aboelela",
@@ -1288,8 +1286,8 @@
             "Student": "46-3211",
             "Studentname": "Kareem Mohamed Reda Afifi",
             "Topic": "COVID-19 Diagnosis from Chest X-rays using Machine Learning",
-            "Time": "2023/03/10 1:30 pm",
-            "Room": "R",
+            "Time": "2023/03/09 10 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1298,9 +1296,8 @@
             "Student": "46-13534",
             "Studentname": "Kareem Yasser Yousef Ezzeldin Mohamed Saleh",
             "Topic": "Automated Device identification in Fine Grained smart Meters",
-            "Time": "2023/03/11 10:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/15 9:30 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -1308,8 +1305,9 @@
             "Student": "46-15042",
             "Studentname": "Karim Gamal Badawy Mohamed Elshaarawy",
             "Topic": "Anonymous DEX II (Solana)",
-            "Time": "2023/03/13 3:30 pm",
-            "Room": "AAA"
+            "Time": "2023/03/14 9:30 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -1317,8 +1315,8 @@
             "Student": "46-1702",
             "Studentname": "Katrin Emad Fathy Ibrahim",
             "Topic": "EfficientNet-B1 Architecture for Urban Sound Tagging",
-            "Time": "2023/03/12 10:30 am",
-            "Room": "WS"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -1326,8 +1324,9 @@
             "Student": "46-19746",
             "Studentname": "Kerolos Romany Bekit Aziz Balamon",
             "Topic": "Smart Image Analysis for LED Screen Performance",
-            "Time": "2023/03/08 1:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/09 12:30 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -1335,9 +1334,8 @@
             "Student": "46-10267",
             "Studentname": "Khadija Mohamed Riad Mohamed Elbadrawy",
             "Topic": "Face Processing and Decoding using Brain Activity",
-            "Time": "2023/03/07 10 am",
-            "Room": "",
-            "Color": "Red"
+            "Time": "2023/03/11 3 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1345,9 +1343,8 @@
             "Student": "46-10603",
             "Studentname": "Khaled Ashraf Elsayed Youssef Khattab",
             "Topic": "Quantum Metrics",
-            "Time": "2023/03/07 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/14 3:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Gamal Eldin Mohamed Aly",
@@ -1355,8 +1352,8 @@
             "Student": "46-1120",
             "Studentname": "Khaled Mohamed Mahmoud Mohamed Youssef Romeh",
             "Topic": "Data Augmentation for P300-based Brain-Computer Interfaces",
-            "Time": "2023/03/10 3:30 pm",
-            "Room": "",
+            "Time": "2023/03/15 11 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -1365,8 +1362,9 @@
             "Student": "46-4854",
             "Studentname": "Khaled Tamer Aly Mohamed",
             "Topic": "Conflicting Moral Codes Simulation for Self Driving Cars: The Swarm Case (Co-Supervised with Assoc. Prof. Amr Elmougy)",
-            "Time": "2023/03/08 1 pm",
-            "Room": "FRE"
+            "Time": "2023/03/10 10 am",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -1374,8 +1372,8 @@
             "Student": "46-4823",
             "Studentname": "Khaled Tarek Ali Hassan Hegazy",
             "Topic": "Dynamic Path Planning for Autonomous Vehicles based on Augmented Lanes",
-            "Time": "2023/03/10 11 am",
-            "Room": "AAA"
+            "Time": "2023/03/11 4 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -1383,8 +1381,8 @@
             "Student": "46-11929",
             "Studentname": "Khalid Ashraf Mohamed Mohamed Awad",
             "Topic": "IoT based smart agriculture system",
-            "Time": "2023/03/10 3 pm",
-            "Room": "FRE"
+            "Time": "2023/03/12 2:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -1392,8 +1390,9 @@
             "Student": "46-0845",
             "Studentname": "Kirea Ashraf Armia Samuel",
             "Topic": "Restoration of damaged archaeological 2D parts using deep learning",
-            "Time": "2023/03/15 9:30 am",
-            "Room": "CED"
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hassen Taher Dorrah",
@@ -1401,8 +1400,9 @@
             "Student": "46-1062",
             "Studentname": "Kirollos Samir Guirguis Latif",
             "Topic": "Deep learning for computational/architectural design I",
-            "Time": "2023/03/09 9:30 am",
-            "Room": "WS"
+            "Time": "2023/03/12 10:30 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -1410,8 +1410,8 @@
             "Student": "46-0770",
             "Studentname": "Kirolos Elkess Habib Gerguis Shehata Rezallah",
             "Topic": "Long-Term Action Recognition in Video Surveillance",
-            "Time": "2023/03/14 12:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 11 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -1419,8 +1419,9 @@
             "Student": "46-1362",
             "Studentname": "Lina Walid Salaheldin Zakaria Shaheen",
             "Topic": "Action Recognition in multi-Camera Video Surveillance",
-            "Time": "2023/03/14 3:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/11 1 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -1428,9 +1429,8 @@
             "Student": "46-3075",
             "Studentname": "Linah Hossam Mohamed Mahmoud",
             "Topic": "Enhancing Character Recognition for Visual Prostheses",
-            "Time": "2023/03/07 2:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/14 10 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -1438,8 +1438,8 @@
             "Student": "46-0384",
             "Studentname": "Lobna Nader Nabil Taher Elnahas",
             "Topic": "Mind GRAF: Acting I (Co-Supervised with Dr. Nourhan Ehab)",
-            "Time": "2023/03/11 9 am",
-            "Room": "WS",
+            "Time": "2023/03/14 10 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1448,8 +1448,8 @@
             "Student": "46-13014",
             "Studentname": "Lougina Hatem Yahia Abdulwahab Backar",
             "Topic": "In-Vehilce monitoring for Passengers' Safety",
-            "Time": "2023/03/09 2:30 pm",
-            "Room": "FRE",
+            "Time": "2023/03/13 10 am",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -1458,8 +1458,8 @@
             "Student": "46-2066",
             "Studentname": "Maged George Saied Abdelsayed",
             "Topic": "Online virtual tours of remote sites",
-            "Time": "2023/03/11 1:30 pm",
-            "Room": "",
+            "Time": "2023/03/10 4 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -1468,8 +1468,8 @@
             "Student": "46-18954",
             "Studentname": "Mahmoud Ahmed Abdelkhalek Rasheidy",
             "Topic": "Anonymous DEX I (Cardano)",
-            "Time": "2023/03/11 11 am",
-            "Room": ""
+            "Time": "2023/03/15 12:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1477,8 +1477,8 @@
             "Student": "46-5151",
             "Studentname": "Mahmoud Hesham Saad Abdelfatah Ahmed",
             "Topic": "Characterizing and Evaluating Data Integration Plans for Time-series Analysis",
-            "Time": "2023/03/11 2:30 pm",
-            "Room": "CED"
+            "Time": "2023/03/13 4 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -1486,8 +1486,9 @@
             "Student": "43-15405",
             "Studentname": "Mahmoud Khalid Zakria Badawy",
             "Topic": "Mind GRAF: Acting II (Co-Supervised with Assoc. Prof. Haythem Ismail)",
-            "Time": "2023/03/16 4 pm",
-            "Room": "FRE"
+            "Time": "2023/03/15 9:30 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Cherif Salama",
@@ -1495,8 +1496,8 @@
             "Student": "46-5700",
             "Studentname": "Mahmoud Nabil Hussein Abdelhalim Hemida",
             "Topic": "Creating 360 deg Views From Cameras Viewing the Road Scene",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "CED",
+            "Time": "2023/03/10 12 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1505,8 +1506,9 @@
             "Student": "46-2507",
             "Studentname": "Mai Alaaeldin Mohamed Ammar",
             "Topic": "Shape grammar for computational/architectural design II",
-            "Time": "2023/03/13 9:30 am",
-            "Room": "FRE"
+            "Time": "2023/03/15 9:30 am",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -1514,8 +1516,9 @@
             "Student": "46-6070",
             "Studentname": "Maiar Ashraf Mohamed Kamaleldin Abbas",
             "Topic": "Mind GRAF: User Interface I (Co-Supervised with Dr. Nourhan Ehab)",
-            "Time": "2023/03/16 1:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/09 12 pm",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -1523,8 +1526,8 @@
             "Student": "46-0406",
             "Studentname": "Malak Mostafa Mohamed Mostafa Elhabak",
             "Topic": "Mind GRAF: Revision I (Co-Supervised with Dr. Nourhan Ehab)",
-            "Time": "2023/03/11 11 am",
-            "Room": "WS",
+            "Time": "2023/03/11 4 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1533,8 +1536,8 @@
             "Student": "46-8504",
             "Studentname": "Maram Anwar Mansour Benamer",
             "Topic": "Deep learning for computational/architectural design II",
-            "Time": "2023/03/11 12:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 1 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mona Farouk",
@@ -1542,9 +1545,8 @@
             "Student": "46-0433",
             "Studentname": "Maria Maged Mourad William Iskander",
             "Topic": "Academic Calendar: Research Agenda",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/13 4 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1552,9 +1554,8 @@
             "Student": "46-2895",
             "Studentname": "Mariam Ahmed Saied Ahmed Osman",
             "Topic": "Assessment Metrics for the Quality of Data across a Data Pipeline",
-            "Time": "2023/03/07 3 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/15 12 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -1562,9 +1563,8 @@
             "Student": "46-3556",
             "Studentname": "Mariam Ehab Shoukry Beshay",
             "Topic": "Fast LiDAR Pre-processing for Critical Real-Time Actions in Autonomous Vehicles",
-            "Time": "2023/03/09 2:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/10 3 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -1572,8 +1572,8 @@
             "Student": "46-3987",
             "Studentname": "Mariam Mohamed Hamdy Eissa",
             "Topic": "Software Usability Patterns Extraction and Analysis for Improving User Engagement II",
-            "Time": "2023/03/10 9 am",
-            "Room": "WS"
+            "Time": "2023/03/09 9:30 am",
+            "Room": "g"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1581,8 +1581,8 @@
             "Student": "46-0296",
             "Studentname": "Mariam Mohamed Mostafa Kamal Mowafy Ramadan",
             "Topic": "Multiplatform Tour-guiding Front End",
-            "Time": "2023/03/11 3 pm",
-            "Room": "CED"
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mona Farouk",
@@ -1590,8 +1590,8 @@
             "Student": "46-0733",
             "Studentname": "Mariam Mohamed Nabil Khalifa",
             "Topic": "Pneumonia classification in Xray using deep learning",
-            "Time": "2023/03/08 12:30 pm",
-            "Room": "R",
+            "Time": "2023/03/10 10 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -1600,8 +1600,8 @@
             "Student": "46-2427",
             "Studentname": "Mariam Sherif Zaki Seoudi",
             "Topic": "Smart bike Green route path finding",
-            "Time": "2023/03/09 10:30 am",
-            "Room": "WS"
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -1609,8 +1609,9 @@
             "Student": "46-0774",
             "Studentname": "Mariam Tamer Mohamed Hamdy Sabry Elshakankiry",
             "Topic": "Emotional Agent Desktop Replacement II (Affective 3D-Model/Graphics/Animation)",
-            "Time": "2023/03/10 11 am",
-            "Room": "R"
+            "Time": "2023/03/15 10 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Samar Hesham",
@@ -1618,7 +1619,7 @@
             "Student": "46-1356",
             "Studentname": "Mariam Wael Talaat Sayed",
             "Topic": "AutoEncoder Baseline for Anomalous Sounds Detection",
-            "Time": "2023/03/11 1 pm",
+            "Time": "2023/03/12 12:30 pm",
             "Room": "",
             "Color": "Red"
       },
@@ -1628,9 +1629,8 @@
             "Student": "46-0978",
             "Studentname": "Mario Ayman Michel Beshai",
             "Topic": "head pose and gaze tracking for assessing critical and non critical driver attention",
-            "Time": "2023/03/07 11 am",
-            "Room": "FRE",
-            "Color": "Red"
+            "Time": "2023/03/16 12 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Galal Nadim",
@@ -1638,8 +1638,8 @@
             "Student": "46-5861",
             "Studentname": "Mark Emeel Yacoub Sroor",
             "Topic": "Psychiatry Counseling in the Metaverse I (VR)",
-            "Time": "2023/03/10 12:30 pm",
-            "Room": "CED",
+            "Time": "2023/03/14 12 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1648,8 +1648,8 @@
             "Student": "46-1616",
             "Studentname": "Mark Malak Amin Armanious",
             "Topic": "Automated Teaching Load Distribution",
-            "Time": "2023/03/13 12 pm",
-            "Room": "R"
+            "Time": "2023/03/16 12 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Yasmin Afify",
@@ -1657,8 +1657,8 @@
             "Student": "46-0719",
             "Studentname": "Mark Wafik Adel Francis",
             "Topic": "Talk about the City: Identifying Urban Themes in Tweets and Analyzing their Associated Sentiments",
-            "Time": "2023/03/15 4 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/14 9 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed El-Bialy",
@@ -1666,8 +1666,8 @@
             "Student": "46-5518",
             "Studentname": "Marwa Mohamed Mahmoud Elsayed Aly",
             "Topic": "Immersive AR and the dimensions of sensibility",
-            "Time": "2023/03/15 12 pm",
-            "Room": "AAA",
+            "Time": "2023/03/16 2:30 pm",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -1676,8 +1676,8 @@
             "Student": "46-1813",
             "Studentname": "Marwan Ayman Elsayed Ahmed Badr",
             "Topic": "Dynamic Noise cancellation system SW Simulation",
-            "Time": "2023/03/15 10 am",
-            "Room": "CED"
+            "Time": "2023/03/16 10:30 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -1685,8 +1685,8 @@
             "Student": "40-16368",
             "Studentname": "Marwan Ayman Hamid Ismail",
             "Topic": "Model Agnostic Methods for Explainable AI: Break Down",
-            "Time": "2023/03/13 10:30 am",
-            "Room": "R"
+            "Time": "2023/03/16 3 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -1694,9 +1694,8 @@
             "Student": "46-18972",
             "Studentname": "Marwan Mohsen Khalil Aboelmagd",
             "Topic": "Automated Brain Tumor Detection from MRI Scans",
-            "Time": "2023/03/07 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Yasmin Afify",
@@ -1704,8 +1703,8 @@
             "Student": "46-3294",
             "Studentname": "Maryam Ayman Mamdouh Abdelmonem Eloraby",
             "Topic": "Mapping and Tracking Sentiment Arcs in Social Media Streams",
-            "Time": "2023/03/15 10 am",
-            "Room": "dwecd"
+            "Time": "2023/03/14 10 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1713,9 +1712,8 @@
             "Student": "46-4542",
             "Studentname": "Maryam Magdy Mohamed Bayoumy Abdelsalam Ghonim",
             "Topic": "EfficientNet-B0 Architecture for Urban Sound Tagging",
-            "Time": "2023/03/07 9 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/14 4 pm",
+            "Room": ""
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -1723,9 +1721,8 @@
             "Student": "46-1035",
             "Studentname": "Maryse Fahim Tadros Fahim",
             "Topic": "video super-resolution using deep learning",
-            "Time": "2023/03/07 9 am",
-            "Room": "FRE",
-            "Color": "Red"
+            "Time": "2023/03/12 10 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -1733,8 +1730,8 @@
             "Student": "46-5830",
             "Studentname": "May Magdy Ahmed Hossien",
             "Topic": "Major Depressive Disorder Diagnosis from EEG Signals using Machine Learning",
-            "Time": "2023/03/08 2:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/15 11 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -1742,9 +1739,8 @@
             "Student": "46-5809",
             "Studentname": "Maya Khaled Fouad Ezzat",
             "Topic": "3-D virtual grocery store Task II",
-            "Time": "2023/03/16 1 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 10:30 am",
+            "Room": "ds"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -1752,8 +1748,8 @@
             "Student": "46-0519",
             "Studentname": "Mayar Ezzeldin Tawfik Aggag",
             "Topic": "Kripke's Worlds",
-            "Time": "2023/03/14 3:30 pm",
-            "Room": "dwecd",
+            "Time": "2023/03/14 9:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1762,8 +1758,9 @@
             "Student": "46-0769",
             "Studentname": "Mazen Wael Ahmed Mahmoud Sadek",
             "Topic": "Java/Web3 Framework I",
-            "Time": "2023/03/11 10 am",
-            "Room": ""
+            "Time": "2023/03/11 1:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -1771,8 +1768,8 @@
             "Student": "46-0616",
             "Studentname": "Menatalla Wael Abdelmegid Mahmoud Mohamed Elnemr",
             "Topic": "Smart Bike Insurance Safety metrics: Hardware",
-            "Time": "2023/03/10 4 pm",
-            "Room": "FRE"
+            "Time": "2023/03/12 4 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Mona Farouk",
@@ -1780,9 +1777,8 @@
             "Student": "46-5183",
             "Studentname": "Menna Mohamed Saeed Abdelaziz Bedir",
             "Topic": "Long-Term People Re-Identification in Video Surveillance",
-            "Time": "2023/03/07 1:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/11 10:30 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -1790,9 +1786,8 @@
             "Student": "46-3693",
             "Studentname": "Mennatallah Ahmed Abdelsamie Mohamed Abdelhamid",
             "Topic": "Semantic Alignment for Anomalous Sounds Detection",
-            "Time": "2023/03/07 3 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/14 9:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Samah Tantawy",
@@ -1800,8 +1795,8 @@
             "Student": "46-0910",
             "Studentname": "Mennatallah Hesham Mohamed Shoulkamy",
             "Topic": "Peer-to-peer GUC bus riding and map route generation",
-            "Time": "2023/03/10 11 am",
-            "Room": "CED",
+            "Time": "2023/03/11 3 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -1810,8 +1805,8 @@
             "Student": "46-1728",
             "Studentname": "Michael George Alphonse Zakhary",
             "Topic": "Early Parkinson\u2019s Disease Diagnosis from Keystrokes",
-            "Time": "2023/03/14 1 pm",
-            "Room": "R"
+            "Time": "2023/03/15 9:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -1819,8 +1814,8 @@
             "Student": "46-3945",
             "Studentname": "Michael Tito Girges Bassily",
             "Topic": "Improving ASR transcript punctuation and disfluency detection for downstream task Machine translation - Microsoft",
-            "Time": "2023/03/11 12 pm",
-            "Room": "R"
+            "Time": "2023/03/16 1:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Sahar Ali Fawzi",
@@ -1828,8 +1823,8 @@
             "Student": "43-1924",
             "Studentname": "Miral Hammam Mohamed Abdallah Ragab",
             "Topic": "Design and Evaluation of Navigation Interaction Techniques in a VR Environment",
-            "Time": "2023/03/12 3 pm",
-            "Room": "R",
+            "Time": "2023/03/09 2:30 pm",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -1838,8 +1833,8 @@
             "Student": "46-17050",
             "Studentname": "Moamen Khaled Saad Shoman",
             "Topic": "Early Parkinson\u2019s Disease Diagnosis from Handwritten Patterns",
-            "Time": "2023/03/13 2:30 pm",
-            "Room": "AAA",
+            "Time": "2023/03/14 1:30 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1848,8 +1843,8 @@
             "Student": "46-5549",
             "Studentname": "Moataz Ahmed Mohamed Aly Morsy",
             "Topic": "Psychiatry Counseling in the Metaverse IV (CV)",
-            "Time": "2023/03/08 9 am",
-            "Room": "FRE"
+            "Time": "2023/03/13 1 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -1857,8 +1852,8 @@
             "Student": "46-5250",
             "Studentname": "Moemen Ashraf Shehata Salem",
             "Topic": "Detecting obstacles using projective geometry",
-            "Time": "2023/03/09 2:30 pm",
-            "Room": "WS"
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mahmoud I Khalil",
@@ -1866,8 +1861,8 @@
             "Student": "46-13323",
             "Studentname": "Mohamed Adel Mohamed Elshafei",
             "Topic": "Semantic image segmentation for pothole detection",
-            "Time": "2023/03/09 1:30 pm",
-            "Room": "WS"
+            "Time": "2023/03/10 12 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1875,8 +1870,8 @@
             "Student": "46-1045",
             "Studentname": "Mohamed Ahmed Mohamed Emarah",
             "Topic": "Psychiatry Counseling in the Metaverse II (Graphics/Animation)",
-            "Time": "2023/03/12 12 pm",
-            "Room": "FRE"
+            "Time": "2023/03/13 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -1884,9 +1879,8 @@
             "Student": "46-1272",
             "Studentname": "Mohamed Ahmed Samir Singer",
             "Topic": "Efficiency and Privacy in Deep Active Learning",
-            "Time": "2023/03/08 2:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/12 10:30 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -1894,8 +1888,8 @@
             "Student": "46-6182",
             "Studentname": "Mohamed Ahmed Zakaria Mostafa Idris",
             "Topic": "End-to-End Task-oriented Dialogue System",
-            "Time": "2023/03/11 9:30 am",
-            "Room": "CED",
+            "Time": "2023/03/16 10 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -1904,9 +1898,8 @@
             "Student": "46-8421",
             "Studentname": "Mohamed Alaaeldin Ahmed Elsayed Ali Eskander Elassyouty",
             "Topic": "Dynamic question-bank based online assessment tool",
-            "Time": "2023/03/08 1:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/11 3:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Cherif Salama",
@@ -1914,9 +1907,8 @@
             "Student": "46-0831",
             "Studentname": "Mohamed Ashraf Mohamed Elsaeed Abdelaziz Hassan",
             "Topic": "Robotic Brain for Sensor Modality Switching in Autonomous Vehicles",
-            "Time": "2023/03/08 4 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/13 12 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -1924,8 +1916,8 @@
             "Student": "46-5930",
             "Studentname": "Mohamed Ashraf Mohamed Mohamed",
             "Topic": "Direct-Manipulation Tangible Desktop Framework II (OS interfacing)",
-            "Time": "2023/03/07 9 am",
-            "Room": "RE",
+            "Time": "2023/03/14 10:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1934,8 +1926,8 @@
             "Student": "46-9061",
             "Studentname": "Mohamed Ashraf Mohamed Sami Hassanin Badreldin",
             "Topic": "Incorporating Uncertainty in Knowledge Graphs",
-            "Time": "2023/03/08 3 pm",
-            "Room": "R",
+            "Time": "2023/03/12 9:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -1944,9 +1936,8 @@
             "Student": "46-1353",
             "Studentname": "Mohamed Assem Hussein Ahmed Sonbol",
             "Topic": "Smart Contract EcoSystem III (Contract language/compiler)",
-            "Time": "2023/03/13 2:30 pm",
-            "Room": "",
-            "Color": "Red"
+            "Time": "2023/03/15 3:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -1954,8 +1945,8 @@
             "Student": "46-6671",
             "Studentname": "Mohamed Emadeldin Ahmed Fouad Zaki Safar",
             "Topic": "Mobile Application for 3D Mesh Model Enhancement for AR Applications",
-            "Time": "2023/03/09 3:30 pm",
-            "Room": "WS"
+            "Time": "2023/03/15 3 pm",
+            "Room": ""
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -1963,8 +1954,9 @@
             "Student": "46-15031",
             "Studentname": "Mohamed Gamal Badawy Mohamed Elshaarawy",
             "Topic": "Anonymous DEX III (Ethereum)",
-            "Time": "2023/03/14 1 pm",
-            "Room": "R"
+            "Time": "2023/03/12 9 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -1972,8 +1964,8 @@
             "Student": "46-2726",
             "Studentname": "Mohamed Hesham Mohamed Helmy Ahmed Eltaher",
             "Topic": "Multimodal Metrics for Assessing Street- and Neighborhood-level Safety",
-            "Time": "2023/03/11 12 pm",
-            "Room": "CED"
+            "Time": "2023/03/15 12:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Gamal Eldin Mohamed Aly",
@@ -1981,9 +1973,8 @@
             "Student": "46-9261",
             "Studentname": "Mohamed Hossam Mohamed Abdelwahab",
             "Topic": "Biometric Identification from Electrocardiography (ECG) Signals",
-            "Time": "2023/03/10 2:30 pm",
-            "Room": "",
-            "Color": "Red"
+            "Time": "2023/03/13 10:30 am",
+            "Room": "g"
       },
       {
             "Examiner": "Azza Taha",
@@ -1991,8 +1982,9 @@
             "Student": "46-12309",
             "Studentname": "Mohamed Hossameldin Mohamed Riad Khalifa",
             "Topic": "Decidable Fragments of Log_A G (II)",
-            "Time": "2023/03/10 2:30 pm",
-            "Room": "AAA"
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -2000,8 +1992,8 @@
             "Student": "46-7203",
             "Studentname": "Mohamed Kamal Monir Abdelaziz Gamil",
             "Topic": "A generalized seizure prediction approach for EEG seizure signals using advanced machine learning algorithms",
-            "Time": "2023/03/07 1:30 pm",
-            "Room": "R",
+            "Time": "2023/03/10 12 pm",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -2010,8 +2002,8 @@
             "Student": "46-1126",
             "Studentname": "Mohamed Khaled Rostom Mohamed Helmy",
             "Topic": "Reinforcement-based Task-oriented Dialogue System",
-            "Time": "2023/03/10 10 am",
-            "Room": "WS"
+            "Time": "2023/03/09 2:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -2019,9 +2011,8 @@
             "Student": "46-20734",
             "Studentname": "Mohamed Mahmoud Mohamed Ahmed Eshiba",
             "Topic": "American Sign Language Recognition using MediaPipe and Deep Learning",
-            "Time": "2023/03/07 2:30 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -2029,8 +2020,8 @@
             "Student": "46-14531",
             "Studentname": "Mohamed Mahmoud Mohamed Mohamed Amin",
             "Topic": "Character rigging in Maya using MEL",
-            "Time": "2023/03/11 9 am",
-            "Room": "R",
+            "Time": "2023/03/10 12:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2039,8 +2030,8 @@
             "Student": "46-0888",
             "Studentname": "Mohamed Sherif Mohamed Abdou Elokby",
             "Topic": "Restoration of damaged archaeological 3D parts using deep learning",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "R",
+            "Time": "2023/03/09 11 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2049,8 +2040,9 @@
             "Student": "46-0916",
             "Studentname": "Mohamed Yehia Mohamed Abdelhalim Elhusseiny",
             "Topic": "Generative Adversarial Network for Anomalous Sounds Detection",
-            "Time": "2023/03/13 12:30 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/15 10:30 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -2058,8 +2050,8 @@
             "Student": "46-17077",
             "Studentname": "Mohamed Youssef Saad Mohamed Ismail",
             "Topic": "Obstacle Avoidance and Object Recognition Enhancement for Visual Prostheses",
-            "Time": "2023/03/11 11 am",
-            "Room": "R",
+            "Time": "2023/03/10 9 am",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -2068,9 +2060,8 @@
             "Student": "46-16738",
             "Studentname": "Mohammed Ahmed Mohammed Abdelhamid Mohamed Neaima",
             "Topic": "Ranking Fear Emotions using EEG and ML",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/11 10 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2078,8 +2069,9 @@
             "Student": "46-17501",
             "Studentname": "Mohammed Mahmoud Abdulatif Abdelgaber",
             "Topic": "From Code to Model: Building Language Models for Source Code Generation (Co-supervised with Dr. Nada Sharaf)",
-            "Time": "2023/03/16 2:30 pm",
-            "Room": "RE"
+            "Time": "2023/03/10 1 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -2087,9 +2079,8 @@
             "Student": "46-1478",
             "Studentname": "Mohammed Yasser Anwar Khafagy",
             "Topic": "STEM Experiment Designer I (Visual Language Desktop App)",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mona Farouk",
@@ -2097,9 +2088,8 @@
             "Student": "46-17080",
             "Studentname": "Mostafa Abobkr Mostafa Mohamed",
             "Topic": "AI Applications in Health Care I: Robot Doctor using Ontology Design (Co-Supervised with Assoc. Prof. Amr Elmougy)",
-            "Time": "2023/03/07 3 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/13 10:30 am",
+            "Room": "gf"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -2107,8 +2097,9 @@
             "Student": "43-6084",
             "Studentname": "Mostafa Abubakr Mahmoud Galal Ali",
             "Topic": "Dynamic Noise cancellation system HW Implementation",
-            "Time": "2023/03/14 4 pm",
-            "Room": "FRE"
+            "Time": "2023/03/14 9 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -2116,8 +2107,9 @@
             "Student": "46-5535",
             "Studentname": "Mostafa Ahmed Abdelhalem Afifi Shaalan",
             "Topic": "Development of virtual lab experiments Electromagnetism - Thermodynamis - in cooperation with Dr. Hisham Osman",
-            "Time": "2023/03/08 3:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/10 11 am",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -2125,8 +2117,9 @@
             "Student": "46-2690",
             "Studentname": "Mostafa Mohamed Aly Sharaf",
             "Topic": "Smart Bike- estimation of processing power needs for routing purposes",
-            "Time": "2023/03/10 1:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/11 12 pm",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -2134,9 +2127,8 @@
             "Student": "46-0409",
             "Studentname": "Mostafa Mohamed Ibrahim Yousif",
             "Topic": "Evaluating the Reliability of Camera Data in Autonomous Vehicles under Different Conditions",
-            "Time": "2023/03/15 12:30 pm",
-            "Room": "RE",
-            "Color": "Red"
+            "Time": "2023/03/11 3:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Yasmin Afify",
@@ -2144,8 +2136,9 @@
             "Student": "46-4124",
             "Studentname": "Mostafa Mohamed Mostafa Hassan",
             "Topic": "Read Me: Interpretable Article Recommender System",
-            "Time": "2023/03/15 1 pm",
-            "Room": "dwecd"
+            "Time": "2023/03/16 9 am",
+            "Room": "sd",
+            "Color": "Red"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -2153,8 +2146,9 @@
             "Student": "46-4223",
             "Studentname": "Moustafa Ahmed Mohamed Fahmy Elwatidy",
             "Topic": "Smart Bike- Energy needs estimation",
-            "Time": "2023/03/10 1 pm",
-            "Room": "FRE"
+            "Time": "2023/03/14 10 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -2162,9 +2156,8 @@
             "Student": "46-8194",
             "Studentname": "Moustafa Ashraf Abdeltawab Ibrahim Khattab",
             "Topic": "Exploring AI Techniques for Algorithmic Bias Detection and Mitigation",
-            "Time": "2023/03/07 12 pm",
-            "Room": "FRE",
-            "Color": "Red"
+            "Time": "2023/03/10 12 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -2172,8 +2165,8 @@
             "Student": "43-13821",
             "Studentname": "Moustafa Mohamed Abdelmonem Abdelhamid Sallam",
             "Topic": "Panoptic Vision for Autonomous Vehicles using Spiking Neural Networks",
-            "Time": "2023/03/13 12 pm",
-            "Room": "R",
+            "Time": "2023/03/09 3 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -2182,8 +2175,9 @@
             "Student": "46-17022",
             "Studentname": "Mustafa Mahmoud Abdelhalim Omran",
             "Topic": "Data Augmentation for Steady-state Visual Evoked Potential (SSVEP) Brain-Computer Interfaces",
-            "Time": "2023/03/12 12:30 pm",
-            "Room": "R"
+            "Time": "2023/03/16 11 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Sahar Selim",
@@ -2191,8 +2185,8 @@
             "Student": "46-0898",
             "Studentname": "Nadeen Eslam Mohamed Ahmed",
             "Topic": "Structure form Motion for 3D Object Model Construction",
-            "Time": "2023/03/14 2:30 pm",
-            "Room": "AAA",
+            "Time": "2023/03/10 9 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -2201,8 +2195,8 @@
             "Student": "46-1564",
             "Studentname": "Nadeen Sayed Abdelmoniem Ibrahim",
             "Topic": "skin disease classification using deep learning",
-            "Time": "2023/03/08 9:30 am",
-            "Room": "R"
+            "Time": "2023/03/14 1 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Fatma Omara",
@@ -2210,8 +2204,8 @@
             "Student": "46-0976",
             "Studentname": "Nadim Ramy Anis Iskander",
             "Topic": "Creating interactive web contents using PlayCanvas and JavaScript",
-            "Time": "2023/03/09 1:30 pm",
-            "Room": "FRE",
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2220,8 +2214,8 @@
             "Student": "46-0363",
             "Studentname": "Nadine Khaled Salem Khaled Fouda",
             "Topic": "Analyzing The Factors Impacting Production Quality for sustainable Industries (Co-supervised with Dr. Amna Ramzy)",
-            "Time": "2023/03/12 1 pm",
-            "Room": "FRE"
+            "Time": "2023/03/13 11 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -2229,9 +2223,8 @@
             "Student": "46-0945",
             "Studentname": "Nayer Hany William Sanad",
             "Topic": "Stable Fully-Backed Coin System (blockchain)",
-            "Time": "2023/03/15 1 pm",
-            "Room": "CED",
-            "Color": "Red"
+            "Time": "2023/03/16 3:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mona Farouk",
@@ -2239,8 +2232,8 @@
             "Student": "46-3346",
             "Studentname": "Nerimane Mohamed Mostafa Elrefai",
             "Topic": "Enhancing Interactivity in a Virtual Super Market",
-            "Time": "2023/03/12 12 pm",
-            "Room": "R"
+            "Time": "2023/03/13 3:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -2248,9 +2241,8 @@
             "Student": "46-8464",
             "Studentname": "Nesma Hatem Mohamed Mohamed Harraz",
             "Topic": "Using Block Chain in Smart Supply Chains (Co-Supervised with Dr. Maggie Mashaly)",
-            "Time": "2023/03/07 4 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/11 10:30 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -2258,8 +2250,8 @@
             "Student": "43-1564",
             "Studentname": "Nour Aly Ragheb Abouzeid",
             "Topic": "STEM Experiment Designer IV (Interaction)",
-            "Time": "2023/03/13 9 am",
-            "Room": "FRE"
+            "Time": "2023/03/10 10:30 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -2267,8 +2259,8 @@
             "Student": "46-1682",
             "Studentname": "Nour Wessam Yehia Mostafa Elgazzar",
             "Topic": "Development of an AI-assisted tool for Industry 4.0: Front-end development",
-            "Time": "2023/03/08 10:30 am",
-            "Room": "AAA"
+            "Time": "2023/03/15 11 am",
+            "Room": "g"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -2276,8 +2268,8 @@
             "Student": "46-0328",
             "Studentname": "Nouran Ayman Mohamed Farouk Younis",
             "Topic": "Masked Autoencoder Distribution Estimation for Anomalous Sounds Detection",
-            "Time": "2023/03/09 2:30 pm",
-            "Room": "RE"
+            "Time": "2023/03/15 10:30 am",
+            "Room": "g"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -2285,9 +2277,8 @@
             "Student": "46-18385",
             "Studentname": "Nouran Khaled Aboelmagd Abobakr Abdelaal",
             "Topic": "Ranking Sadness Emotions using EEG and ML",
-            "Time": "2023/03/12 9 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/15 2:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Wagdy Anis Aziz",
@@ -2295,8 +2286,8 @@
             "Student": "46-12946",
             "Studentname": "Noureldin Hesham Abdelazim Elhusseiny Awad",
             "Topic": "Smart Bike Secure B2X",
-            "Time": "2023/03/10 12:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/12 1:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -2304,9 +2295,8 @@
             "Student": "46-5432",
             "Studentname": "Omar Ahmed Abdelrahman Mousa Aref",
             "Topic": "Web-based Smart billboard Ads with image analysis and raspberry-pi",
-            "Time": "2023/03/07 12:30 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/11 12 pm",
+            "Room": ""
       },
       {
             "Examiner": "Cherif Salama",
@@ -2314,8 +2304,8 @@
             "Student": "46-8626",
             "Studentname": "Omar Ahmed Ibrahim Altantawy",
             "Topic": "Tactile Driving of Remote Vehicles over the Internet using VR",
-            "Time": "2023/03/13 1:30 pm",
-            "Room": "R"
+            "Time": "2023/03/14 3 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Nawal Ahmed El-Fishawy",
@@ -2323,8 +2313,9 @@
             "Student": "46-2224",
             "Studentname": "Omar Ashraf Abdelmaboud Elsayed Wahbi",
             "Topic": "Explainable AI for Self Driving Cars (Co-Supervised with Assoc. Prof. Amr Elmougy)",
-            "Time": "2023/03/09 4 pm",
-            "Room": "AAA"
+            "Time": "2023/03/16 9 am",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Galal Nadim",
@@ -2332,9 +2323,8 @@
             "Student": "46-10229",
             "Studentname": "Omar Ashraf Fathy Ali Elnahtawy",
             "Topic": "Psychiatry Counseling in the Metaverse III (Interaction)",
-            "Time": "2023/03/13 12:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/10 12 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2342,8 +2332,9 @@
             "Student": "46-5347",
             "Studentname": "Omar Ashraf Mohamed Elsawi",
             "Topic": "Predictive AI for Tactile Driving over the Internet",
-            "Time": "2023/03/13 1 pm",
-            "Room": "R"
+            "Time": "2023/03/10 2:30 pm",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -2351,8 +2342,8 @@
             "Student": "46-0877",
             "Studentname": "Omar Ayman Mohamed Samir Zaki Abbas",
             "Topic": "Visual programming for computational/architectural design I",
-            "Time": "2023/03/13 10 am",
-            "Room": "FRE"
+            "Time": "2023/03/12 4 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -2360,9 +2351,8 @@
             "Student": "46-4937",
             "Studentname": "Omar Emad Youssef Elsherif",
             "Topic": "STEM Experiment Designer III (Language/compiler)",
-            "Time": "2023/03/16 4 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/10 10 am",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -2370,8 +2360,8 @@
             "Student": "46-2654",
             "Studentname": "Omar Hatem Mohamed Zaki Baghdady",
             "Topic": "Kripke's Virtual Worlds",
-            "Time": "2023/03/11 10 am",
-            "Room": "WS",
+            "Time": "2023/03/09 1 pm",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -2380,9 +2370,8 @@
             "Student": "46-4215",
             "Studentname": "Omar Hossam Ahmed Farahat",
             "Topic": "Time2Vec for Urban Sound Tagging System 3",
-            "Time": "2023/03/07 4 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 1:30 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2390,8 +2379,8 @@
             "Student": "46-5257",
             "Studentname": "Omar Hussam Abdellatif Mostafa",
             "Topic": "Cooperative Decision Making in Unavoidable Accident Scenarios of Self Driving Cars (Co-supervised by Dr. Nourhan Ehab)",
-            "Time": "2023/03/07 1 pm",
-            "Room": "CED",
+            "Time": "2023/03/10 9 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2400,8 +2389,8 @@
             "Student": "46-1259",
             "Studentname": "Omar Khaled Mohamed Kamaleldin Mohamed Nasser",
             "Topic": "Federated Learning on Non- independent and identically distributed Data.",
-            "Time": "2023/03/07 10:30 am",
-            "Room": "R",
+            "Time": "2023/03/10 11 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -2410,9 +2399,8 @@
             "Student": "46-1152",
             "Studentname": "Omar Khaled Sayed Ismail",
             "Topic": "Creating a Digital Twin for a Simple 3D Wire-Bending Machine (Co-supervised by Dr. Amir Roushdy from EMS)",
-            "Time": "2023/03/15 12 pm",
-            "Room": "RE",
-            "Color": "Red"
+            "Time": "2023/03/11 12:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -2420,8 +2408,8 @@
             "Student": "46-4439",
             "Studentname": "Omar Medhat Mohiyeldin Abdellatif Ibrahim",
             "Topic": "Direct-Manipulation Tangible Desktop Framework I (Interaction)",
-            "Time": "2023/03/13 4 pm",
-            "Room": "AAA"
+            "Time": "2023/03/15 1 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -2429,8 +2417,8 @@
             "Student": "46-1014",
             "Studentname": "Omar Mohamed Amin Seifallah",
             "Topic": "Cyber-attacks on Implanted Medical Devices Using Compatible Novel Bio-Mechatronics Technique (Co-supervised by Dr. Amir Roushdy from EMS)",
-            "Time": "2023/03/10 10 am",
-            "Room": "AAA"
+            "Time": "2023/03/11 1:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -2438,8 +2426,8 @@
             "Student": "46-3579",
             "Studentname": "Omar Mohamed Fahim Abdelaziz Obaia",
             "Topic": "Spectrotemporally-Aligned Features and Multi-Head Self-Attention for Sound Event Localization and Detection",
-            "Time": "2023/03/13 10:30 am",
-            "Room": "FRE"
+            "Time": "2023/03/10 3 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Ahmed El-Bialy",
@@ -2447,8 +2435,8 @@
             "Student": "46-1632",
             "Studentname": "Omar Mohamed Hussein Ezzeldin Zaki",
             "Topic": "Character rigging in Maya using Python",
-            "Time": "2023/03/09 11 am",
-            "Room": "WS",
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -2457,8 +2445,8 @@
             "Student": "46-0292",
             "Studentname": "Omar Mostafa Fathy Elkersh",
             "Topic": "Domain-Knowledge Aided Explainable Systems",
-            "Time": "2023/03/13 9 am",
-            "Room": "R",
+            "Time": "2023/03/10 11 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2467,8 +2455,8 @@
             "Student": "46-3097",
             "Studentname": "Omar Osama Kamal Ibrahim Mohamed",
             "Topic": "ML IoT Smart Pet Feeder",
-            "Time": "2023/03/09 9 am",
-            "Room": "AAA",
+            "Time": "2023/03/09 10 am",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -2477,8 +2465,8 @@
             "Student": "46-1299",
             "Studentname": "Omar Tarek Mohamed Youssef Darwish",
             "Topic": "Augmented-Virtuality Exercise System (VR)",
-            "Time": "2023/03/09 9 am",
-            "Room": "R",
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2487,9 +2475,8 @@
             "Student": "43-7913",
             "Studentname": "Omar Tarek Saeed Almarsafawy",
             "Topic": "Smart bike Module Scheduling system",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "dwecd",
-            "Color": "Red"
+            "Time": "2023/03/12 3 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Magdy Abdlghany Soliman Aboelela",
@@ -2497,8 +2484,8 @@
             "Student": "46-10418",
             "Studentname": "Omar Usama Mahmoud Elnagar",
             "Topic": "Smart Bike obstacle detection and avoidance",
-            "Time": "2023/03/13 3:30 pm",
-            "Room": "AAA",
+            "Time": "2023/03/13 12:30 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -2507,9 +2494,8 @@
             "Student": "46-6401",
             "Studentname": "Peter Ashraf Mounir Hanna Sharobim",
             "Topic": "Residual CNNS for Sound Event Localization and Detection",
-            "Time": "2023/03/16 11 am",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/16 12:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mona Farouk",
@@ -2517,9 +2503,8 @@
             "Student": "46-4128",
             "Studentname": "Peter Osama Laban Ragheb Gendy",
             "Topic": "Spectrotemporally-Aligned Features and Long Short-Term Memory for Sound Event Localization and Detection",
-            "Time": "2023/03/13 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 12:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Gamal Eldin Mohamed Aly",
@@ -2527,8 +2512,8 @@
             "Student": "46-2230",
             "Studentname": "Philopateer Amgad Mikhail Fouad",
             "Topic": "COVID-19 Diagnosis from CT Scans using Machine Learning",
-            "Time": "2023/03/15 12:30 pm",
-            "Room": "dwecd",
+            "Time": "2023/03/14 9 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2537,8 +2522,9 @@
             "Student": "46-1116",
             "Studentname": "Philopateer Atef Badeer Ghattas",
             "Topic": "Predicting Depressive Symptoms in Social Contexts from Recorded EEG Signals using Machine Learning",
-            "Time": "2023/03/12 1:30 pm",
-            "Room": "R"
+            "Time": "2023/03/14 3 pm",
+            "Room": "ds",
+            "Color": "Red"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -2546,8 +2532,8 @@
             "Student": "46-1548",
             "Studentname": "Raghad Mohamed Mohamed Lotfy Abdeltawab",
             "Topic": "Remote sensing image semantic segmentation Using Feedforward CNN",
-            "Time": "2023/03/14 1 pm",
-            "Room": "R"
+            "Time": "2023/03/16 12:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Mona Farouk",
@@ -2555,8 +2541,9 @@
             "Student": "46-17621",
             "Studentname": "Raghda Essam Taha Othman Hussein",
             "Topic": "Investigating Intrinsically Interpretable Methods for Explainable AI",
-            "Time": "2023/03/12 11 am",
-            "Room": "R"
+            "Time": "2023/03/10 9:30 am",
+            "Room": "g",
+            "Color": "Red"
       },
       {
             "Examiner": "Samar Hesham",
@@ -2564,8 +2551,8 @@
             "Student": "46-0908",
             "Studentname": "Rana Rafat Mohamed Mohamed Mostafa",
             "Topic": "2-D virtual grocery store with market basket analysis",
-            "Time": "2023/03/14 12 pm",
-            "Room": "dwecd",
+            "Time": "2023/03/10 3:30 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -2574,8 +2561,8 @@
             "Student": "46-13489",
             "Studentname": "Rawan Reda Ibrahim Youssef Fouda",
             "Topic": "Indoor Scenes Understanding for Visual Prostheses",
-            "Time": "2023/03/10 9:30 am",
-            "Room": "R"
+            "Time": "2023/03/12 11 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Sahar Selim",
@@ -2583,8 +2570,8 @@
             "Student": "46-0599",
             "Studentname": "Roushan Sherief Muhammed Elwassif Abdelmaksoud",
             "Topic": "Efficiency and Privacy in Deep Meta-Learning",
-            "Time": "2023/03/08 12 pm",
-            "Room": "FRE",
+            "Time": "2023/03/12 3:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2593,8 +2580,8 @@
             "Student": "46-5055",
             "Studentname": "Rowan Amgad Nabil Mohamed",
             "Topic": "EyeSpy: A website to develop the cognitive skills of physically disabled children using eye and gaze tracking ",
-            "Time": "2023/03/13 12 pm",
-            "Room": "WS",
+            "Time": "2023/03/09 1 pm",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -2603,9 +2590,8 @@
             "Student": "46-0550",
             "Studentname": "Salma Amr Abdelfattah Abuelnaga",
             "Topic": "Federated Learning for Person Re-Identification",
-            "Time": "2023/03/07 1:30 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/11 11 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -2613,9 +2599,8 @@
             "Student": "46-0271",
             "Studentname": "Salma Ashraf Ismail Abdelaal",
             "Topic": "EfficientNet-B2 Architecture for Urban Sound Tagging",
-            "Time": "2023/03/08 4 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/15 9:30 am",
+            "Room": "g"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -2623,9 +2608,8 @@
             "Student": "46-7723",
             "Studentname": "Salma Khalid Sayed Ahmed Ghazal",
             "Topic": "Rule Introduction in Java SNePS 3.0",
-            "Time": "2023/03/07 9 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/16 3 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2633,8 +2617,8 @@
             "Student": "46-17002",
             "Studentname": "Salma Mohamed Hassan Aly Elshafey",
             "Topic": "Evaluation of Pretrained Language Models for Machine Translation (Co-supervised with Dr. Caroline Sabty)",
-            "Time": "2023/03/11 3:30 pm",
-            "Room": "RE",
+            "Time": "2023/03/15 10 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -2643,8 +2627,8 @@
             "Student": "46-2101",
             "Studentname": "Salma Osama Kamel Mostafa Kishk",
             "Topic": "Model Agnostic Methods for Explainable AI: Shapley Values (SHAP)",
-            "Time": "2023/03/16 9:30 am",
-            "Room": "CED",
+            "Time": "2023/03/09 4 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2653,8 +2637,8 @@
             "Student": "46-2285",
             "Studentname": "Samaa Ahmed Mamdouh Ahmed Abdelraheem",
             "Topic": "Using ML to Define the Character Traits of Egyptian Women Enterpreneurs in STEM Fields on Social Media",
-            "Time": "2023/03/08 3:30 pm",
-            "Room": "WS",
+            "Time": "2023/03/10 9:30 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2663,9 +2647,8 @@
             "Student": "46-4736",
             "Studentname": "Sara Noureldeen Samir Abdelhalim",
             "Topic": "Automatic categorization of tasks based on constraints",
-            "Time": "2023/03/16 3 pm",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/10 1:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2673,9 +2656,8 @@
             "Student": "46-0431",
             "Studentname": "Sarah Ahmed Fouad Hella",
             "Topic": "UX Analysis for Online Collaboration Platforms",
-            "Time": "2023/03/10 12 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/13 1 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -2683,8 +2665,8 @@
             "Student": "46-5892",
             "Studentname": "Sarah Hany Abdelhamid Aly Hassan",
             "Topic": "Multiplatform Tour-guiding Front End",
-            "Time": "2023/03/12 3:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/15 1:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2692,8 +2674,9 @@
             "Student": "46-1521",
             "Studentname": "Seif Ahmed Fouad Abdelsalam",
             "Topic": "Motion Stabilization for Autonomous Vehicles using Arduinos and Motor Feedback",
-            "Time": "2023/03/16 1 pm",
-            "Room": "RE"
+            "Time": "2023/03/10 10 am",
+            "Room": "gf",
+            "Color": "Red"
       },
       {
             "Examiner": "Sahar Ali Fawzi",
@@ -2701,8 +2684,8 @@
             "Student": "46-1953",
             "Studentname": "Seif Ahmed Mostafa Elberkawy",
             "Topic": "Similar Objects Grouping for Visual Prostheses",
-            "Time": "2023/03/09 10:30 am",
-            "Room": "R",
+            "Time": "2023/03/12 1:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2711,8 +2694,9 @@
             "Student": "46-3958",
             "Studentname": "Seif Ramy Mahmoud Ibrahim",
             "Topic": "Design and Evaluation of Input Interaction Techniques in a VR Environment",
-            "Time": "2023/03/14 12:30 pm",
-            "Room": "R"
+            "Time": "2023/03/11 1 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Wael Zakaria",
@@ -2720,8 +2704,8 @@
             "Student": "43-16664",
             "Studentname": "Seifallah Alaaeldin Elsayed Ali Salem Arafaa",
             "Topic": "Indoor 3D Scene Construction using Structure form Motion for Mobile Robots",
-            "Time": "2023/03/15 10 am",
-            "Room": "R",
+            "Time": "2023/03/16 10:30 am",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -2730,9 +2714,8 @@
             "Student": "46-1691",
             "Studentname": "Seifeldin Maged Elsayed Mounir Ibrahim",
             "Topic": "Visual Questioning Answer for E-Commerce",
-            "Time": "2023/03/08 1 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 3 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Mohamed Watheq Elkharashy",
@@ -2740,8 +2723,8 @@
             "Student": "46-5287",
             "Studentname": "Shady Ahmed Zaki Ahmed Ali",
             "Topic": "Design and Evaluation of Selection Interaction Techniques in a VR Environment",
-            "Time": "2023/03/14 12 pm",
-            "Room": "R"
+            "Time": "2023/03/15 12 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2749,8 +2732,8 @@
             "Student": "46-1105",
             "Studentname": "Shahd Medhat Mahmoud Abdallah Koura",
             "Topic": "Measuring User Engagement with Different UI Designs for a Recommender System (Co-supervised with Dr. Nada Sharaf)",
-            "Time": "2023/03/07 12 pm",
-            "Room": "CED",
+            "Time": "2023/03/15 10:30 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -2759,8 +2742,8 @@
             "Student": "46-4880",
             "Studentname": "Shams Tarek Tawfik Elsayed Ahmed",
             "Topic": "Incorporating Auxiliary Data for Urban Sound Tagging System 4",
-            "Time": "2023/03/12 11 am",
-            "Room": "WS"
+            "Time": "2023/03/15 12:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mohamed H Farouk ",
@@ -2768,8 +2751,8 @@
             "Student": "46-3502",
             "Studentname": "Shawky Haitham Lotfy Abdelsalam",
             "Topic": "Anomaly detection in Fine Grained smart Meters",
-            "Time": "2023/03/08 9:30 am",
-            "Room": "FRE"
+            "Time": "2023/03/14 3 pm",
+            "Room": ""
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -2777,8 +2760,8 @@
             "Student": "46-12355",
             "Studentname": "Shaza Hamdy Ibrahim Amer Mosleh",
             "Topic": "Illumination Transfer from Images to Animated Graphics",
-            "Time": "2023/03/07 10 am",
-            "Room": "FRE",
+            "Time": "2023/03/14 12 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -2787,8 +2770,8 @@
             "Student": "46-1163",
             "Studentname": "Sherif Moataz Abdelsattar Ibrahim Bialy",
             "Topic": "Time2Vec for Urban Sound Tagging System 2",
-            "Time": "2023/03/15 2:30 pm",
-            "Room": "",
+            "Time": "2023/03/10 1 pm",
+            "Room": "gre",
             "Color": "Red"
       },
       {
@@ -2797,8 +2780,8 @@
             "Student": "46-1206",
             "Studentname": "Shorook Mohamed Said Mostafa Soliman",
             "Topic": "Incorporating Auxiliary Data for Urban Sound Tagging System 2",
-            "Time": "2023/03/09 11 am",
-            "Room": "RE"
+            "Time": "2023/03/10 12:30 pm",
+            "Room": "gre"
       },
       {
             "Examiner": "Ahmed Hassan",
@@ -2806,8 +2789,8 @@
             "Student": "46-5198",
             "Studentname": "Tasneem Ahmed Abdelhady Otefy",
             "Topic": "Multimodal Metrics for Assessing City Vibrancy",
-            "Time": "2023/03/11 11 am",
-            "Room": "CED"
+            "Time": "2023/03/13 12 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Hossam Abdelonem",
@@ -2815,9 +2798,8 @@
             "Student": "46-5144",
             "Studentname": "Tasneem Hazem Ibrahim Ahmed",
             "Topic": "DSP Runtime Simulator on Simulink",
-            "Time": "2023/03/07 10:30 am",
-            "Room": "FRE",
-            "Color": "Red"
+            "Time": "2023/03/10 12:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Hanaa Bayoumi",
@@ -2825,9 +2807,8 @@
             "Student": "46-2248",
             "Studentname": "Veronika Fayez Shehata Youssef",
             "Topic": "Creating Animated Graphics for Printed Matters",
-            "Time": "2023/03/07 9:30 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/16 1 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Sahar Ali Fawzi",
@@ -2835,8 +2816,8 @@
             "Student": "46-0737",
             "Studentname": "Yara Ahmed Hassan Fahmy Aboelhamayed",
             "Topic": "Mood Extraction from Franco-Arabic Data using Deep Learning Techniques",
-            "Time": "2023/03/14 9 am",
-            "Room": "R",
+            "Time": "2023/03/14 1 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2845,8 +2826,9 @@
             "Student": "46-1575",
             "Studentname": "Yasmeen Hassan Mohamed Bahaaeldin Helal",
             "Topic": "Multivalued Algebraic Logic",
-            "Time": "2023/03/12 11 am",
-            "Room": "FRE"
+            "Time": "2023/03/16 1 pm",
+            "Room": "sd",
+            "Color": "Red"
       },
       {
             "Examiner": "Tamer Heshmat",
@@ -2854,8 +2836,8 @@
             "Student": "46-1847",
             "Studentname": "Yasmine Ahmed Yehia Abdelrahman",
             "Topic": "Using high performance computing to predict mechanical properties of materials",
-            "Time": "2023/03/11 1:30 pm",
-            "Room": "",
+            "Time": "2023/03/15 2:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2864,8 +2846,8 @@
             "Student": "46-13722",
             "Studentname": "Yomna Islam Youssef Alayary",
             "Topic": "Face masked and unmasked humans detection and tracking in video surveillance",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "R",
+            "Time": "2023/03/12 1 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -2874,8 +2856,8 @@
             "Student": "46-2387",
             "Studentname": "Yousef Magdy Hany Abdelhalim Aly Elbon",
             "Topic": "traffic light recognition with prior maps",
-            "Time": "2023/03/14 11 am",
-            "Room": "R"
+            "Time": "2023/03/16 10:30 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Mohamed Refky Amin",
@@ -2883,8 +2865,9 @@
             "Student": "46-2911",
             "Studentname": "Yousef Sayed Kamal Sayed Hassanein",
             "Topic": "Game development using Unreal and Oculus",
-            "Time": "2023/03/10 11 am",
-            "Room": "R"
+            "Time": "2023/03/13 9:30 am",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Magdy Abdlghany Soliman Aboelela",
@@ -2892,8 +2875,8 @@
             "Student": "46-10406",
             "Studentname": "Youseff Mohamed Moustafa Hassan Elgindy",
             "Topic": "Image and point cloud fusion for traffic sign detection",
-            "Time": "2023/03/15 12 pm",
-            "Room": "R",
+            "Time": "2023/03/14 12:30 pm",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -2902,8 +2885,8 @@
             "Student": "46-2459",
             "Studentname": "Youssef Ahmed Abdelghafour Aly",
             "Topic": "Autonomous vehicle route planning aided by pedestrian behavior prediction models",
-            "Time": "2023/03/14 1 pm",
-            "Room": ""
+            "Time": "2023/03/10 3:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -2911,9 +2894,8 @@
             "Student": "46-16452",
             "Studentname": "Youssef Ahmed Kamal Ismail Aboulyousr",
             "Topic": "Priority-based constrained routing for road Vehicles",
-            "Time": "2023/03/11 3:30 pm",
-            "Room": "",
-            "Color": "Red"
+            "Time": "2023/03/13 4 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -2921,9 +2903,8 @@
             "Student": "46-1043",
             "Studentname": "Youssef Ahmed Mohamed Kamal Mohamed Abdelrazek",
             "Topic": "Stable Fully-Backed Coin System (front-end)",
-            "Time": "2023/03/15 12:30 pm",
-            "Room": "CED",
-            "Color": "Red"
+            "Time": "2023/03/16 2:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -2931,8 +2912,8 @@
             "Student": "46-7368",
             "Studentname": "Youssef Alaaeldin Kamal Mohamed Thabet",
             "Topic": "Enhanced Night Vision for Autonomous Vehicles using Sensor Fusion between LiDAR and Thermal Camera",
-            "Time": "2023/03/14 1:30 pm",
-            "Room": ""
+            "Time": "2023/03/11 2:30 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Sahar Ali Fawzi",
@@ -2940,8 +2921,8 @@
             "Student": "46-3220",
             "Studentname": "Youssef Amin Eshak Amin Eldalil",
             "Topic": "Pigmented Skin Lesions Recognition using Deep Learning",
-            "Time": "2023/03/14 10 am",
-            "Room": "R",
+            "Time": "2023/03/14 12:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2950,9 +2931,8 @@
             "Student": "46-3661",
             "Studentname": "Youssef Amr Mohamed Ibrahim Ashour",
             "Topic": "Software Usability Patterns Extraction and Analysis for Improving User Engagement I",
-            "Time": "2023/03/16 11 am",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/09 1 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mohamed Handosa",
@@ -2960,9 +2940,8 @@
             "Student": "46-0576",
             "Studentname": "Youssef Amr Saied Shaker",
             "Topic": "Modular Task-oriented Dialogue Systems",
-            "Time": "2023/03/07 9:30 am",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/09 12 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Cherif Salama",
@@ -2970,8 +2949,8 @@
             "Student": "46-3138",
             "Studentname": "Youssef Amro Mostafa Kamal Mohamed Dessouky",
             "Topic": "Quantifying Acceptable Levels of Risk for Supply Chain through Graph Analytics",
-            "Time": "2023/03/09 1 pm",
-            "Room": "",
+            "Time": "2023/03/10 12:30 pm",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -2980,9 +2959,8 @@
             "Student": "43-2344",
             "Studentname": "Youssef Elabbas Mohamed Anis Aboelnaga",
             "Topic": "Mind GRAF: Graphical Infrastructure II (Co-Supervised with Assoc. Prof. Haythem Ismail)",
-            "Time": "2023/03/08 12 pm",
-            "Room": "CED",
-            "Color": "Red"
+            "Time": "2023/03/15 10:30 am",
+            "Room": "gre"
       },
       {
             "Examiner": "Mona Farouk",
@@ -2990,8 +2968,8 @@
             "Student": "46-5543",
             "Studentname": "Youssef Hamdy Abdelmoniem Attallah",
             "Topic": "COSMIC programming language compiler",
-            "Time": "2023/03/07 11 am",
-            "Room": "WS",
+            "Time": "2023/03/14 2:30 pm",
+            "Room": "ds",
             "Color": "Red"
       },
       {
@@ -3000,9 +2978,8 @@
             "Student": "46-0583",
             "Studentname": "Youssef Hatem Mohamed Abdelaziz Ammar",
             "Topic": "Automated Process Workflow Extraction from Unstructured Data",
-            "Time": "2023/03/07 4 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 3 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Hesham N. Elmahdy",
@@ -3010,9 +2987,8 @@
             "Student": "43-8939",
             "Studentname": "Youssef Hesham Mohamed Eltaher",
             "Topic": "Machine Learning based Adaptive Approximate Computing",
-            "Time": "2023/03/07 9:30 am",
-            "Room": "",
-            "Color": "Red"
+            "Time": "2023/03/15 2:30 pm",
+            "Room": ""
       },
       {
             "Examiner": "Walaa Ibrahim Gabr",
@@ -3020,8 +2996,8 @@
             "Student": "46-0929",
             "Studentname": "Youssef Magdy Mahmoud Abdelwaly Yehia",
             "Topic": "Investigating Explanation Methods for Deep Neural Networks II",
-            "Time": "2023/03/11 10 am",
-            "Room": "RE",
+            "Time": "2023/03/10 3 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -3030,9 +3006,8 @@
             "Student": "46-11401",
             "Studentname": "Youssef Mohamed Mahmoud Moneer Mahmoud Algendy",
             "Topic": "Academic Calendar: Student Tasks",
-            "Time": "2023/03/09 12 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/16 1:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Hussein Shahin",
@@ -3040,9 +3015,8 @@
             "Student": "46-6130",
             "Studentname": "Youssef Mohamed Moustafa Mohamed Kersha",
             "Topic": "Brain-Computer Interfaces as Additional Inputs to Augmented Reality",
-            "Time": "2023/03/16 12 pm",
-            "Room": "R",
-            "Color": "Red"
+            "Time": "2023/03/13 12 pm",
+            "Room": "ds"
       },
       {
             "Examiner": "Hussein Abdelaty",
@@ -3050,8 +3024,9 @@
             "Student": "46-6157",
             "Studentname": "Youssef Osama Elnabawy Elsabbagh",
             "Topic": "Time2Vec for Urban Sound Tagging System 1",
-            "Time": "2023/03/09 12 pm",
-            "Room": "RE"
+            "Time": "2023/03/09 4 pm",
+            "Room": "",
+            "Color": "Red"
       },
       {
             "Examiner": "Islam Ahmed Mahmoud El-Maddah ",
@@ -3059,8 +3034,8 @@
             "Student": "46-1566",
             "Studentname": "Youssef Sameh Mohamed Saleh Ahmed",
             "Topic": "STEM Experiment Designer IV (Interaction)",
-            "Time": "2023/03/08 1 pm",
-            "Room": "FRE"
+            "Time": "2023/03/10 3:30 pm",
+            "Room": "sd"
       },
       {
             "Examiner": "Mostafa ElAttar",
@@ -3068,8 +3043,8 @@
             "Student": "46-1756",
             "Studentname": "Youssef Yasser Aly Mohamed Elbassiouny",
             "Topic": "Physical 3D Display using LEDs (Hardware)",
-            "Time": "2023/03/09 9:30 am",
-            "Room": "R",
+            "Time": "2023/03/12 1 pm",
+            "Room": "g",
             "Color": "Red"
       },
       {
@@ -3078,8 +3053,9 @@
             "Student": "46-2496",
             "Studentname": "Youssef Yasser Hussein Awadallah",
             "Topic": "Developing a Dashboard Platform for Smart City Video Surveillance",
-            "Time": "2023/03/10 10:30 am",
-            "Room": "R"
+            "Time": "2023/03/14 3:30 pm",
+            "Room": "gre",
+            "Color": "Red"
       },
       {
             "Examiner": "Ahmed El Sheikh",
@@ -3087,8 +3063,8 @@
             "Student": "46-2188",
             "Studentname": "Youssef Youhanna Abdelmessih Salama",
             "Topic": "Flipped Autonomous Driving using Road-side Units",
-            "Time": "2023/03/16 3:30 pm",
-            "Room": "FRE",
+            "Time": "2023/03/16 10:30 am",
+            "Room": "",
             "Color": "Red"
       },
       {
@@ -3097,8 +3073,8 @@
             "Student": "46-13378",
             "Studentname": "Yousseif Ahmed Hamed Abdou Abourefaei",
             "Topic": "Ranking Joy Emotions using EEG and ML",
-            "Time": "2023/03/10 1:30 pm",
-            "Room": "CED",
+            "Time": "2023/03/09 10 am",
+            "Room": "sd",
             "Color": "Red"
       },
       {
@@ -3107,8 +3083,8 @@
             "Student": "46-4827",
             "Studentname": "Yusuf Muhammad Eissa Ahmed Eissa Ammar",
             "Topic": "Annotating Lecture Slides with Code-Switched Data",
-            "Time": "2023/03/12 4 pm",
-            "Room": "R",
+            "Time": "2023/03/09 11 am",
+            "Room": "gf",
             "Color": "Red"
       },
       {
@@ -3117,9 +3093,8 @@
             "Student": "46-1327",
             "Studentname": "Zeina Ahmed Mostafa Mahmoud Ibrahim Elkassas",
             "Topic": "Masked Autoregressive Flows for Anomalous Sounds Detection",
-            "Time": "2023/03/08 10 am",
-            "Room": "AAA",
-            "Color": "Red"
+            "Time": "2023/03/15 12 pm",
+            "Room": "g"
       },
       {
             "Examiner": "Mona Farouk",
@@ -3127,9 +3102,8 @@
             "Student": "46-16190",
             "Studentname": "Zeyad Elsaeed Ibrahim Abbas Eissa",
             "Topic": "On the Difference Between Believing P and Believing that P is True",
-            "Time": "2023/03/07 3:30 pm",
-            "Room": "WS",
-            "Color": "Red"
+            "Time": "2023/03/13 2:30 pm",
+            "Room": "gf"
       },
       {
             "Examiner": "Ahmed Abdelfattah",
@@ -3137,7 +3111,8 @@
             "Student": "37-2496",
             "Studentname": "Ziad Amr Abdelmonem Mostafa Darwish",
             "Topic": "Mind GRAF: User Interface II (Co-Supervised with Assoc. Prof. Haythem Ismail)",
-            "Time": "2023/03/16 2:30 pm",
-            "Room": "FRE"
+            "Time": "2023/03/09 1:30 pm",
+            "Room": "gre",
+            "Color": "Red"
       }
 ]
