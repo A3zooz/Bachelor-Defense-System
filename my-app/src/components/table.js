@@ -1,9 +1,7 @@
-    import React, { Component,useState,table, useEffect } from 'react'
+    import React, { Component,useState, useEffect } from 'react'
+    import table from 'react'
     import LoadingScreen from "react-loading-screen";
     import spinner from'./download.gif'
-    import ReactDOM from 'react-dom'
-    import Timetable from 'react-scheduler-table'
-    import CSVRenderer from './CSVRenderer'; 
     import { ToastContainer, toast } from 'react-toastify';
     import 'react-toastify/dist/ReactToastify.css';
     import "./table.css"
@@ -50,7 +48,37 @@
             {showButton ? (<button  className="btn-const1" onClick={onGenerate}>Generate Solution</button>) :<> </> }
             {downButton ? (
             <> 
-            <CSVRenderer data={data} cssClass="table"></CSVRenderer>
+            <table className="ArchiveTable">
+            <thead>
+                <tr>
+                    <th>Examiner</th>
+                    <th>Supervisor</th>
+                    <th>Student</th>
+                    <th>Student Name</th>
+                    <th>Student Email</th>
+                    <th>Topic</th>
+                    <th>Time</th>
+                    <th>Room</th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                {data &&
+                data.map((data, index) => (
+                    <tr key={index}>
+                    <td>{data.Examiner}</td>
+                    <td>{data.Supervisor}</td>
+                    <td>{data.Student}</td>
+                    <td>{data.Studentname}</td>
+                    <td>{data.Studentemail}</td>
+                    <td>{data.Topic}</td>
+                    <td>{data.Time}</td>
+                    <td>{data.Room}</td>
+                    <td>{data.Color}</td>
+                    </tr>
+                ))}
+            </tbody>
+    </table>
             <form action='http://localhost:5000/downloadFile/'>
             <input onClick={handleSubmit} className="btn-const2" type="submit" value="Download Solution" />
             </form>

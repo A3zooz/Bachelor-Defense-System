@@ -13,7 +13,7 @@ def Create_input(Name,dates,rooms):
     ID = []
     Room = []
     name = []
-    email = []
+    # email = []
     topic = []
 
     # Dates = [""]
