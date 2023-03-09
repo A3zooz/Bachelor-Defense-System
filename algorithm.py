@@ -1,5 +1,5 @@
 # from tkinter import SOLID
-from importlib.resources import as_file
+# from importlib.resources import as_file
 import math
 from sqlalchemy import null
 import data as dt

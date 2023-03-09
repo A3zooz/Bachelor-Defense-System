@@ -102,7 +102,7 @@ function Card() {
       console.log("Done with temp")
       console.log(tmplist);
       axios.post('http://localhost:5000/external/',res)
-      toast("Examiner constraints successfully added !!!");
+      toast("Examiner constraints successfully added!");
     }
   
     return (

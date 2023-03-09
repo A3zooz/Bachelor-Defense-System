@@ -12,9 +12,11 @@ function Form() {
   const[dates ,setDates ]= useState([]);
   const[rooms ,setRooms ]= useState([]);
   const[room ,setRoom ]= useState('');
+
   const handleChange = (event)=> {
     setFile(event.target.files[0]);
   }
+
   const handleSumbit = (event)=> {
     event.preventDefault();
     const url = 'http://localhost:5000/upload-file/';
@@ -26,85 +28,98 @@ function Form() {
     axios.post(url,formData).then((response) => {
       console.log(response.data);
     });
-    toast("Data successfully added !!!");
+    toast("Data successfully added. You can move to Examiner's Constraints tab!");
 
   }
-    return (
-      <>
-      <form className="addForm" onSubmit={handleSumbit}>
-        <div className="formTitle">Schedule's Data</div>
-        <label className="uploadLabel">
-          Upload Excel File <span className="required">*</span>
-        </label>
-        <label className="info">(.csv)</label>
-        <br></br>
-        <input
-          className="inpt"
-          type="file"
-          name = "file"
-          onChange={handleChange}
-          accept=".csv"
-        />
-      <label className="dateLabel">
-        Choose Dates <span className="required">*</span>
-      </label>
-      <div className='datePicker'>
-        <DatePicker
-        multiple
-        value={dates}
-        onChange={ setDates }
-        sort
-        plugins={[
-          <DatePanel />
-      ]}
-        ></DatePicker>
-      </div>
-      <label className="roomLabel">
-        Choose Rooms <span className="required">*</span>
-      </label>
 
-
-      <div className="room">
-      <div>
-        <input type="text" value={room} onChange={(event) => {
-    setRoom(event.target.value);
-  }} />
-        <button type="button" onClick={() => {
+  const handleAddRoom = () => {
     const newList = rooms.concat(room);
-
     setRooms(newList);
-  }}>
-          Add
-        </button>
-      </div>
+    setRoom('');
+  }
 
-      <div style={{ display: 'flex', marginTop: '5px' }}>
+  const handleKeyPress = (event) => {
+    if(event.key === 'Enter') {
+      event.preventDefault();
+      handleAddRoom();
+    }
+  }
 
-      {/* <FlatList list={[1, 2, 3]} renderItem={rooms.map((item) => (
-          <li key={item}>{item}</li>
-        ))}/> */}
-        
-        <FlatList
-      data={rooms}
-      keyExtractor={(item, index) => index.toString()}
-      contentContainerStyle={{ justifyContent: 'flex-start', flexDirection: 
-      'row', flexWrap: 'wrap', paddingHorizontal: 10 }}
-      renderItem={({ item }) =>
-                  <TouchableOpacity style={{ padding: 10 }}>
-                  <Text style={{ backgroundColor: '#edf4fa', fontSize: 15, 
-                      padding: 6, borderRadius: 7 }}>{item}</Text>
-                    </TouchableOpacity>
+  return (
+    <>
+    <form className="addForm" onSubmit={handleSumbit}>
+      <div className="formTitle">Schedule's Data</div>
+      <label className="uploadLabel">
+        Upload Excel File <span className="required">*</span>
+      </label>
+      <label className="info">(.csv)</label>
+      <br></br>
+      <input
+        className="inpt"
+        type="file"
+        name = "file"
+        onChange={handleChange}
+        accept=".csv"
+      />
+    <label className="dateLabel">
+      Choose Dates <span className="required">*</span>
+    </label>
+    <div className='datePicker'>
+      <DatePicker
+      multiple
+      value={dates}
+      onChange={ setDates }
+      sort
+      plugins={[
+        <DatePanel />
+    ]}
+      ></DatePicker>
+    </div>
+    <label className="roomLabel">
+      Choose Rooms <span className="required">*</span>
+    </label>
 
-      }
-  />
 
-      </div>
+    <div className="room">
+    <div>
+      <input type="text" value={room} onChange={(event) => {
+  setRoom(event.target.value);
+}} onKeyPress={(event) => {
+  if(event.key === 'Enter') {
+    event.preventDefault();
+    handleAddRoom();
+  }
+}} />
+      <button type="button" onClick={handleAddRoom}>
+        Add
+      </button>
+    </div>
+
+    <div style={{ display: 'flex', marginTop: '5px' }}>
+
+    <FlatList
+  data={rooms}
+  keyExtractor={(item, index) => index.toString()}
+  contentContainerStyle={{ justifyContent: 'flex-start', flexDirection: 
+  'row', flexWrap: 'wrap', paddingHorizontal: 10 }}
+  renderItem={({ item }) =>
+              <TouchableOpacity style={{ padding: 10 }}>
+              <Text style={{ backgroundColor: '#edf4fa', fontSize: 15, 
+                  padding: 6, borderRadius: 7 }}>{item}</Text>
+                </TouchableOpacity>
+
+  }
+/>
+
+    </div>
 
 
-    
-      </div>
-      <button className="btn" onClick={handleSumbit}>Submit</button>
-      <ToastContainer />
+
+    </div>
+    <button className="btn" onClick={handleSumbit}>Submit</button>
+    <ToastContainer />
+
+
 
       </form>
       
@@ -112,4 +127,7 @@ function Form() {
     );
   
 }
+
+
+
 export default Form;

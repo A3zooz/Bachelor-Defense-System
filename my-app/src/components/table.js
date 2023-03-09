@@ -39,7 +39,10 @@
             <LoadingScreen
             loading={true}
             logoSrc={spinner}
+            text={"This might take a while ~30 mins"}
+            // textStyle={{ fontSize: "2px", color: "gray" }}
             />
+
             ) : (
             <>
 
