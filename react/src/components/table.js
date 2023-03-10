@@ -17,7 +17,7 @@
             setIsLoding(true)
             setShowButton(false)
             setdownButton(true)
-            return axios.post('http://localhost:5000/generate/').then((res) => {
+            return axios.post('http://bachelor-defense-system_backend_1:5000/generate/').then((res) => {
                 console.log(res.data[0])
                 setData(res.data[0]);
                 console.log(data)
@@ -79,7 +79,7 @@
                 ))}
             </tbody>
     </table>
-            <form action='http://localhost:5000/downloadFile/'>
+            <form action='http://bachelor-defense-system_backend_1:5000/downloadFile/'>
             <input onClick={handleSubmit} className="btn-const2" type="submit" value="Download Solution" />
             </form>
             <ToastContainer/>

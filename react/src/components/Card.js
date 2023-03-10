@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const axios = require("axios").default;
-const url = "http://localhost:5000/allExternals/";
+const url = "http://bachelor-defense-system_backend_1:5000/allExternals/";
 const animatedComponents = makeAnimated();
 
 function Card() {
@@ -101,7 +101,7 @@ function Card() {
       res[SelectedExaminar.value]=tmplist;
       console.log("Done with temp")
       console.log(tmplist);
-      axios.post('http://localhost:5000/external/',res)
+      axios.post('http://bachelor-defense-system_backend_1:5000/external/',res)
       toast("Examiner constraints successfully added!");
     }
   
