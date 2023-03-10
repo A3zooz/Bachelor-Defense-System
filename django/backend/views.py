@@ -37,6 +37,13 @@ def generate(request):
                 res.append(i)
         return Response(w,status=status.HTTP_200_OK)
 
+@api_view(['GET'])
+def get_iterations(request):
+    if request.method == 'GET':
+        iterations = algo.iterations
+        return Response({'iterations': iterations}, status=status.HTTP_200_OK)
+
+
 @api_view(['POST','GET','DELETE'])
 def external(request):
     if request.method == 'POST':

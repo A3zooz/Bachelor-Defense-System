@@ -28,4 +28,5 @@ urlpatterns = [
     path('supervisor/', views.supervisor),
     path('allSupervisors/', views.getAllSupervisors),
     path('generate/', views.generate),
+    path('get_iterations/', views.get_iterations),
 ]

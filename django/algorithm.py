@@ -32,6 +32,10 @@ import random
 # sinput_file = Inputcreation.Create_input(Name,dates,rooms)
 cost_function = cost_function.cost  
 
+iterations = 0
+
+
+
 
 def drawschedule(f):
     u=[""]*270
@@ -56,6 +60,7 @@ def drawschedule(f):
 
 
 def evolutionary_algorithm():
+    global iterations
     max_generations = 2000
     num_runs = 1
     best_timetable = None
@@ -101,6 +106,7 @@ def evolutionary_algorithm():
 
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
+                iterations = j
                 print('Iteration', j, 'cost', cost_function(solution,days,slots))
             # if j % 5000 == 0:
 
