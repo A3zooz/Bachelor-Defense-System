@@ -15,7 +15,7 @@ services:
       - react_build:/react/build 
     stdin_open: true  
     expose:
-      - "3000"
+      - "3000"  
 
   nginx:
     image: nginx:latest
