@@ -40,7 +40,7 @@ def generate(request):
 @api_view(['GET'])
 def get_iterations(request):
     if request.method == 'GET':
-        iterations = algo.iterations
+        iterations = algo.get_iterations()
         return Response({'iterations': iterations}, status=status.HTTP_200_OK)
 
 

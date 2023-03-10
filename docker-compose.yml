@@ -4,7 +4,7 @@ services:
   backend:
     build:
       context: ./django
-    command: gunicorn backend.wsgi --bind 0.0.0.0:5000 --timeout 0
+    command: gunicorn backend.wsgi --bind 0.0.0.0:5000 --worker-class gthread --workers 2 --timeout 0
     ports:
       - "5000:5000"
     expose:

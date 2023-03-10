@@ -32,8 +32,6 @@ import random
 # sinput_file = Inputcreation.Create_input(Name,dates,rooms)
 cost_function = cost_function.cost  
 
-iterations = 0
-
 
 
 
@@ -57,10 +55,14 @@ def drawschedule(f):
     with open('Solution.txt', 'w') as e: 
         e.write(tabulate([x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12], headers=['9 am', '9:30 am','10 am', '10:30 am','11 am', 'Break',' 12 pm', '12:30 pm,','1 pm', '1:30 pm','Break', '2:30 pm','3 pm','3:30 pm', '4 pm'], tablefmt="grid"))
 
+def get_iterations():
+    f = open('iterations.txt', 'r')
+    iter = f.readline()
+    f.close()
+    return iter
 
 
 def evolutionary_algorithm():
-    global iterations
     max_generations = 2000
     num_runs = 1
     best_timetable = None
@@ -106,7 +108,9 @@ def evolutionary_algorithm():
 
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
-                iterations = j
+                f = open('iterations.txt','w')  
+                f.write('{}'.format((j//max_generations)*100))
+                f.close()
                 print('Iteration', j, 'cost', cost_function(solution,days,slots))
             # if j % 5000 == 0:
 

@@ -13,18 +13,24 @@ const Table = () => {
   const [downButton, setDownButton] = useState(false);
   const [loadingTime, setLoadingTime] = useState(null);
 
+
   const checkIterations = () => {
     console.log("innn check")
     axios
       .get('http://35.223.140.142/get_iterations/')
       .then((res) => {
-        console.log(res.data)
         setLoadingTime(res.data.iterations);
+        console.log(res.data)
+        if (res.data.iterations > 95) {
+          clearInterval(intervalId);
+        }
       })
       .catch((error) => {
         console.error('Failed to get iterations:', error);
       });
   };
+
+  setInterval(checkIterations, 1000);
 
   const onGenerate = () => {
     setIsLoading(true);
@@ -51,16 +57,17 @@ const Table = () => {
     <div>
       {isLoading ? (
         <>
-         <button className="btn-const1" onClick={checkIterations}>
+        {/* {checkIterations} */}
+         {/* <button className="btn-const1" onClick={checkIterations}>
               check iterations remaining
             </button>
-          <p> This might take a while ~{loadingTime} mins</p>
-          {/* <LoadingScreen
+          <p> This might take a while ~{loadingTime} mins</p> */}
+          <LoadingScreen
             loading={true}
             logoSrc={spinner}
-            text={`This might take a while ~${loadingTime} mins`}
+            text={`This might take a while ~${loadingTime}%`}
             // textStyle={{ fontSize: "2px", color: "gray" }}
-          /> */}
+          />
         </>
       ) : (
         <>
