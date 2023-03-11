@@ -19,7 +19,7 @@ function Form() {
 
   const handleSumbit = (event)=> {
     event.preventDefault();
-    const url = 'http://35.223.140.142/upload-file/';
+    const url = 'http://13.51.162.165/upload-file/';
     const formData = new FormData();
     formData.append('File',file);
     formData.append('Dates',dates);

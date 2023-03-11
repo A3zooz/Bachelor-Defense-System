@@ -15,13 +15,12 @@ const Table = () => {
 
 
   const checkIterations = () => {
-    console.log("innn check")
     axios
-      .get('http://35.223.140.142/get_iterations/')
+      .get('http://13.51.162.165/get_iterations/')
       .then((res) => {
         setLoadingTime(res.data.iterations);
-        console.log(res.data)
-        if (res.data.iterations > 95) {
+        const iterations = parseInt(res.data.iterations);
+        if (iterations >= 99) {
           clearInterval(intervalId);
         }
       })
@@ -30,15 +29,14 @@ const Table = () => {
       });
   };
 
-  setInterval(checkIterations, 1000);
 
   const onGenerate = () => {
     setIsLoading(true);
     setShowButton(false);
     setDownButton(true);
-
+    const intervalId = setInterval(checkIterations, 10000);
     axios
-      .post('http://35.223.140.142/generate/')
+      .post('http://13.51.162.165/generate/')
       .then((res) => {
         console.log(res.data[0]);
         setData(res.data[0]);
@@ -65,7 +63,7 @@ const Table = () => {
           <LoadingScreen
             loading={true}
             logoSrc={spinner}
-            text={`This might take a while ~${loadingTime}%`}
+            text={`This might take a while ~${loadingTime ?? '0.0'}%`}
             // textStyle={{ fontSize: "2px", color: "gray" }}
           />
         </>
@@ -79,7 +77,7 @@ const Table = () => {
 
           {downButton && (
             <>
-              <form action="http://35.223.140.142/downloadFile/">
+              <form action="http://13.51.162.165/downloadFile/">
                 <input
                   onClick={handleSubmit}
                   className="btn-const2"

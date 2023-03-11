@@ -109,7 +109,7 @@ def evolutionary_algorithm():
             # print the iteration number and the cost for the current solution
             if j % 200 == 0:
                 f = open('iterations.txt','w')  
-                f.write('{}'.format((j//max_generations)*100))
+                f.write('{}'.format(((j/max_generations)*100)//1))
                 f.close()
                 print('Iteration', j, 'cost', cost_function(solution,days,slots))
             # if j % 5000 == 0:
