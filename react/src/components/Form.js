@@ -1,9 +1,11 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import DatePicker from "react-multi-date-picker"
 import DatePanel from "react-multi-date-picker/plugins/date_panel"
 import { Text, View, FlatList, TouchableOpacity} from 'react-native';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ip from './ip.txt';
+
 
 const axios = require('axios').default;
 
@@ -13,13 +15,22 @@ function Form() {
   const[rooms ,setRooms ]= useState([]);
   const[room ,setRoom ]= useState('');
 
+  const [ipAddr, setIpAddr] = useState('');
+
+  useEffect(() => {
+    fetch(ip)
+      .then(response => response.text())
+      .then(data => setIpAddr(data))
+      .catch(error => console.error(error));
+  }, []);
+
   const handleChange = (event)=> {
     setFile(event.target.files[0]);
   }
 
   const handleSumbit = (event)=> {
     event.preventDefault();
-    const url = 'http://13.51.162.165/upload-file/';
+    const url = `http://${ipAddr}/upload-file/`;
     const formData = new FormData();
     formData.append('File',file);
     formData.append('Dates',dates);

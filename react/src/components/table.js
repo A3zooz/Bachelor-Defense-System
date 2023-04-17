@@ -1,25 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import LoadingScreen from 'react-loading-screen';
 import spinner from './download.gif';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './table.css';
+import ip from './ip.txt';
 
-const Table = () => {
+
+
+function Table() {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [showButton, setShowButton] = useState(true);
   const [downButton, setDownButton] = useState(false);
   const [loadingTime, setLoadingTime] = useState(null);
+  const [intervalId, setIntervalId] = useState(null);
+
+  const [ipAddr, setIpAddr] = useState('');
+  const [download, setDownload] = useState('');
+
+
+  useEffect(() => {
+    fetch(ip)
+      .then(response => response.text())
+      .then(data => setIpAddr(data))
+      .catch(error => console.error(error));
+  }, []);
 
 
   const checkIterations = () => {
     axios
-      .get('http://13.51.162.165/get_iterations/')
+      .get(`http://${ipAddr}/get_iterations/`)
       .then((res) => {
         setLoadingTime(res.data.iterations);
         const iterations = parseInt(res.data.iterations);
+        console.log("hereeee: " + iterations)
         if (iterations >= 99) {
           clearInterval(intervalId);
         }
@@ -29,20 +45,24 @@ const Table = () => {
       });
   };
 
-
   const onGenerate = () => {
     setIsLoading(true);
     setShowButton(false);
     setDownButton(true);
-    const intervalId = setInterval(checkIterations, 10000);
+    const newIntervalId = setInterval(checkIterations, 10000);
+    setIntervalId(newIntervalId);
     axios
-      .post('http://13.51.162.165/generate/')
+      .post(`http://${ipAddr}/generate/`)
       .then((res) => {
         console.log(res.data[0]);
         setData(res.data[0]);
         setIsLoading(false);
+        console.log(newIntervalId)
+        clearInterval(newIntervalId);
+        setDownload(`http://${ipAddr}/downloadFile/`)
       })
       .catch((error) => {
+        clearInterval(newIntervalId);
         console.error('Failed to generate:', error);
       });
   };
@@ -50,6 +70,7 @@ const Table = () => {
   const handleSubmit = (event) => {
     toast('CSV file is downloading !!!');
   };
+
 
   return (
     <div>
@@ -77,7 +98,7 @@ const Table = () => {
 
           {downButton && (
             <>
-              <form action="http://13.51.162.165/downloadFile/">
+              <form action={download}>
                 <input
                   onClick={handleSubmit}
                   className="btn-const2"

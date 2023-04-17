@@ -1,13 +1,13 @@
-import React, { useState, } from "react";
+import React, { useState, useEffect } from "react";
 import AsyncSelect from "react-select/async";
 import makeAnimated from 'react-select/animated';
 import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import ip from './ip.txt';
 
 const axios = require("axios").default;
-const url = "http://13.51.162.165/allExternals/";
+// const url = `http://${ipAddr}/allExternals/`;
 const animatedComponents = makeAnimated();
 
 function Card() {
@@ -16,6 +16,16 @@ function Card() {
   const [day, setDay] = useState([]);
   const [dates,setDates]=useState([]);
   const [selectedslots,setSelectedslots]=useState(Array(dates.length*15).fill(0));
+
+  const [ipAddr, setIpAddr] = useState('');
+
+  useEffect(() => {
+    fetch(ip)
+      .then(response => response.text())
+      .then(data => setIpAddr(data))
+      .catch(error => console.error(error));
+  }, []);
+  
   const slotOptions = [
     { label: "Select All", value: "all" },
     { value: 0, label: '1st' },
@@ -33,8 +43,11 @@ function Card() {
     { value: 12, label: '13th' },
     { value: 13, label: '14th' },
     { value: 14, label: '15th' },]
+
+
+
     const loadExaminars = (searchExaminar) => {
-      return axios.get(url).then((res) => {
+      return axios.get(`http://${ipAddr}/allExternals/`).then((res) => {
         let list = [];
         console.log(res.data);
         res.data["externals"].forEach((ex) => list.push({ value: ex, label: ex }));
@@ -43,7 +56,7 @@ function Card() {
     };
   
     const loadDates = (searchDate) => {
-      return axios.get(url).then((res) => {
+      return axios.get(`http://${ipAddr}/allExternals/`).then((res) => {
         const exams = res.data["dates"];
         setDates(exams);
         let list = [];
@@ -101,10 +114,16 @@ function Card() {
       res[SelectedExaminar.value]=tmplist;
       console.log("Done with temp")
       console.log(tmplist);
-      axios.post('http://13.51.162.165/external/',res)
+      axios.post(`http://${ipAddr}/external/`,res)
       toast("Examiner constraints successfully added!");
     }
-  
+
+    if(ipAddr == '')
+    {
+      return null
+    }
+    
+  else{
     return (
       <>
         <form className={"Constarints-1"}>
@@ -161,5 +180,6 @@ function Card() {
         </form>
       </>
     );
+        }
   }
   export default Card;
