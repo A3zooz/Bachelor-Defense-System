@@ -35,7 +35,7 @@ function Table() {
       .then((res) => {
         setLoadingTime(res.data.iterations);
         const iterations = parseInt(res.data.iterations);
-        console.log("iterations: " + iterations)
+        console.log("iterations: " + iterations + "%")
         if (iterations >= 99) {
           clearInterval(intervalId);
         }
