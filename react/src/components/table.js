@@ -35,7 +35,7 @@ function Table() {
       .then((res) => {
         setLoadingTime(res.data.iterations);
         const iterations = parseInt(res.data.iterations);
-        console.log("hereeee: " + iterations)
+        console.log("iterations: " + iterations)
         if (iterations >= 99) {
           clearInterval(intervalId);
         }
@@ -49,7 +49,7 @@ function Table() {
     setIsLoading(true);
     setShowButton(false);
     setDownButton(true);
-    const newIntervalId = setInterval(checkIterations, 10000);
+    const newIntervalId = setInterval(checkIterations, 30000);
     setIntervalId(newIntervalId);
     axios
       .post(`http://${ipAddr}/generate/`)
