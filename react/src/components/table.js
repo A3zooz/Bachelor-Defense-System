@@ -63,6 +63,7 @@ function Table() {
       })
       .catch((error) => {
         clearInterval(newIntervalId);
+        setLoadingTime("Failed to generate: " + error);
         console.error('Failed to generate:', error);
       });
   };
